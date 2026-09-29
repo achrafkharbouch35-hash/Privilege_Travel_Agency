@@ -1,11 +1,11 @@
 /* =========================================================
-   NOMADIA TRAVEL — script.js
+   Privilege_Travel_Agency — script.js
    ========================================================= */
 
 /* ---------- CONFIG ---------- */
 const CONFIG = {
     whatsapp: "212675296774",
-    instagram: "https://instagram.com/nomadia.travel"
+    instagram: "https://instagram.com/priviligetravel"
 };
 
 /* ---------- DATA ---------- */
