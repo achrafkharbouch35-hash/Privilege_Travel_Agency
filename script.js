@@ -120,7 +120,7 @@ rating:5.0,
 
 badge:"BEST SELLER",
 
-image:"PM5.jpg",
+image:"PM5.jpeg",
 
 
 description:
