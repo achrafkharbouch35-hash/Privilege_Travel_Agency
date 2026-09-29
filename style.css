@@ -365,33 +365,61 @@ textarea{
 }
 
 
-/* BRAND */
+/* =========================
+   LOGO
+========================= */
 
 .brand{
   display:flex;
-  flex-direction:column;
+  align-items:center;
+  flex-shrink:0;
   line-height:1;
+  text-decoration:none;
 }
 
-.brand-main{
-  font-family:var(--font-display);
-  font-size:23px;
-  font-weight:900;
-  color:var(--navy);
-  letter-spacing:-.04em;
+.brand-logo{
+  width:auto;
+  height:52px;
+  max-width:190px;
+  object-fit:contain;
+  display:block;
+  transition:
+    transform .3s var(--ease),
+    opacity .3s var(--ease);
 }
 
-.brand-main.light{
-  color:white;
-  font-size:26px;
+.brand:hover .brand-logo{
+  transform:translateY(-1px);
+  opacity:.92;
 }
 
-.brand-sub{
-  font-size:8.5px;
-  letter-spacing:.19em;
-  color:var(--turquoise-dark);
-  font-weight:900;
-  margin-top:5px;
+/* Logo après scroll */
+.navbar.scrolled .brand-logo{
+  height:45px;
+}
+
+/* Tablette / mobile */
+@media(max-width:768px){
+  .brand-logo{
+    height:43px;
+    max-width:155px;
+  }
+
+  .navbar.scrolled .brand-logo{
+    height:40px;
+  }
+}
+
+/* Petits téléphones */
+@media(max-width:400px){
+  .brand-logo{
+    height:39px;
+    max-width:140px;
+  }
+
+  .navbar.scrolled .brand-logo{
+    height:37px;
+  }
 }
 
 
