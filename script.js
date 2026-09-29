@@ -125,7 +125,7 @@ rating:5.0,
 
 badge:"BEST SELLER",
 
-image:"imlil.jpg",
+image:"PM3.jpeg",
 
 
 description:
@@ -521,7 +521,7 @@ conditions:[
     price: 1299,
     rating: 5.0,
     badge: "BEST SELLER",
-    image: "ouzoud.jpg",
+    image: "PM2.jpeg",
 
     specialTitle:
       "Azilal • Ouzoud • Bin El Ouidane — 1299 DH",
