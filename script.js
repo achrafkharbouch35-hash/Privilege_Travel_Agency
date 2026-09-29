@@ -546,7 +546,7 @@ const TOURS = [
 
     formulas: [
       {
-        name: "Formule complète",
+        name: "_Formule complète_",
         price: 1299,
         items: [
           "Transport aller-retour en bus touristique climatisé et confortable",
