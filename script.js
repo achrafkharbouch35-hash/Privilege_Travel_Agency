@@ -88,7 +88,7 @@ const TOURS = [
     badge: "BEST SELLER",
     image: "PM.jpeg",
 
-    description: "Le voyage le plus demandé est de retour en mode SAFARI. Ambiance, détente et relaxation au cœur du désert de Merzouga, avec hôtel, soirée animée, feu de camp et plusieurs activités selon la formule choisie.",
+    description: "",
 
     dates: [
       "02–04 octobre 2026",
