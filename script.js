@@ -280,27 +280,130 @@ const TOURS = [
     excluded: ["Déjeuner", "Activités nautiques"]
   },
 
-  {
-    id: "ouzoud",
-    name: "Ouzoud",
-    destination: "Cascades d'Ouzoud",
-    category: "montagne",
-    duration: "1 journée",
-    price: 349,
-    rating: 4.7,
-    badge: "NOUVEAU",
-    image: "ouzoud.jpg",
-    description: "Randonnez jusqu'au pied des cascades d'Ouzoud, les plus hautes du Maroc, et observez les singes magots dans leur habitat naturel.",
-    program: [
-      { time: "08:30", label: "Départ" },
-      { time: "10:30", label: "Arrivée et randonnée vers les cascades" },
-      { time: "12:30", label: "Balade en barque (optionnelle)" },
-      { time: "14:00", label: "Déjeuner avec vue sur les chutes" },
-      { time: "17:30", label: "Retour" }
-    ],
-    included: ["Transport", "Guide accompagnateur"],
-    excluded: ["Déjeuner", "Balade en barque"]
+ {
+  id: "azilal-ouzdoud-bin-el-ouidane",
+  name: "Azilal, Ouzoud & Bin El Ouidane",
+  destination: "Azilal • Cascades d'Ouzoud • Bin El Ouidane • Aïn Asserdoun",
+  category: "nature",
+  duration: "3 jours / 2 nuits",
+  price: 1299,
+  rating: 5.0,
+  badge: "NATURE & DÉTENTE",
+  image: "PM2.jpeg",
+
+  description: `
+🌿 Une magnifique escapade au cœur de la nature marocaine.
+
+Découvrez Azilal, les cascades d'Ouzoud, le lac de Bin El Ouidane
+et les sources d'Aïn Asserdoun
+  `,
+
+  dates: [
+    "09–11 octobre 2026",
+    "16–18 octobre 2026",
+    "23–25 octobre 2026",
+    "30 octobre–01 novembre 2026",
+    "06–08 novembre 2026",
+    "13–15 novembre 2026",
+    "20–22 novembre 2026",
+    "27–29 novembre 2026",
+    "04–06 décembre 2026",
+    "11–13 décembre 2026",
+    "18–20 décembre 2026",
+    "25–27 décembre 2026"
+  ],
+
+  program: [
+    {
+      day: "Jour 1 — Départ & Azilal",
+      items: [
+        "17:30 — Départ de Kénitra si 6 personnes ou plus",
+        "18:30 — Départ de Rabat devant la gare Rabat Agdal",
+        "19:30 — Départ de Mohammedia devant Marjane",
+        "20:30 — Départ de Casablanca devant la gare Casa-Voyageurs, porte arrière",
+        "Direction Beni Mellal",
+        "Dîner libre",
+        "Direction Azilal",
+        "Installation à l'hôtel",
+        "Distribution des chambres doubles et triples",
+        "Temps libre pour repos et douche",
+        "Nuit à l'hôtel"
+      ]
+    },
+
+    {
+      day: "Jour 2 — Cascades d'Ouzoud & Bin El Ouidane",
+      items: [
+        "08:00 — Petit-déjeuner à l'hôtel",
+        "09:00 — Départ vers les cascades d'Ouzoud",
+        "Descente vers les cascades et temps libre",
+        "Découverte et détente au cœur de la nature",
+        "Déjeuner libre",
+        "Départ vers Bin El Ouidane",
+        "Installation à l'hôtel",
+        "Distribution des chambres doubles et triples",
+        "Temps libre pour repos et détente",
+        "Dîner à l'hôtel",
+        "Jeux et animation en groupe",
+        "Nuit à l'hôtel"
+      ]
+    },
+
+    {
+      day: "Jour 3 — Bin El Ouidane & Aïn Asserdoun",
+      items: [
+        "08:00 — Petit-déjeuner",
+        "10:00 — Départ vers le barrage de Bin El Ouidane",
+        "Balade en bateau sur le lac — activité libre",
+        "Tour du barrage d'environ 1 heure",
+        "Départ vers une huilerie d'Aïn Asserdoun",
+        "Temps libre pour acheter l'huile d'olive de la région",
+        "Départ vers les sources d'Aïn Asserdoun",
+        "Visite des cascades d'Aïn Asserdoun",
+        "Temps libre pour profiter de la région",
+        "Déjeuner libre",
+        "Départ pour le retour",
+        "Arrivée à Casablanca",
+        "Arrivée à Mohammedia",
+        "Arrivée à Rabat"
+      ]
+    }
+  ],
+
+  included: [
+    "Transport aller-retour en autocar touristique climatisé et confortable",
+    "1 nuit dans un hôtel 4 étoiles à Azilal — Hotel Atlas Day ou équivalent",
+    "1 nuit dans un hôtel 4 étoiles à Bin El Ouidane — Hotel Chams du Lac ou équivalent",
+    "Dîner du deuxième jour à l'hôtel",
+    "Deux petits-déjeuners à l'hôtel",
+    "Animation et encadrement pendant toute la durée du voyage"
+  ],
+
+  excluded: [
+    "Déjeuners",
+    "Dîner du premier jour",
+    "Balade en bateau à Bin El Ouidane",
+    "Dépenses personnelles",
+    "Achats personnels"
+  ],
+
+  priceDetails: {
+    price: "1299 DH / personne"
   },
+
+  reservation: [
+    "Envoyer le nom et prénom",
+    "Envoyer le numéro de la carte nationale",
+    "Préciser le point de départ",
+    "Réserver la place en payant la totalité ou un acompte de 400 DH",
+    "Paiement par compte bancaire de Privilége Travel",
+    "Contacter Privilége Travel pour les coordonnées bancaires"
+  ],
+
+  contact: "0675296774",
+
+  slogan: "Privilége Travel — Voyagez confortablement, profitez du moment et laissez-nous nous occuper des souvenirs."
+}
 
   {
     id: "atlas",
