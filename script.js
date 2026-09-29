@@ -20,7 +20,94 @@ const CONFIG = {
 
 const TOURS = [
 
- 
+  /* =======================================================
+     AGAFAY
+     ======================================================= */
+
+  {
+    id: "agafay",
+    name: "Désert d'Agafay",
+    destination: "Agafay, près de Marrakech",
+    category: "desert",
+    duration: "1 journée",
+    price: 399,
+    rating: 4.8,
+    badge: "BEST SELLER",
+    image: "desert agafay.jpg",
+
+    description:
+      "À seulement quelques kilomètres de Marrakech, le désert d'Agafay offre des paysages rocheux spectaculaires. Une escapade parfaite pour profiter d'une ambiance désertique, de détente et de découverte.",
+
+    dates: [
+      "Dates disponibles sur demande"
+    ],
+
+    formulas: [
+      {
+        name: "Formule journée",
+        price: 399,
+        items: [
+          "Transport aller-retour",
+          "Transport climatisé",
+          "Balade en dromadaire",
+          "Déjeuner traditionnel",
+          "Guide accompagnateur"
+        ]
+      }
+    ],
+
+    program: [
+      {
+        time: "08:00",
+        label: "Départ de Marrakech"
+      },
+      {
+        time: "09:00",
+        label: "Arrivée au désert d'Agafay"
+      },
+      {
+        time: "10:00",
+        label: "Balade en dromadaire"
+      },
+      {
+        time: "13:00",
+        label: "Déjeuner traditionnel"
+      },
+      {
+        time: "15:00",
+        label: "Temps libre et détente"
+      },
+      {
+        time: "16:00",
+        label: "Retour vers Marrakech"
+      }
+    ],
+
+    included: [
+      "Transport aller-retour climatisé",
+      "Balade en dromadaire",
+      "Déjeuner traditionnel",
+      "Guide accompagnateur"
+    ],
+
+    excluded: [
+      "Boissons",
+      "Pourboires",
+      "Activités optionnelles",
+      "Dépenses personnelles"
+    ],
+
+    reservation:
+      "Contactez Privilege Travel au 0675296774 via WhatsApp ou appel pour réserver votre place.",
+
+    conditions: [
+      "Réservation selon les places disponibles.",
+      "Les activités optionnelles sont à la charge du participant.",
+      "Le programme peut être adapté selon les conditions du voyage."
+    ]
+  },
+
+
   /* =======================================================
      CHEFCHAOUEN
      ======================================================= */
@@ -109,171 +196,83 @@ const TOURS = [
      MARRAKECH
      ======================================================= */
 
- {
-id:"imlil-akfay-marrakech",
+  {
+    id: "marrakech",
+    name: "Marrakech",
+    destination: "La ville rouge",
+    category: "villes",
+    duration: "1 journée",
+    price: 299,
+    rating: 4.7,
+    badge: "NOUVEAU",
+    image: "marrakech.jpg",
 
-name:"Imlil – Akfay – Marrakech",
+    description:
+      "Explorez Marrakech, la ville rouge, entre médina historique, souks, monuments emblématiques et jardins. Une journée pour découvrir l'ambiance unique de la ville.",
 
-destination:"Montagnes de l'Atlas • Désert d'Agafay • Ville rouge",
+    dates: [
+      "Dates disponibles sur demande"
+    ],
 
-category:"aventure",
+    formulas: [
+      {
+        name: "Formule journée",
+        price: 299,
+        items: [
+          "Guide francophone",
+          "Visite des principaux sites",
+          "Temps libre dans la médina"
+        ]
+      }
+    ],
 
-duration:"3 jours / 2 nuits",
+    program: [
+      {
+        time: "09:00",
+        label: "Rendez-vous au centre-ville"
+      },
+      {
+        time: "09:30",
+        label: "Visite de la Koutoubia et de la médina"
+      },
+      {
+        time: "12:00",
+        label: "Balade dans les souks"
+      },
+      {
+        time: "14:00",
+        label: "Déjeuner libre"
+      },
+      {
+        time: "15:00",
+        label: "Temps libre"
+      },
+      {
+        time: "17:00",
+        label: "Fin de la visite"
+      }
+    ],
 
-price:879,
+    included: [
+      "Guide francophone",
+      "Visite des principaux sites"
+    ],
 
-rating:5.0,
+    excluded: [
+      "Déjeuner",
+      "Transport depuis votre hébergement",
+      "Dépenses personnelles"
+    ],
 
-badge:"BEST SELLER",
+    reservation:
+      "Contactez Privilege Travel au 0675296774 pour réserver.",
 
-image:"PM3.jpeg",
+    conditions: [
+      "Réservation selon les places disponibles.",
+      "Les entrées et repas non mentionnés sont à la charge du participant."
+    ]
+  },
 
-
-description:
-"Une expérience unique entre les montagnes de l'Atlas, les cascades d'Imlil, le désert d'Agafay et la magie de Marrakech. Une excursion complète entre nature, aventure, détente et découverte.",
-
-
-dates:[
-"02–04 octobre 2026",
-"09–11 octobre 2026",
-"16–18 octobre 2026",
-"23–25 octobre 2026",
-"30 octobre–01 novembre 2026",
-"06–08 novembre 2026",
-"13–15 novembre 2026",
-"20–22 novembre 2026",
-"27–29 novembre 2026",
-"04–06 décembre 2026",
-"11–13 décembre 2026",
-"18–20 décembre 2026",
-"25–27 décembre 2026",
-"01–03 janvier 2027",
-"08–10 janvier 2027",
-"15–17 janvier 2027",
-"22–24 janvier 2027",
-"29–31 janvier 2027"
-],
-
-
-program:[
-
-{
-time:"VENDREDI 18:00",
-label:"Départ de Rabat — Gare Rabat Agdal"
-},
-
-{
-time:"20:00",
-label:"Départ de Casablanca — Gare Casa Voyageurs"
-},
-
-{
-time:"Nuit",
-label:"Direction Imlil et installation au Riad"
-},
-
-
-{
-time:"SAMEDI 09:00",
-label:"Petit déjeuner au Riad"
-},
-
-{
-time:"Matin",
-label:"Visite des cascades d'Imlil et promenade facile dans la nature"
-},
-
-{
-time:"Après-midi",
-label:"Départ vers Marrakech avec arrêt déjeuner à Tahnaout"
-},
-
-{
-time:"Soir",
-label:"Installation à l'hôtel à Marrakech et temps libre"
-},
-
-{
-time:"Nuit",
-label:"Sortie optionnelle au désert d'Agafay avec dîner et animation (150 DH)"
-},
-
-
-{
-time:"DIMANCHE 06:00",
-label:"Possibilité de balade en montgolfière au lever du soleil (optionnelle)"
-},
-
-{
-time:"09:30",
-label:"Petit déjeuner à l'hôtel"
-},
-
-{
-time:"Matin",
-label:"Visite de la Palmeraie de Marrakech"
-},
-
-{
-time:"Après-midi",
-label:"Activité Quad dans la Palmeraie (optionnelle)"
-},
-
-{
-time:"16:00",
-label:"Départ retour vers Casablanca puis Rabat"
-}
-
-],
-
-
-included:[
-
-"Transport touristique climatisé aller-retour",
-
-"Nuitée dans un Riad à Imlil",
-
-"Nuitée dans un hôtel à Marrakech",
-
-"Petits déjeuners samedi et dimanche",
-
-"Animation et accompagnement durant le voyage"
-
-],
-
-
-excluded:[
-
-"Dîner Agafay 150 DH optionnel",
-
-"Montgolfière",
-
-"Quad",
-
-"Repas non mentionnés",
-
-"Dépenses personnelles"
-
-],
-
-
-reservation:
-"Réservation par WhatsApp au 0675296774. Possibilité de confirmer avec un acompte de 300 DH.",
-
-
-conditions:[
-
-"Places limitées selon disponibilité",
-
-"Confirmation après paiement",
-
-"Le programme peut être modifié pour assurer le bon déroulement du voyage",
-
-"L'agence décline toute responsabilité en cas de force majeure"
-
-]
-
-},
 
   /* =======================================================
      MERZOUGA
@@ -522,13 +521,13 @@ conditions:[
     price: 1299,
     rating: 5.0,
     badge: "BEST SELLER",
-    image: "PM2.jpeg",
+    image: "ouzoud.jpg",
 
     specialTitle:
       "Azilal • Ouzoud • Bin El Ouidane — 1299 DH",
 
     description:
-      "Quand la beauté de la nature rencontre le plaisir du voyage, l'aventure commence avec Privilège Travel.",
+      "Quand la beauté de la nature rencontre le plaisir du voyage, l'aventure commence avec Privilège Travel. Découvrez une magnifique expérience au cœur de la nature marocaine entre les montagnes de l'Atlas, les cascades d'Ouzoud, le lac de Bin El Ouidane et les sources d'Aïn Asserdoun. Une escapade pensée pour combiner découverte, détente, divertissement et moments conviviaux pendant 3 jours.",
 
     dates: [
       "09–11 octobre 2026",
@@ -547,7 +546,7 @@ conditions:[
 
     formulas: [
       {
-        name: "_Formule complète_",
+        name: "Formule complète",
         price: 1299,
         items: [
           "Transport aller-retour en bus touristique climatisé et confortable",
