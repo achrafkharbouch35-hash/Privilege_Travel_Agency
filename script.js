@@ -7,7 +7,7 @@ const CONFIG = {
     whatsapp: "212675296774",
     instagram: "https://instagram.com/priviligetravel"
 };
-
+console.log("CHIHAJA SCRIPT CHARGE");
 /* ---------- DATA ---------- */
 const TOURS = [
   {
@@ -403,7 +403,7 @@ et les sources d'Aïn Asserdoun
   contact: "0675296774",
 
   slogan: "Privilége Travel — Voyagez confortablement, profitez du moment et laissez-nous nous occuper des souvenirs."
-}
+},
 
   {
     id: "atlas",
