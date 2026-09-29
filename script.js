@@ -4,12 +4,18 @@
 
 /* ---------- CONFIG ---------- */
 const CONFIG = {
-    whatsapp: "212675296774",
-    instagram: "https://instagram.com/priviligetravel"
+  whatsapp: "212675296774",
+  instagram: "https://instagram.com/priviligetravel"
 };
-console.log("CHIHAJA SCRIPT CHARGE");
-/* ---------- DATA ---------- */
+
+
+/* =========================================================
+   DATA — EXCURSIONS
+   ========================================================= */
+
 const TOURS = [
+
+  /* ---------- AGAFAY ---------- */
   {
     id: "agafay",
     name: "Désert d'Agafay",
@@ -20,7 +26,10 @@ const TOURS = [
     rating: 4.8,
     badge: "BEST SELLER",
     image: "desert agafay.jpg",
-    description: "À seulement 40 minutes de Marrakech, le désert d'Agafay offre des paysages lunaires de collines rocheuses. Une escapade parfaite pour ressentir l'immensité du désert sans le long trajet vers le Sahara.",
+
+    description:
+      "À seulement 40 minutes de Marrakech, le désert d'Agafay offre des paysages lunaires de collines rocheuses. Une escapade parfaite pour ressentir l'immensité du désert sans le long trajet vers le Sahara.",
+
     program: [
       { time: "08:00", label: "Départ de votre hôtel à Marrakech" },
       { time: "09:00", label: "Arrivée au camp d'Agafay" },
@@ -28,9 +37,23 @@ const TOURS = [
       { time: "13:00", label: "Déjeuner traditionnel sous tente berbère" },
       { time: "16:00", label: "Retour vers Marrakech" }
     ],
-    included: ["Transport aller-retour climatisé", "Balade en dromadaire", "Déjeuner traditionnel", "Guide francophone"],
-    excluded: ["Boissons non incluses", "Pourboires", "Activités optionnelles"]
+
+    included: [
+      "Transport aller-retour climatisé",
+      "Balade en dromadaire",
+      "Déjeuner traditionnel",
+      "Guide francophone"
+    ],
+
+    excluded: [
+      "Boissons non incluses",
+      "Pourboires",
+      "Activités optionnelles"
+    ]
   },
+
+
+  /* ---------- CHEFCHAOUEN ---------- */
   {
     id: "chefchaouen",
     name: "Chefchaouen",
@@ -41,7 +64,10 @@ const TOURS = [
     rating: 4.9,
     badge: "BEST SELLER",
     image: "chafchaoun.jpg",
-    description: "Perdez-vous dans les ruelles bleutées de Chefchaouen, nichée dans les montagnes du Rif. Une journée dédiée à la photographie, à l'artisanat local et à l'atmosphère paisible de la médina.",
+
+    description:
+      "Perdez-vous dans les ruelles bleutées de Chefchaouen, nichée dans les montagnes du Rif. Une journée dédiée à la photographie, à l'artisanat local et à l'atmosphère paisible de la médina.",
+
     program: [
       { time: "06:30", label: "Départ matinal" },
       { time: "10:30", label: "Arrivée à Chefchaouen" },
@@ -49,9 +75,21 @@ const TOURS = [
       { time: "13:30", label: "Déjeuner libre" },
       { time: "17:00", label: "Retour" }
     ],
-    included: ["Transport confortable", "Guide local", "Temps libre dans la médina"],
-    excluded: ["Repas", "Entrées éventuelles aux monuments"]
+
+    included: [
+      "Transport confortable",
+      "Guide local",
+      "Temps libre dans la médina"
+    ],
+
+    excluded: [
+      "Repas",
+      "Entrées éventuelles aux monuments"
+    ]
   },
+
+
+  /* ---------- MARRAKECH ---------- */
   {
     id: "marrakech",
     name: "Marrakech",
@@ -62,7 +100,10 @@ const TOURS = [
     rating: 4.7,
     badge: "NOUVEAU",
     image: "marrakech.jpg",
-    description: "Explorez la place Jemaa el-Fna, les souks colorés, les jardins Majorelle et les palais historiques au cœur de Marrakech, ville impériale pleine de vie.",
+
+    description:
+      "Explorez la place Jemaa el-Fna, les souks colorés, les jardins Majorelle et les palais historiques au cœur de Marrakech, ville impériale pleine de vie.",
+
     program: [
       { time: "09:00", label: "Rendez-vous au centre-ville" },
       { time: "09:30", label: "Visite de la Koutoubia et de la médina" },
@@ -70,25 +111,46 @@ const TOURS = [
       { time: "14:00", label: "Déjeuner" },
       { time: "17:00", label: "Jardins Majorelle" }
     ],
-    included: ["Guide francophone", "Entrées aux sites principaux"],
-    excluded: ["Déjeuner", "Transport depuis votre riad"]
+
+    included: [
+      "Guide francophone",
+      "Entrées aux sites principaux"
+    ],
+
+    excluded: [
+      "Déjeuner",
+      "Transport depuis votre riad"
+    ]
   },
 
+
   /* =========================================================
-     MERZOUGA — DÉTAILS COMPLETS
+     MERZOUGA EXPRESS
      ========================================================= */
+
   {
     id: "merzouga",
+
     name: "Merzouga Express",
-    destination: "Dunes de l'Erg Chebbi — Safari Sahara",
+
+    destination:
+      "Dunes de l'Erg Chebbi — Safari Sahara",
+
     category: "desert",
+
     duration: "3 jours / 2 nuits",
+
     price: 779,
+
     rating: 5.0,
+
     badge: "BEST SELLER",
+
     image: "PM.jpeg",
 
-    description: "",
+    description:
+      "Le voyage le plus demandé est de retour en mode SAFARI. Ambiance, détente et relaxation au cœur du désert de Merzouga, avec hôtel, soirée animée, feu de camp et plusieurs activités selon la formule choisie.",
+
 
     dates: [
       "02–04 octobre 2026",
@@ -112,10 +174,13 @@ const TOURS = [
       "29–31 janvier 2027"
     ],
 
+
     formulas: [
+
       {
-        name: "_Formule Essentielle_",
+        name: "Formule Essentielle",
         price: 779,
+
         items: [
           "Transport touristique climatisé A/R",
           "Shooting photo professionnel et Story",
@@ -126,9 +191,11 @@ const TOURS = [
           "Feux de camp"
         ]
       },
+
       {
-        name: "_Formule All In_",
+        name: "Formule All In",
         price: 979,
+
         items: [
           "Transport touristique climatisé A/R",
           "Shooting photo professionnel et Story",
@@ -142,90 +209,134 @@ const TOURS = [
           "Feux de camp"
         ]
       }
+
     ],
 
+
     program: [
+
       {
         time: "VENDREDI · 19:00",
-        label: "Départ de Casablanca — Gare Casa-Voyageurs"
+        label:
+          "Départ de Casablanca — Gare Casa-Voyageurs"
       },
+
       {
         time: "20:00",
-        label: "Départ de Mohammedia — devant École Majorelle"
+        label:
+          "Départ de Mohammedia — devant École Majorelle"
       },
+
       {
         time: "21:00",
-        label: "Départ de Rabat — Gare Rabat Ville"
+        label:
+          "Départ de Rabat — Gare Rabat Ville"
       },
+
       {
         time: "00:30",
-        label: "Départ de Meknès — Gare routière Sidi Saïd"
+        label:
+          "Départ de Meknès — Gare routière Sidi Saïd"
       },
+
       {
         time: "Nuit",
-        label: "Pause dîner en route et pause dans une aire de repos"
+        label:
+          "Pause dîner en route et pause dans une aire de repos"
       },
+
       {
         time: "SAMEDI · 07:30",
-        label: "Arrivée à Aïn Atti, petit déjeuner et possibilité d'acheter cache-col, melhfa et derâa"
+        label:
+          "Arrivée à Aïn Atti, petit déjeuner et possibilité d'acheter cache-col, melhfa et derâa"
       },
+
       {
         time: "Matinée",
-        label: "Départ vers Merzouga, arrivée au centre et check-in à l'hôtel"
+        label:
+          "Départ vers Merzouga, arrivée au centre et check-in à l'hôtel"
       },
+
       {
         time: "Après arrivée",
-        label: "Dispatching des chambres doubles, triples ou suites quadruples selon disponibilité, puis temps libre, détente et baignade à la piscine"
+        label:
+          "Dispatching des chambres doubles, triples ou suites quadruples selon disponibilité, puis temps libre, détente et baignade à la piscine"
       },
+
       {
         time: "13:00",
-        label: "Départ vers le village de Khamlia et déjeuner à Dar Gnaoua : salade, medfouna, poulet, thé et fruit de saison"
+        label:
+          "Départ vers le village de Khamlia et déjeuner à Dar Gnaoua : salade, medfouna, poulet, thé et fruit de saison"
       },
+
       {
         time: "14:00",
-        label: "1 heure de Quad ou Buggy dans le désert — activité libre"
+        label:
+          "1 heure de Quad ou Buggy dans le désert — activité libre"
       },
+
       {
         time: "Après-midi",
-        label: "Départ en 4×4 vers les dunes de Merzouga et coucher du soleil"
+        label:
+          "Départ en 4×4 vers les dunes de Merzouga et coucher du soleil"
       },
+
       {
         time: "Soir",
-        label: "Retour à l'hôtel à dos de dromadaire, douche et temps libre"
+        label:
+          "Retour à l'hôtel à dos de dromadaire, douche et temps libre"
       },
+
       {
         time: "Soirée",
-        label: "Dîner buffet, soirée animée avec DJ, feu de camp en plein désert et nuitée à l'hôtel"
+        label:
+          "Dîner buffet, soirée animée avec DJ, feu de camp en plein désert et nuitée à l'hôtel"
       },
+
       {
         time: "DIMANCHE · 07:00",
-        label: "Réveil en douceur et petit déjeuner buffet à l'hôtel"
+        label:
+          "Réveil en douceur et petit déjeuner buffet à l'hôtel"
       },
+
       {
         time: "08:15",
-        label: "Check-out et départ vers Erfoud"
+        label:
+          "Check-out et départ vers Erfoud"
       },
+
       {
         time: "09:30",
-        label: "Arrivée à Erfoud et achat des dattes"
+        label:
+          "Arrivée à Erfoud et achat des dattes"
       },
+
       {
         time: "10:30",
-        label: "Arrivée à Aïn Atti et possibilité d'achat de lait de dromadaire"
+        label:
+          "Arrivée à Aïn Atti et possibilité d'achat de lait de dromadaire"
       },
+
       {
         time: "11:00",
-        label: "Pause à l'oasis Oulad Chaggar — paysage panoramique"
+        label:
+          "Pause à l'oasis Oulad Chaggar — paysage panoramique"
       },
+
       {
         time: "Retour",
-        label: "Voyage du retour avec déjeuner libre à Zaida et pause dans une aire de repos"
+        label:
+          "Voyage du retour avec déjeuner libre à Zaida et pause dans une aire de repos"
       },
+
       {
         time: "Fin",
-        label: "Arrivée successive à Meknès, Rabat, Mohammedia puis Casablanca"
+        label:
+          "Arrivée successive à Meknès, Rabat, Mohammedia puis Casablanca"
       }
+
     ],
+
 
     included: [
       "Transport touristique climatisé A/R",
@@ -237,6 +348,7 @@ const TOURS = [
       "Feux de camp"
     ],
 
+
     excluded: [
       "Déjeuner du samedi en formule Essentielle",
       "Excursion 4×4 et balade en dromadaire en formule Essentielle",
@@ -246,7 +358,10 @@ const TOURS = [
       "Dépenses personnelles et prestations non mentionnées"
     ],
 
-    reservation: "Réservation par versement bancaire d'une avance de 300 DH. Contactez Allo Privilège au 0675296774 via WhatsApp ou appel pour demander le RIB.",
+
+    reservation:
+      "Réservation par versement bancaire d'une avance de 300 DH. Contactez Allo Privilège au 0675296774 via WhatsApp ou appel pour demander le RIB.",
+
 
     conditions: [
       "Réservation selon les places disponibles.",
@@ -258,6 +373,218 @@ const TOURS = [
     ]
   },
 
+
+  /* =========================================================
+     AZILAL — OUZOUD — BIN EL OUIDANE — AÏN ASSERDOUN
+     ========================================================= */
+
+  {
+    id: "azilal-ouzoud-bin-el-ouidane",
+
+    name:
+      "Azilal • Ouzoud • Bin El Ouidane",
+
+    destination:
+      "Azilal • Cascades d'Ouzoud • Bin El Ouidane • Aïn Asserdoun",
+
+    category: "montagne",
+
+    duration: "3 jours / 2 nuits",
+
+    price: 1299,
+
+    rating: 5.0,
+
+    badge: "NOUVEAU",
+
+    image: "azilal.jpg",
+
+    description:
+      "Une magnifique escapade au cœur de la nature marocaine entre Azilal, les cascades d'Ouzoud, le lac de Bin El Ouidane et les sources d'Aïn Asserdoun. Une expérience pensée pour combiner découverte, détente, confort, nature et moments conviviaux.",
+
+
+    dates: [
+      "09–11 octobre 2026",
+      "16–18 octobre 2026",
+      "23–25 octobre 2026",
+      "30–31 octobre–01 novembre 2026",
+      "06–08 novembre 2026",
+      "13–15 novembre 2026",
+      "20–22 novembre 2026",
+      "27–29 novembre 2026",
+      "04–06 décembre 2026",
+      "11–13 décembre 2026",
+      "18–20 décembre 2026",
+      "25–27 décembre 2026"
+    ],
+
+
+    departurePoints: [
+      "17:30 — Kénitra, si 6 personnes ou plus",
+      "18:30 — Rabat, devant la gare Rabat Agdal",
+      "19:30 — Mohammedia, devant Marjane",
+      "20:30 — Casablanca, devant la gare Casa-Voyageurs (porte arrière)"
+    ],
+
+
+    hotels: [
+      "1 nuit dans un hôtel 4 étoiles à Azilal — Hotel Atlas Day ou équivalent",
+      "1 nuit dans un hôtel 4 étoiles à Bin El Ouidane — Hotel Chams du Lac ou équivalent"
+    ],
+
+
+    reservation:
+      "Envoyer le nom et prénom, le numéro de la carte nationale et le point de départ. La réservation se fait par paiement intégral ou par un acompte de 400 DH via le compte bancaire de Privilège Travel. Contactez le 0675296774 pour les coordonnées bancaires.",
+
+
+    conditions: [
+      "Réservation selon les places disponibles.",
+      "Le déjeuner et le dîner du premier jour sont libres.",
+      "La balade en bateau à Bin El Ouidane est libre et non incluse.",
+      "Les activités et dépenses personnelles non mentionnées sont à la charge du participant."
+    ],
+
+
+    program: [
+
+      {
+        time: "JOUR 1 · 17:30",
+        label:
+          "Départ de Kénitra si 6 personnes ou plus."
+      },
+
+      {
+        time: "18:30",
+        label:
+          "Départ de Rabat devant la gare Rabat Agdal."
+      },
+
+      {
+        time: "19:30",
+        label:
+          "Départ de Mohammedia devant Marjane."
+      },
+
+      {
+        time: "20:30",
+        label:
+          "Départ de Casablanca devant la gare Casa-Voyageurs, porte arrière."
+      },
+
+      {
+        time: "Soir",
+        label:
+          "Direction Beni Mellal. Dîner libre, puis route vers l'hôtel à Azilal."
+      },
+
+      {
+        time: "Nuit",
+        label:
+          "Installation, distribution des chambres doubles et triples, temps libre, repos et nuit à l'hôtel."
+      },
+
+      {
+        time: "JOUR 2 · 08:00",
+        label:
+          "Petit-déjeuner à l'hôtel, inclus dans le prix."
+      },
+
+      {
+        time: "09:00",
+        label:
+          "Départ vers les cascades d'Ouzoud."
+      },
+
+      {
+        time: "Matinée",
+        label:
+          "Descente vers les cascades, découverte du site et temps libre au cœur de la nature."
+      },
+
+      {
+        time: "Midi",
+        label:
+          "Déjeuner libre."
+      },
+
+      {
+        time: "Après-midi",
+        label:
+          "Départ vers Bin El Ouidane, installation à l'hôtel et distribution des chambres doubles et triples."
+      },
+
+      {
+        time: "Soir",
+        label:
+          "Temps libre pour repos et détente, dîner à l'hôtel inclus, jeux et animation en groupe, puis nuit."
+      },
+
+      {
+        time: "JOUR 3 · 08:00",
+        label:
+          "Petit-déjeuner à l'hôtel."
+      },
+
+      {
+        time: "10:00",
+        label:
+          "Départ vers le barrage de Bin El Ouidane."
+      },
+
+      {
+        time: "Matinée",
+        label:
+          "Balade en bateau sur le lac pendant environ 1 heure — activité libre."
+      },
+
+      {
+        time: "Après",
+        label:
+          "Visite d'une huilerie à Aïn Asserdoun et temps libre pour acheter l'huile d'olive de la région."
+      },
+
+      {
+        time: "Suite",
+        label:
+          "Visite des sources et cascades d'Aïn Asserdoun, puis temps libre."
+      },
+
+      {
+        time: "Midi",
+        label:
+          "Déjeuner libre."
+      },
+
+      {
+        time: "Retour",
+        label:
+          "Départ pour le retour vers Casablanca, Mohammedia puis Rabat."
+      }
+
+    ],
+
+
+    included: [
+      "Transport aller-retour en autocar touristique climatisé et confortable",
+      "1 nuit dans un hôtel 4 étoiles à Azilal — Hotel Atlas Day ou équivalent",
+      "1 nuit dans un hôtel 4 étoiles à Bin El Ouidane — Hotel Chams du Lac ou équivalent",
+      "Dîner du deuxième jour à l'hôtel",
+      "Deux petits-déjeuners à l'hôtel",
+      "Animation et encadrement pendant toute la durée du voyage"
+    ],
+
+
+    excluded: [
+      "Dîner du premier jour",
+      "Déjeuner du deuxième jour",
+      "Déjeuner du troisième jour",
+      "Balade en bateau à Bin El Ouidane",
+      "Dépenses et achats personnels"
+    ]
+  },
+
+
+  /* ---------- ESSAOUIRA ---------- */
   {
     id: "essaouira",
     name: "Essaouira",
@@ -268,7 +595,10 @@ const TOURS = [
     rating: 4.6,
     badge: "NOUVEAU",
     image: "essaouira.jpg",
-    description: "Découvrez la médina fortifiée d'Essaouira, son port de pêcheurs animé et ses plages venteuses, prisées des amateurs de surf et de kitesurf.",
+
+    description:
+      "Découvrez la médina fortifiée d'Essaouira, son port de pêcheurs animé et ses plages venteuses, prisées des amateurs de surf et de kitesurf.",
+
     program: [
       { time: "08:00", label: "Départ" },
       { time: "10:30", label: "Visite de la médina et des remparts" },
@@ -276,135 +606,55 @@ const TOURS = [
       { time: "15:00", label: "Temps libre à la plage" },
       { time: "18:00", label: "Retour" }
     ],
-    included: ["Transport aller-retour", "Guide local"],
-    excluded: ["Déjeuner", "Activités nautiques"]
+
+    included: [
+      "Transport aller-retour",
+      "Guide local"
+    ],
+
+    excluded: [
+      "Déjeuner",
+      "Activités nautiques"
+    ]
   },
 
- {
-  id: "azilal-ouzdoud-bin-el-ouidane",
-  name: "Azilal, Ouzoud & Bin El Ouidane",
-  destination: "Azilal • Cascades d'Ouzoud • Bin El Ouidane • Aïn Asserdoun",
-  category: "nature",
-  duration: "3 jours / 2 nuits",
-  price: 1299,
-  rating: 5.0,
-  badge: "NATURE & DÉTENTE",
-  image: "PM2.jpeg",
 
-  description: `
-🌿 Une magnifique escapade au cœur de la nature marocaine.
+  /* ---------- OUZOUD ---------- */
+  {
+    id: "ouzoud",
+    name: "Ouzoud",
+    destination: "Cascades d'Ouzoud",
+    category: "montagne",
+    duration: "1 journée",
+    price: 349,
+    rating: 4.7,
+    badge: "NOUVEAU",
+    image: "ouzoud.jpg",
 
-Découvrez Azilal, les cascades d'Ouzoud, le lac de Bin El Ouidane
-et les sources d'Aïn Asserdoun
-  `,
+    description:
+      "Randonnez jusqu'au pied des cascades d'Ouzoud, les plus hautes du Maroc, et observez les singes magots dans leur habitat naturel.",
 
-  dates: [
-    "09–11 octobre 2026",
-    "16–18 octobre 2026",
-    "23–25 octobre 2026",
-    "30 octobre–01 novembre 2026",
-    "06–08 novembre 2026",
-    "13–15 novembre 2026",
-    "20–22 novembre 2026",
-    "27–29 novembre 2026",
-    "04–06 décembre 2026",
-    "11–13 décembre 2026",
-    "18–20 décembre 2026",
-    "25–27 décembre 2026"
-  ],
+    program: [
+      { time: "08:30", label: "Départ" },
+      { time: "10:30", label: "Arrivée et randonnée vers les cascades" },
+      { time: "12:30", label: "Balade en barque (optionnelle)" },
+      { time: "14:00", label: "Déjeuner avec vue sur les chutes" },
+      { time: "17:30", label: "Retour" }
+    ],
 
-  program: [
-    {
-      day: "Jour 1 — Départ & Azilal",
-      items: [
-        "17:30 — Départ de Kénitra si 6 personnes ou plus",
-        "18:30 — Départ de Rabat devant la gare Rabat Agdal",
-        "19:30 — Départ de Mohammedia devant Marjane",
-        "20:30 — Départ de Casablanca devant la gare Casa-Voyageurs, porte arrière",
-        "Direction Beni Mellal",
-        "Dîner libre",
-        "Direction Azilal",
-        "Installation à l'hôtel",
-        "Distribution des chambres doubles et triples",
-        "Temps libre pour repos et douche",
-        "Nuit à l'hôtel"
-      ]
-    },
+    included: [
+      "Transport",
+      "Guide accompagnateur"
+    ],
 
-    {
-      day: "Jour 2 — Cascades d'Ouzoud & Bin El Ouidane",
-      items: [
-        "08:00 — Petit-déjeuner à l'hôtel",
-        "09:00 — Départ vers les cascades d'Ouzoud",
-        "Descente vers les cascades et temps libre",
-        "Découverte et détente au cœur de la nature",
-        "Déjeuner libre",
-        "Départ vers Bin El Ouidane",
-        "Installation à l'hôtel",
-        "Distribution des chambres doubles et triples",
-        "Temps libre pour repos et détente",
-        "Dîner à l'hôtel",
-        "Jeux et animation en groupe",
-        "Nuit à l'hôtel"
-      ]
-    },
-
-    {
-      day: "Jour 3 — Bin El Ouidane & Aïn Asserdoun",
-      items: [
-        "08:00 — Petit-déjeuner",
-        "10:00 — Départ vers le barrage de Bin El Ouidane",
-        "Balade en bateau sur le lac — activité libre",
-        "Tour du barrage d'environ 1 heure",
-        "Départ vers une huilerie d'Aïn Asserdoun",
-        "Temps libre pour acheter l'huile d'olive de la région",
-        "Départ vers les sources d'Aïn Asserdoun",
-        "Visite des cascades d'Aïn Asserdoun",
-        "Temps libre pour profiter de la région",
-        "Déjeuner libre",
-        "Départ pour le retour",
-        "Arrivée à Casablanca",
-        "Arrivée à Mohammedia",
-        "Arrivée à Rabat"
-      ]
-    }
-  ],
-
-  included: [
-    "Transport aller-retour en autocar touristique climatisé et confortable",
-    "1 nuit dans un hôtel 4 étoiles à Azilal — Hotel Atlas Day ou équivalent",
-    "1 nuit dans un hôtel 4 étoiles à Bin El Ouidane — Hotel Chams du Lac ou équivalent",
-    "Dîner du deuxième jour à l'hôtel",
-    "Deux petits-déjeuners à l'hôtel",
-    "Animation et encadrement pendant toute la durée du voyage"
-  ],
-
-  excluded: [
-    "Déjeuners",
-    "Dîner du premier jour",
-    "Balade en bateau à Bin El Ouidane",
-    "Dépenses personnelles",
-    "Achats personnels"
-  ],
-
-  priceDetails: {
-    price: "1299 DH / personne"
+    excluded: [
+      "Déjeuner",
+      "Balade en barque"
+    ]
   },
 
-  reservation: [
-    "Envoyer le nom et prénom",
-    "Envoyer le numéro de la carte nationale",
-    "Préciser le point de départ",
-    "Réserver la place en payant la totalité ou un acompte de 400 DH",
-    "Paiement par compte bancaire de Privilége Travel",
-    "Contacter Privilége Travel pour les coordonnées bancaires"
-  ],
 
-  contact: "0675296774",
-
-  slogan: "Privilége Travel — Voyagez confortablement, profitez du moment et laissez-nous nous occuper des souvenirs."
-},
-
+  /* ---------- ATLAS ---------- */
   {
     id: "atlas",
     name: "Atlas Mountains",
@@ -415,7 +665,10 @@ et les sources d'Aïn Asserdoun
     rating: 4.8,
     badge: "BEST SELLER",
     image: "atlas mouantains.jpg",
-    description: "Randonnée dans les villages berbères de la vallée de l'Ourika, au cœur du Haut Atlas, avec ses cascades, ses terrasses cultivées et son air pur.",
+
+    description:
+      "Randonnée dans les villages berbères de la vallée de l'Ourika, au cœur du Haut Atlas, avec ses cascades, ses terrasses cultivées et son air pur.",
+
     program: [
       { time: "08:00", label: "Départ de Marrakech" },
       { time: "09:30", label: "Arrivée et début de la randonnée" },
@@ -423,10 +676,21 @@ et les sources d'Aïn Asserdoun
       { time: "15:00", label: "Visite d'un village berbère" },
       { time: "18:00", label: "Retour" }
     ],
-    included: ["Transport 4x4", "Guide de montagne", "Déjeuner berbère"],
-    excluded: ["Boissons", "Pourboires"]
+
+    included: [
+      "Transport 4x4",
+      "Guide de montagne",
+      "Déjeuner berbère"
+    ],
+
+    excluded: [
+      "Boissons",
+      "Pourboires"
+    ]
   },
 
+
+  /* ---------- FES / MEKNES ---------- */
   {
     id: "fes-meknes",
     name: "Fès & Meknès",
@@ -437,7 +701,10 @@ et les sources d'Aïn Asserdoun
     rating: 4.7,
     badge: "NOUVEAU",
     image: "fesmeknes.jpg",
-    description: "Plongez dans l'histoire du Maroc à travers les médinas classées à l'UNESCO de Fès et Meknès, entre tanneries millénaires et monuments impériaux.",
+
+    description:
+      "Plongez dans l'histoire du Maroc à travers les médinas classées à l'UNESCO de Fès et Meknès, entre tanneries millénaires et monuments impériaux.",
+
     program: [
       { time: "07:00", label: "Départ" },
       { time: "09:30", label: "Visite de Meknès et Volubilis" },
@@ -445,1106 +712,2797 @@ et les sources d'Aïn Asserdoun
       { time: "15:00", label: "Médina de Fès et tanneries" },
       { time: "19:00", label: "Retour" }
     ],
-    included: ["Transport", "Guide francophone", "Entrées à Volubilis"],
-    excluded: ["Déjeuner", "Pourboires"]
+
+    included: [
+      "Transport",
+      "Guide francophone",
+      "Entrées à Volubilis"
+    ],
+
+    excluded: [
+      "Déjeuner",
+      "Pourboires"
+    ]
+  }
+
+];
+
+
+/* =========================================================
+   DESTINATIONS
+   ========================================================= */
+
+const DESTINATIONS = [
+  {
+    name: "Marrakech",
+    count: 6,
+    image: "marrakech.jpg"
+  },
+  {
+    name: "Fès",
+    count: 4,
+    image: "fesmeknes.jpg"
+  },
+  {
+    name: "Chefchaouen",
+    count: 3,
+    image: "chafchaoun.jpg"
+  },
+  {
+    name: "Merzouga",
+    count: 5,
+    image: "marzouga.jpg"
+  },
+  {
+    name: "Agafay",
+    count: 3,
+    image: "desert agafay.jpg"
+  },
+  {
+    name: "Essaouira",
+    count: 4,
+    image: "essaouira.jpg"
   }
 ];
 
-const DESTINATIONS = [
-  { name: "Marrakech", count: 6, image: "marrakech.jpg" },
-  { name: "Fès", count: 4, image: "fesmeknes.jpg" },
-  { name: "Chefchaouen", count: 3, image: "chafchaoun.jpg" },
-  { name: "Merzouga", count: 5, image: "marzouga.jpg" },
-  { name: "Agafay", count: 3, image: "desert agafay.jpg" },
-  { name: "Essaouira", count: 4, image: "essaouira.jpg" }
-];
+
+/* =========================================================
+   CIRCUITS
+   ========================================================= */
 
 const CIRCUITS = [
-  { name: "Maroc Essentiel", days: "7 jours", route: "Marrakech → Aït Ben Haddou → Merzouga → Fès", price: 3490 },
-  { name: "Grande Aventure Sahara", days: "5 jours", route: "Marrakech → Ouarzazate → Merzouga", price: 2490 },
-  { name: "Côte Atlantique", days: "4 jours", route: "Casablanca → Rabat → Essaouira", price: 1990 }
+  {
+    name: "Maroc Essentiel",
+    days: "7 jours",
+    route: "Marrakech → Aït Ben Haddou → Merzouga → Fès",
+    price: 3490
+  },
+  {
+    name: "Grande Aventure Sahara",
+    days: "5 jours",
+    route: "Marrakech → Ouarzazate → Merzouga",
+    price: 2490
+  },
+  {
+    name: "Côte Atlantique",
+    days: "4 jours",
+    route: "Casablanca → Rabat → Essaouira",
+    price: 1990
+  }
 ];
+
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
 
 const TESTIMONIALS = [
   {
     name: "Claire Dubois",
     country: "France",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
-    text: "Une expérience incroyable ! L'organisation était parfaite et notre guide connaissait parfaitement la région."
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
+    text:
+      "Une expérience incroyable ! L'organisation était parfaite et notre guide connaissait parfaitement la région."
   },
   {
     name: "Marco Rossi",
     country: "Italie",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
-    text: "Le désert de Merzouga restera gravé dans ma mémoire. Une équipe attentionnée du début à la fin du séjour."
+    avatar:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop",
+    text:
+      "Le désert de Merzouga restera gravé dans ma mémoire. Une équipe attentionnée du début à la fin du séjour."
   },
   {
     name: "Sarah Johnson",
     country: "Royaume-Uni",
-    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
-    text: "Réservation simple via WhatsApp, transport confortable et guides passionnants. Je recommande vivement Privilege_Travel_Agency."
+    avatar:
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
+    text:
+      "Réservation simple via WhatsApp, transport confortable et guides passionnants. Je recommande vivement Privilege_Travel_Agency."
   }
 ];
+
+
+/* =========================================================
+   INSTAGRAM
+   ========================================================= */
 
 const INSTAGRAM_IMAGES = [
   "https://images.unsplash.com/photo-1489493887464-892be6d1daae?q=80&w=500&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?q=80&w=500&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=500&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=500&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=500&auto=format&fit=crop"
 ];
 
-/* ---------- STATE ---------- */
+
+/* =========================================================
+   STATE
+   ========================================================= */
+
 let currentFilter = "all";
 let currentSort = "recommended";
-let favorites = JSON.parse(localStorage.getItem("nomadia_favorites") || "[]");
 let activeTour = null;
 let bookingQty = 2;
+let testimonialIndex = 0;
+let testimonialTimer = null;
 
-/* ---------- HELPERS ---------- */
-function formatPrice(p){ return p.toLocaleString("fr-FR") + " DH"; }
+let favorites = [];
 
-function buildWhatsappLink(message){
-  return `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(message)}`;
+try {
+  favorites = JSON.parse(
+    localStorage.getItem("PrivilegeTravelAgency_favorites") || "[]"
+  );
+} catch (e) {
+  favorites = [];
 }
 
-function defaultWhatsappMessage(){
-  return "Bonjour Privilege_Travel_Agency TRAVEL 👋\n\nJe souhaite avoir plus d'informations sur vos excursions.\n\nMerci.";
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+
+function formatPrice(price) {
+  return Number(price).toLocaleString("fr-FR") + " DH";
 }
 
-function tourWhatsappMessage(tour){
-  return `Bonjour Privilege_Travel_Agency TRAVEL 👋\n\nJe souhaite réserver :\n\nExcursion : ${tour.name}\nDate : \nNombre de personnes : \n\nMerci.`;
+
+function buildWhatsappLink(message) {
+  return (
+    "https://wa.me/" +
+    CONFIG.whatsapp +
+    "?text=" +
+    encodeURIComponent(message)
+  );
 }
 
-/* ---------- INIT WHATSAPP LINKS ---------- */
-function initWhatsappLinks(){
-  const links = [
-    "navWhatsapp","mobileWhatsapp","heroWhatsapp","contactWhatsapp","footerWhatsapp","floatingWhatsapp"
+
+function defaultWhatsappMessage() {
+  return `Bonjour Privilege_Travel_Agency 👋
+
+Je souhaite avoir plus d'informations sur vos excursions.
+
+Merci.`;
+}
+
+
+function tourWhatsappMessage(tour) {
+  return `Bonjour Privilege_Travel_Agency 👋
+
+Je souhaite réserver :
+
+Excursion : ${tour.name}
+Date :
+Nombre de personnes :
+
+Merci.`;
+}
+
+
+/* =========================================================
+   WHATSAPP
+   ========================================================= */
+
+function initWhatsappLinks() {
+
+  const ids = [
+    "navWhatsapp",
+    "mobileWhatsapp",
+    "heroWhatsapp",
+    "contactWhatsapp",
+    "footerWhatsapp",
+    "floatingWhatsapp"
   ];
-  links.forEach(id=>{
-    const el = document.getElementById(id);
-    if(el) el.href = buildWhatsappLink(defaultWhatsappMessage());
-  });
-}
 
-/* ---------- NAVBAR SCROLL STATE ---------- */
-function initNavbarScroll(){
-  const navbar = document.getElementById("navbar");
-  window.addEventListener("scroll", ()=>{
-    if(window.scrollY > 30) navbar.classList.add("scrolled");
-    else navbar.classList.remove("scrolled");
-  });
-}
+  ids.forEach(id => {
 
-/* ---------- MOBILE MENU ---------- */
-function initMobileMenu(){
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
+    const element =
+      document.getElementById(id);
 
-  hamburger.addEventListener("click", ()=>{
-    hamburger.classList.toggle("open");
-    mobileMenu.classList.toggle("open");
-  });
+    if (element) {
 
-  mobileMenu.querySelectorAll(".mobile-link").forEach(link=>{
-    link.addEventListener("click", ()=>{
-      hamburger.classList.remove("open");
-      mobileMenu.classList.remove("open");
-    });
-  });
-}
+      element.href =
+        buildWhatsappLink(
+          defaultWhatsappMessage()
+        );
 
-/* ---------- SEARCH OVERLAY ---------- */
-function initSearchOverlay(){
-  const overlay = document.getElementById("searchOverlay");
-  const input = document.getElementById("liveSearchInput");
-  const resultsWrap = document.getElementById("searchResults");
-
-  function open(){
-    overlay.classList.add("open");
-    setTimeout(()=>input.focus(), 350);
-    renderSearchResults("");
-  }
-
-  function close(){
-    overlay.classList.remove("open");
-    input.value = "";
-  }
-
-  document.getElementById("searchToggle").addEventListener("click", open);
-  document.getElementById("searchClose").addEventListener("click", close);
-
-  overlay.addEventListener("click", (e)=>{
-    if(e.target === overlay) close();
-  });
-
-  document.addEventListener("keydown", (e)=>{
-    if(e.key === "Escape") close();
-  });
-
-  input.addEventListener("input", ()=>{
-    renderSearchResults(input.value);
-  });
-
-  function renderSearchResults(query){
-    const q = query.trim().toLowerCase();
-
-    const matches = TOURS.filter(t =>
-      t.name.toLowerCase().includes(q) ||
-      t.destination.toLowerCase().includes(q)
-    );
-
-    resultsWrap.innerHTML = matches.map(t => `
-      <a class="search-result-item" href="#excursions" data-id="${t.id}">
-        <span>${t.name} — ${t.destination}</span>
-        <span>${formatPrice(t.price)}</span>
-      </a>
-    `).join("") || `<p style="color:rgba(248,243,233,0.5);">Aucun résultat pour "${query}"</p>`;
-
-    resultsWrap.querySelectorAll(".search-result-item").forEach(item=>{
-      item.addEventListener("click", ()=>{
-        overlay.classList.remove("open");
-        setTimeout(()=> openTourModal(item.dataset.id), 300);
-      });
-    });
-  }
-}
-
-/* ---------- HERO SEARCH FORM ---------- */
-function initHeroSearch(){
-  const form = document.getElementById("heroSearchForm");
-
-  form.addEventListener("submit", (e)=>{
-    e.preventDefault();
-
-    const where = document.getElementById("hsWhere").value.trim();
-
-    document.getElementById("excursions").scrollIntoView({
-      behavior:"smooth"
-    });
-
-    if(where){
-      document.getElementById("liveSearchInput").value = where;
     }
 
-    window.__heroSearchTerm = where.toLowerCase();
-    renderTours();
   });
+
 }
 
-/* ---------- TOURS RENDER ---------- */
-function getFilteredSortedTours(){
-  let list = TOURS.slice();
 
-  if(currentFilter !== "all"){
-    list = list.filter(t => t.category === currentFilter);
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+function initNavbarScroll() {
+
+  const navbar =
+    document.getElementById("navbar");
+
+  if (!navbar) return;
+
+  window.addEventListener(
+    "scroll",
+    () => {
+
+      navbar.classList.toggle(
+        "scrolled",
+        window.scrollY > 30
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+function initMobileMenu() {
+
+  const hamburger =
+    document.getElementById("hamburger");
+
+  const mobileMenu =
+    document.getElementById("mobileMenu");
+
+  if (!hamburger || !mobileMenu) return;
+
+  hamburger.addEventListener(
+    "click",
+    () => {
+
+      hamburger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+
+    }
+  );
+
+
+  mobileMenu
+    .querySelectorAll(".mobile-link")
+    .forEach(link => {
+
+      link.addEventListener(
+        "click",
+        () => {
+
+          hamburger.classList.remove("open");
+          mobileMenu.classList.remove("open");
+
+        }
+      );
+
+    });
+
+}
+
+
+/* =========================================================
+   SEARCH OVERLAY
+   ========================================================= */
+
+function initSearchOverlay() {
+
+  const overlay =
+    document.getElementById("searchOverlay");
+
+  const input =
+    document.getElementById("liveSearchInput");
+
+  const results =
+    document.getElementById("searchResults");
+
+  const toggle =
+    document.getElementById("searchToggle");
+
+  const closeBtn =
+    document.getElementById("searchClose");
+
+  if (
+    !overlay ||
+    !input ||
+    !results ||
+    !toggle ||
+    !closeBtn
+  ) return;
+
+
+  function renderSearchResults(query) {
+
+    const q =
+      query.trim().toLowerCase();
+
+    const matches =
+      TOURS.filter(t =>
+        t.name.toLowerCase().includes(q) ||
+        t.destination.toLowerCase().includes(q)
+      );
+
+
+    results.innerHTML =
+      matches.map(t => `
+
+        <a
+          class="search-result-item"
+          href="#excursions"
+          data-id="${t.id}">
+
+          <span>
+            ${t.name} — ${t.destination}
+          </span>
+
+          <span>
+            ${formatPrice(t.price)}
+          </span>
+
+        </a>
+
+      `).join("") ||
+
+      `
+        <p style="color:rgba(248,243,233,0.5);">
+          Aucun résultat pour "${query}"
+        </p>
+      `;
+
+
+    results
+      .querySelectorAll(".search-result-item")
+      .forEach(item => {
+
+        item.addEventListener(
+          "click",
+          () => {
+
+            overlay.classList.remove("open");
+
+            setTimeout(
+              () =>
+                openTourModal(
+                  item.dataset.id
+                ),
+              300
+            );
+
+          }
+        );
+
+      });
+
   }
 
-  if(window.__heroSearchTerm){
-    const term = window.__heroSearchTerm;
 
-    list = list.filter(t =>
-      t.name.toLowerCase().includes(term) ||
-      t.destination.toLowerCase().includes(term)
+  function open() {
+
+    overlay.classList.add("open");
+
+    setTimeout(
+      () => input.focus(),
+      350
     );
+
+    renderSearchResults("");
+
   }
 
-  switch(currentSort){
+
+  function close() {
+
+    overlay.classList.remove("open");
+    input.value = "";
+
+  }
+
+
+  toggle.addEventListener(
+    "click",
+    open
+  );
+
+  closeBtn.addEventListener(
+    "click",
+    close
+  );
+
+
+  overlay.addEventListener(
+    "click",
+    e => {
+
+      if (e.target === overlay) {
+        close();
+      }
+
+    }
+  );
+
+
+  document.addEventListener(
+    "keydown",
+    e => {
+
+      if (e.key === "Escape") {
+        close();
+      }
+
+    }
+  );
+
+
+  input.addEventListener(
+    "input",
+    () => {
+
+      renderSearchResults(
+        input.value
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   HERO SEARCH
+   ========================================================= */
+
+function initHeroSearch() {
+
+  const form =
+    document.getElementById(
+      "heroSearchForm"
+    );
+
+  if (!form) return;
+
+
+  form.addEventListener(
+    "submit",
+    e => {
+
+      e.preventDefault();
+
+
+      const where =
+        document
+          .getElementById("hsWhere")
+          ?.value
+          .trim() || "";
+
+
+      const excursions =
+        document.getElementById(
+          "excursions"
+        );
+
+
+      if (excursions) {
+
+        excursions.scrollIntoView({
+          behavior: "smooth"
+        });
+
+      }
+
+
+      window.__heroSearchTerm =
+        where.toLowerCase();
+
+
+      renderTours();
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   FILTER + SORT
+   ========================================================= */
+
+function getFilteredSortedTours() {
+
+  let list =
+    TOURS.slice();
+
+
+  if (
+    currentFilter !== "all"
+  ) {
+
+    list =
+      list.filter(
+        tour =>
+          tour.category ===
+          currentFilter
+      );
+
+  }
+
+
+  if (window.__heroSearchTerm) {
+
+    const term =
+      window.__heroSearchTerm;
+
+    list =
+      list.filter(tour =>
+        tour.name
+          .toLowerCase()
+          .includes(term) ||
+
+        tour.destination
+          .toLowerCase()
+          .includes(term)
+      );
+
+  }
+
+
+  switch (currentSort) {
+
     case "price-asc":
-      list.sort((a,b)=>a.price-b.price);
+
+      list.sort(
+        (a, b) =>
+          a.price - b.price
+      );
+
       break;
+
 
     case "price-desc":
-      list.sort((a,b)=>b.price-a.price);
+
+      list.sort(
+        (a, b) =>
+          b.price - a.price
+      );
+
       break;
+
 
     case "rating":
-      list.sort((a,b)=>b.rating-a.rating);
+
+      list.sort(
+        (a, b) =>
+          b.rating - a.rating
+      );
+
       break;
 
-    default:
-      break;
   }
+
 
   return list;
+
 }
 
-function renderTours(){
-  const grid = document.getElementById("toursGrid");
-  const noResults = document.getElementById("noResults");
-  const list = getFilteredSortedTours();
 
-  if(list.length === 0){
-    grid.innerHTML = "";
-    noResults.hidden = false;
+/* =========================================================
+   RENDER TOURS
+   ========================================================= */
+
+function renderTours() {
+
+  const grid =
+    document.getElementById(
+      "toursGrid"
+    );
+
+  const noResults =
+    document.getElementById(
+      "noResults"
+    );
+
+
+  if (!grid) {
+
+    console.error(
+      "Erreur : #toursGrid est introuvable."
+    );
+
     return;
+
   }
 
-  noResults.hidden = true;
 
-  grid.innerHTML = list.map(t => `
-    <div class="tour-card reveal in-view" data-id="${t.id}">
-      <div class="tour-media">
-        <img src="${t.image}" alt="${t.name}" loading="lazy">
+  const list =
+    getFilteredSortedTours();
 
-        <span class="tour-badge ${t.badge === 'NOUVEAU' ? 'new' : ''}">
-          ${t.badge}
-        </span>
 
-        <button
-          class="tour-fav-btn ${favorites.includes(t.id) ? 'active' : ''}"
-          data-id="${t.id}"
-          aria-label="Ajouter aux favoris">
+  if (list.length === 0) {
 
-          <svg viewBox="0 0 24 24"
-               width="17"
-               height="17"
-               fill="none"
-               stroke-width="1.8">
-            <path d="M12 20.5s-7.5-4.6-10-9.2C0.3 8 1.7 4.3 5.2 3.6c2.1-.4 4.1.6 5.2 2.3c1.1-1.7 3.1-2.7 5.2-2.3c3.5.7 4.9 4.4 3.2 7.7c-2.5 4.6-10 9.2-10 9.2z"/>
-          </svg>
-        </button>
-      </div>
+    grid.innerHTML = "";
 
-      <div class="tour-body">
-        <div class="tour-top-row">
-          <h3 class="tour-name">${t.name}</h3>
-          <span class="tour-rating">★ ${t.rating.toFixed(1)}</span>
+    if (noResults) {
+      noResults.hidden = false;
+    }
+
+    return;
+
+  }
+
+
+  if (noResults) {
+    noResults.hidden = true;
+  }
+
+
+  grid.innerHTML =
+    list.map(tour => `
+
+      <article
+        class="tour-card reveal in-view"
+        data-id="${tour.id}">
+
+        <div class="tour-media">
+
+          <img
+            src="${tour.image}"
+            alt="${tour.name}"
+            loading="lazy"
+            onerror="this.style.background='#e9eef2';">
+
+          <span
+            class="tour-badge ${
+              tour.badge === "NOUVEAU"
+                ? "new"
+                : ""
+            }">
+
+            ${tour.badge}
+
+          </span>
+
+
+          <button
+            type="button"
+            class="tour-fav-btn ${
+              favorites.includes(tour.id)
+                ? "active"
+                : ""
+            }"
+            data-id="${tour.id}"
+            aria-label="Ajouter aux favoris">
+
+            <svg
+              viewBox="0 0 24 24"
+              width="17"
+              height="17"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8">
+
+              <path
+                d="M12 20.5s-7.5-4.6-10-9.2C0.3 8 1.7 4.3 5.2 3.6c2.1-.4 4.1.6 5.2 2.3c1.1-1.7 3.1-2.7 5.2-2.3c3.5.7 4.9 4.4 3.2 7.7c-2.5 4.6-10 9.2-10 9.2z">
+              </path>
+
+            </svg>
+
+          </button>
+
         </div>
 
-        <p class="tour-meta">
-          ${t.destination} · ${t.duration}
-        </p>
 
-        <div class="tour-bottom-row">
-          <p class="tour-price">
-            <span>Dès</span><br>
-            ${formatPrice(t.price)}
+        <div class="tour-body">
+
+          <div class="tour-top-row">
+
+            <h3 class="tour-name">
+              ${tour.name}
+            </h3>
+
+            <span class="tour-rating">
+              ★ ${tour.rating.toFixed(1)}
+            </span>
+
+          </div>
+
+
+          <p class="tour-meta">
+            ${tour.destination}
+            ·
+            ${tour.duration}
           </p>
 
-          <div class="tour-actions">
-            <button
-              class="btn btn-primary btn-details"
-              data-id="${t.id}">
-              Détails
-            </button>
 
-            <a
-              class="icon-btn tour-wa-btn"
-              data-id="${t.id}"
-              target="_blank"
-              rel="noopener"
-              aria-label="WhatsApp">
+          <div class="tour-bottom-row">
 
-              <svg viewBox="0 0 24 24"
-                   width="16"
-                   height="16"
-                   fill="currentColor">
-                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.9-4.45 9.9-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24c-1.44 0-2.85-.37-4.09-1.08l-.29-.17l-3.11.82l.83-3.03l-.19-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.24-8.24z"/>
-              </svg>
-            </a>
+            <p class="tour-price">
+
+              <span>Dès</span><br>
+
+              ${formatPrice(tour.price)}
+
+            </p>
+
+
+            <div class="tour-actions">
+
+              <button
+                type="button"
+                class="btn btn-primary btn-details"
+                data-id="${tour.id}">
+
+                Détails
+
+              </button>
+
+
+              <a
+                class="icon-btn tour-wa-btn"
+                data-id="${tour.id}"
+                target="_blank"
+                rel="noopener"
+                aria-label="WhatsApp">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="currentColor">
+
+                  <path
+                    d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.9-4.45 9.9-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24c-1.44 0-2.85-.37-4.09-1.08l-.29-.17l-3.11.82l.83-3.03l-.19-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.24-8.24z">
+                  </path>
+
+                </svg>
+
+              </a>
+
+            </div>
+
           </div>
+
         </div>
-      </div>
-    </div>
-  `).join("");
 
-  grid.querySelectorAll(".btn-details").forEach(btn=>{
-    btn.addEventListener("click", ()=>{
-      openTourModal(btn.dataset.id);
+      </article>
+
+    `).join("");
+
+
+  grid
+    .querySelectorAll(".btn-details")
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () =>
+          openTourModal(
+            button.dataset.id
+          )
+      );
+
     });
-  });
 
-  grid.querySelectorAll(".tour-fav-btn").forEach(btn=>{
-    btn.addEventListener("click", ()=>{
-      toggleFavorite(btn.dataset.id);
+
+  grid
+    .querySelectorAll(".tour-fav-btn")
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () =>
+          toggleFavorite(
+            button.dataset.id
+          )
+      );
+
     });
-  });
 
-  grid.querySelectorAll(".tour-wa-btn").forEach(btn=>{
-    const tour = TOURS.find(t=>t.id === btn.dataset.id);
 
-    btn.href = buildWhatsappLink(
-      tourWhatsappMessage(tour)
+  grid
+    .querySelectorAll(".tour-wa-btn")
+    .forEach(button => {
+
+      const tour =
+        TOURS.find(
+          t =>
+            t.id ===
+            button.dataset.id
+        );
+
+      if (tour) {
+
+        button.href =
+          buildWhatsappLink(
+            tourWhatsappMessage(
+              tour
+            )
+          );
+
+      }
+
+    });
+
+}
+
+
+/* =========================================================
+   FILTERS
+   ========================================================= */
+
+function initFiltersAndSort() {
+
+  const tabs =
+    document.getElementById(
+      "filterTabs"
     );
-  });
-}
 
-/* ---------- FILTERS + SORT ---------- */
-function initFiltersAndSort(){
-  document.getElementById("filterTabs").addEventListener("click",(e)=>{
-    const btn = e.target.closest(".filter-tab");
+  const sort =
+    document.getElementById(
+      "sortSelect"
+    );
 
-    if(!btn) return;
 
-    document.querySelectorAll(".filter-tab")
-      .forEach(b=>b.classList.remove("active"));
+  if (tabs) {
 
-    btn.classList.add("active");
+    tabs.addEventListener(
+      "click",
+      e => {
 
-    currentFilter = btn.dataset.filter;
+        const button =
+          e.target.closest(
+            ".filter-tab"
+          );
 
-    renderTours();
-  });
+        if (!button) return;
 
-  document.getElementById("sortSelect").addEventListener("change",(e)=>{
-    currentSort = e.target.value;
-    renderTours();
-  });
-}
 
-/* ---------- FAVORITES ---------- */
-function toggleFavorite(id){
-  if(favorites.includes(id)){
-    favorites = favorites.filter(f=>f!==id);
-  } else {
-    favorites.push(id);
+        tabs
+          .querySelectorAll(
+            ".filter-tab"
+          )
+          .forEach(
+            item =>
+              item.classList.remove(
+                "active"
+              )
+          );
+
+
+        button.classList.add(
+          "active"
+        );
+
+
+        currentFilter =
+          button.dataset.filter;
+
+
+        window.__heroSearchTerm =
+          "";
+
+
+        renderTours();
+
+      }
+    );
+
   }
 
+
+  if (sort) {
+
+    sort.addEventListener(
+      "change",
+      e => {
+
+        currentSort =
+          e.target.value;
+
+        renderTours();
+
+      }
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   FAVORITES
+   ========================================================= */
+
+function toggleFavorite(id) {
+
+  if (
+    favorites.includes(id)
+  ) {
+
+    favorites =
+      favorites.filter(
+        item => item !== id
+      );
+
+  } else {
+
+    favorites.push(id);
+
+  }
+
+
   localStorage.setItem(
-    "nomadia_favorites",
-    JSON.stringify(favorites)
+    "PrivilegeTravelAgency_favorites",
+    JSON.stringify(
+      favorites
+    )
   );
+
 
   updateFavCount();
   renderTours();
   renderFavDrawer();
+
 }
 
-function updateFavCount(){
-  document.getElementById("favCount").textContent =
-    favorites.length;
-}
 
-function renderFavDrawer(){
-  const body = document.getElementById("favDrawerBody");
+function updateFavCount() {
 
-  if(favorites.length === 0){
-    body.innerHTML = `
-      <p class="fav-empty">
-        Vous n'avez pas encore d'excursion favorite.<br>
-        Cliquez sur le cœur d'une carte pour l'ajouter ici.
-      </p>
-    `;
-    return;
-  }
-
-  const items = TOURS.filter(t =>
-    favorites.includes(t.id)
-  );
-
-  body.innerHTML = items.map(t=>`
-    <div class="fav-item">
-      <img src="${t.image}" alt="${t.name}">
-
-      <div class="fav-item-info">
-        <h4>${t.name}</h4>
-        <p>${formatPrice(t.price)} · ${t.duration}</p>
-      </div>
-
-      <button
-        class="fav-remove"
-        data-id="${t.id}"
-        aria-label="Retirer">
-        &times;
-      </button>
-    </div>
-  `).join("");
-
-  body.querySelectorAll(".fav-remove").forEach(btn=>{
-    btn.addEventListener("click", ()=>{
-      toggleFavorite(btn.dataset.id);
-    });
-  });
-}
-
-function initFavDrawer(){
-  const drawer = document.getElementById("favDrawer");
-  const backdrop = document.getElementById("drawerBackdrop");
-
-  function open(){
-    renderFavDrawer();
-
-    drawer.classList.add("open");
-    backdrop.classList.add("open");
-  }
-
-  function close(){
-    drawer.classList.remove("open");
-    backdrop.classList.remove("open");
-  }
-
-  document.getElementById("favToggle")
-    .addEventListener("click", open);
-
-  document.getElementById("favClose")
-    .addEventListener("click", close);
-
-  backdrop.addEventListener("click", close);
-}
-
-/* ---------- DESTINATIONS RENDER ---------- */
-function renderDestinations(){
-  const grid = document.getElementById("destinationsGrid");
-
-  grid.innerHTML = DESTINATIONS.map(d=>`
-    <div
-      class="destination-card reveal"
-      data-name="${d.name}">
-
-      <img
-        src="${d.image}"
-        alt="${d.name}"
-        loading="lazy">
-
-      <div class="destination-info">
-        <h3>${d.name}</h3>
-        <p>${d.count} expériences disponibles</p>
-        <span class="destination-explore">
-          Explorer
-        </span>
-      </div>
-    </div>
-  `).join("");
-
-  grid.querySelectorAll(".destination-card")
-    .forEach(card=>{
-
-      card.addEventListener("click", ()=>{
-
-        window.__heroSearchTerm =
-          card.dataset.name.toLowerCase();
-
-        currentFilter = "all";
-
-        document.querySelectorAll(".filter-tab")
-          .forEach(b =>
-            b.classList.toggle(
-              "active",
-              b.dataset.filter === "all"
-            )
-          );
-
-        renderTours();
-
-        document.getElementById("excursions")
-          .scrollIntoView({
-            behavior:"smooth"
-          });
-      });
-
-    });
-}
-
-/* ---------- CIRCUITS RENDER ---------- */
-function renderCircuits(){
-  const grid = document.getElementById("circuitsGrid");
-
-  grid.innerHTML = CIRCUITS.map(c=>`
-    <div class="circuit-card reveal">
-      <span class="circuit-days">${c.days}</span>
-
-      <h3 class="circuit-name">
-        ${c.name}
-      </h3>
-
-      <p class="circuit-route">
-        ${c.route}
-      </p>
-
-      <p class="circuit-price">
-        <span>À partir de</span><br>
-        ${formatPrice(c.price)}
-      </p>
-
-      <button
-        class="btn btn-outline circuit-btn"
-        data-name="${c.name}">
-        Voir le circuit
-      </button>
-    </div>
-  `).join("");
-
-  grid.querySelectorAll(".circuit-btn")
-    .forEach(btn=>{
-
-      btn.addEventListener("click", ()=>{
-
-        const msg =
-          `Bonjour Privilege_Travel_Agency TRAVEL 👋\n\nJe suis intéressé(e) par le circuit :\n${btn.dataset.name}\n\nPouvez-vous me donner plus de détails ?\n\nMerci.`;
-
-        window.open(
-          buildWhatsappLink(msg),
-          "_blank"
-        );
-      });
-
-    });
-}
-
-/* ---------- INSTAGRAM RENDER ---------- */
-function renderInstagram(){
-  const grid = document.getElementById("instagramGrid");
-
-  grid.innerHTML = INSTAGRAM_IMAGES.map(src=>`
-    <a
-      class="insta-item"
-      href="${CONFIG.instagram}"
-      target="_blank"
-      rel="noopener">
-
-      <img
-        src="${src}"
-        alt="Photo de voyage Privilege_Travel_Agency"
-        loading="lazy">
-
-      <span class="insta-icon">
-        <svg
-          viewBox="0 0 24 24"
-          width="24"
-          height="24"
-          fill="currentColor">
-
-          <path d="M12 2c2.7 0 3.05.01 4.12.06c1.06.05 1.79.22 2.43.47c.66.26 1.21.6 1.76 1.15c.55.55.9 1.1 1.15 1.76c.25.64.42 1.37.47 2.43c.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76a4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47c-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15a4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43c.26-.66.6-1.21 1.15-1.76a4.9 4.9 0 0 1 1.76-1.15c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2m0 1.8c-2.65 0-2.97.01-4.02.06c-.97.04-1.5.2-1.85.34c-.47.18-.8.4-1.15.75s-.57.68-.75 1.15c-.14.35-.3.88-.34 1.85c-.05 1.05-.06 1.37-.06 4.02s.01 2.97.06 4.02c.04.97.2 1.5.34 1.85c.18.47.4.8.75 1.15s.68.57 1.15.75c.35.14.88.3 1.85.34c1.05.05 1.37.06 4.02.06s2.97-.01 4.02-.06c.97-.04 1.5-.2 1.85-.34c.47-.18.8-.4 1.15-.75s.57-.68.75-1.15c.14-.35.3-.88.34-1.85c.05-1.05.06-1.37.06-4.02s-.01-2.97-.06-4.02c-.04-.97-.2-1.5-.34-1.85a3.1 3.1 0 0 0-.75-1.15a3.1 3.1 0 0 0-1.15-.75c-.35-.14-.88-.3-1.85-.34C14.97 3.81 14.65 3.8 12 3.8m0 3.06a5.14 5.14 0 1 1 0 10.28a5.14 5.14 0 0 1 0-10.28m0 1.8a3.34 3.34 0 1 0 0 6.68a3.34 3.34 0 0 0 0-6.68m5.34-1.96a1.2 1.2 0 1 1-2.4 0a1.2 1.2 0 0 1 2.4 0"/>
-        </svg>
-      </span>
-    </a>
-  `).join("");
-}
-
-/* ---------- TESTIMONIALS SLIDER ---------- */
-let testimonialIndex = 0;
-let testimonialTimer = null;
-
-function renderTestimonials(){
-  const track = document.getElementById("testimonialTrack");
-  const dots = document.getElementById("testimonialDots");
-
-  track.innerHTML = TESTIMONIALS.map(t=>`
-    <div class="testimonial-card">
-      <div class="stars">★★★★★</div>
-
-      <p class="testimonial-quote">
-        "${t.text}"
-      </p>
-
-      <img
-        class="testimonial-avatar"
-        src="${t.avatar}"
-        alt="${t.name}">
-
-      <p class="testimonial-name">
-        ${t.name}
-      </p>
-
-      <p class="testimonial-country">
-        ${t.country}
-      </p>
-    </div>
-  `).join("");
-
-  dots.innerHTML = TESTIMONIALS.map((_,i)=>
-    `<button class="t-dot ${i===0?'active':''}" data-index="${i}"></button>`
-  ).join("");
-
-  dots.querySelectorAll(".t-dot").forEach(dot=>{
-
-    dot.addEventListener("click", ()=>{
-
-      testimonialIndex =
-        parseInt(dot.dataset.index);
-
-      updateTestimonialSlide();
-      resetTestimonialTimer();
-    });
-
-  });
-
-  startTestimonialAutoplay();
-}
-
-function updateTestimonialSlide(){
-  const track =
-    document.getElementById("testimonialTrack");
-
-  track.style.transform =
-    `translateX(-${testimonialIndex * 100}%)`;
-
-  document.querySelectorAll(".t-dot")
-    .forEach((d,i)=>
-      d.classList.toggle(
-        "active",
-        i===testimonialIndex
-      )
+  const count =
+    document.getElementById(
+      "favCount"
     );
-}
 
-function startTestimonialAutoplay(){
-  testimonialTimer = setInterval(()=>{
-
-    testimonialIndex =
-      (testimonialIndex + 1) %
-      TESTIMONIALS.length;
-
-    updateTestimonialSlide();
-
-  }, 5500);
-}
-
-function resetTestimonialTimer(){
-  clearInterval(testimonialTimer);
-  startTestimonialAutoplay();
-}
-
-/* ---------- FAQ ACCORDION ---------- */
-function initFaq(){
-  document.querySelectorAll(".faq-item")
-    .forEach(item=>{
-
-      const question =
-        item.querySelector(".faq-question");
-
-      const answer =
-        item.querySelector(".faq-answer");
-
-      question.addEventListener("click", ()=>{
-
-        const isOpen =
-          item.classList.contains("open");
-
-        document.querySelectorAll(".faq-item")
-          .forEach(other=>{
-
-            other.classList.remove("open");
-
-            other.querySelector(".faq-answer")
-              .style.maxHeight = null;
-          });
-
-        if(!isOpen){
-
-          item.classList.add("open");
-
-          answer.style.maxHeight =
-            answer.scrollHeight + "px";
-        }
-
-      });
-
-    });
-}
-
-/* ---------- TOUR DETAILS MODAL ---------- */
-function openTourModal(id){
-
-  const tour =
-    TOURS.find(t=>t.id===id);
-
-  if(!tour) return;
-
-  activeTour = tour;
-  bookingQty = 2;
-
-  document.getElementById("tmImage").src =
-    tour.image;
-
-  document.getElementById("tmImage").alt =
-    tour.name;
-
-  document.getElementById("tmBadge").textContent =
-    tour.badge;
-
-  document.getElementById("tmBadge").className =
-    "tour-badge " +
-    (tour.badge === "NOUVEAU" ? "new" : "");
-
-  document.getElementById("tmDestination").textContent =
-    tour.destination;
-
-  document.getElementById("tmTitle").textContent =
-    tour.name;
-
-  document.getElementById("tmDuration").textContent =
-    tour.duration;
-
-  document.getElementById("tmRating").textContent =
-    "★ " + tour.rating.toFixed(1);
-
-  document.getElementById("tmDesc").textContent =
-    tour.description;
-
-  document.getElementById("tmPrice").textContent =
-    formatPrice(tour.price);
-
-  document.getElementById("tmQtyValue").textContent =
-    bookingQty;
-
-
-  /* ---------- MERZOUGA SPECIAL CONTENT ---------- */
-
-  const special =
-    document.getElementById("tmSpecial");
-
-  const datesBlock =
-    document.getElementById("tmDatesBlock");
-
-  const reservationBlock =
-    document.getElementById("tmReservationBlock");
-
-  const conditionsBlock =
-    document.getElementById("tmConditionsBlock");
-
-  if(special){
-    special.hidden = !tour.formulas;
+  if (count) {
+    count.textContent =
+      favorites.length;
   }
 
-  if(datesBlock){
-    datesBlock.hidden = !tour.dates;
-  }
-
-  if(reservationBlock){
-    reservationBlock.hidden = !tour.reservation;
-  }
-
-  if(conditionsBlock){
-    conditionsBlock.hidden = !tour.conditions;
-  }
-
-
-  if(tour.formulas){
-
-    const title =
-      document.getElementById("tmSpecialTitle");
-
-    if(title){
-      title.textContent =
-        "Safari Merzouga — 779 DH / All In 979 DH";
-    }
-
-    const formulas =
-      document.getElementById("tmFormulas");
-
-    if(formulas){
-
-      formulas.innerHTML =
-        tour.formulas.map(f=>`
-
-          <div class="tm-formula">
-
-            <div class="tm-formula-top">
-              <strong>${f.name}</strong>
-              <span>${formatPrice(f.price)}</span>
-            </div>
-
-            <ul>
-              ${f.items.map(i=>`
-                <li>${i}</li>
-              `).join("")}
-            </ul>
-
-          </div>
-
-        `).join("");
-    }
-  }
-
-
- if(tour.dates){
-
-  const dates =
-    document.getElementById("tmDates");
-
-  const datesBlock =
-    document.getElementById("tmDatesBlock");
-
-  if(dates){
-
-    dates.innerHTML =
-      tour.dates.map(d=>`
-        <span class="tm-date-item">${d}</span>
-      `).join("");
-
-    if(datesBlock){
-      datesBlock.hidden = false;
-    }
-  }
-
-}else{
-
-  const datesBlock =
-    document.getElementById("tmDatesBlock");
-
-  if(datesBlock){
-    datesBlock.hidden = true;
-  }
 }
 
 
-  if(tour.reservation){
+function renderFavDrawer() {
 
-    const reservation =
-      document.getElementById("tmReservation");
+  const body =
+    document.getElementById(
+      "favDrawerBody"
+    );
 
-    if(reservation){
-      reservation.textContent =
-        tour.reservation;
-    }
+  if (!body) return;
+
+
+  if (
+    favorites.length === 0
+  ) {
+
+    body.innerHTML = `
+
+      <p class="fav-empty">
+
+        Vous n'avez pas encore
+        d'excursion favorite.
+
+        <br>
+
+        Cliquez sur le cœur
+        d'une carte pour l'ajouter ici.
+
+      </p>
+
+    `;
+
+    return;
+
   }
 
 
-  if(tour.conditions){
-
-    const conditions =
-      document.getElementById("tmConditions");
-
-    if(conditions){
-
-      conditions.innerHTML =
-        tour.conditions.map(i=>`
-          <li>${i}</li>
-        `).join("");
-    }
-  }
+  const items =
+    TOURS.filter(
+      tour =>
+        favorites.includes(
+          tour.id
+        )
+    );
 
 
-  /* ---------- PROGRAMME ---------- */
+  body.innerHTML =
+    items.map(tour => `
 
-  document.getElementById("tmProgram").innerHTML =
-    tour.program.map(p=>`
-      <li>
-        <span class="time">${p.time}</span>
-        <span>${p.label}</span>
-      </li>
+      <div class="fav-item">
+
+        <img
+          src="${tour.image}"
+          alt="${tour.name}">
+
+        <div class="fav-item-info">
+
+          <h4>
+            ${tour.name}
+          </h4>
+
+          <p>
+            ${formatPrice(tour.price)}
+            ·
+            ${tour.duration}
+          </p>
+
+        </div>
+
+        <button
+          type="button"
+          class="fav-remove"
+          data-id="${tour.id}"
+          aria-label="Retirer">
+
+          &times;
+
+        </button>
+
+      </div>
+
     `).join("");
 
 
-  document.getElementById("tmIncluded").innerHTML =
-    tour.included
-      .map(i=>`<li>${i}</li>`)
-      .join("");
+  body
+    .querySelectorAll(".fav-remove")
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () =>
+          toggleFavorite(
+            button.dataset.id
+          )
+      );
+
+    });
+
+}
 
 
-  document.getElementById("tmExcluded").innerHTML =
-    tour.excluded
-      .map(i=>`<li>${i}</li>`)
-      .join("");
+function initFavDrawer() {
 
+  const drawer =
+    document.getElementById(
+      "favDrawer"
+    );
 
-  document.getElementById("tmWhatsapp").href =
-    buildWhatsappLink(
-      tourWhatsappMessage(tour)
+  const backdrop =
+    document.getElementById(
+      "drawerBackdrop"
+    );
+
+  const toggle =
+    document.getElementById(
+      "favToggle"
+    );
+
+  const close =
+    document.getElementById(
+      "favClose"
     );
 
 
-  document.getElementById("tourModalBackdrop")
-    .classList.add("open");
+  if (
+    !drawer ||
+    !backdrop ||
+    !toggle ||
+    !close
+  ) return;
+
+
+  function open() {
+
+    renderFavDrawer();
+
+    drawer.classList.add(
+      "open"
+    );
+
+    backdrop.classList.add(
+      "open"
+    );
+
+  }
+
+
+  function closeDrawer() {
+
+    drawer.classList.remove(
+      "open"
+    );
+
+    backdrop.classList.remove(
+      "open"
+    );
+
+  }
+
+
+  toggle.addEventListener(
+    "click",
+    open
+  );
+
+  close.addEventListener(
+    "click",
+    closeDrawer
+  );
+
+  backdrop.addEventListener(
+    "click",
+    closeDrawer
+  );
+
+}
+
+
+/* =========================================================
+   DESTINATIONS
+   ========================================================= */
+
+function renderDestinations() {
+
+  const grid =
+    document.getElementById(
+      "destinationsGrid"
+    );
+
+  if (!grid) return;
+
+
+  grid.innerHTML =
+    DESTINATIONS.map(
+      destination => `
+
+        <div
+          class="destination-card reveal"
+          data-name="${destination.name}">
+
+          <img
+            src="${destination.image}"
+            alt="${destination.name}"
+            loading="lazy">
+
+          <div class="destination-info">
+
+            <h3>
+              ${destination.name}
+            </h3>
+
+            <p>
+              ${destination.count}
+              expériences disponibles
+            </p>
+
+            <span class="destination-explore">
+              Explorer
+            </span>
+
+          </div>
+
+        </div>
+
+      `
+    ).join("");
+
+
+  grid
+    .querySelectorAll(
+      ".destination-card"
+    )
+    .forEach(card => {
+
+      card.addEventListener(
+        "click",
+        () => {
+
+          window.__heroSearchTerm =
+            card.dataset.name
+              .toLowerCase();
+
+          currentFilter =
+            "all";
+
+
+          document
+            .querySelectorAll(
+              ".filter-tab"
+            )
+            .forEach(
+              button =>
+                button.classList.toggle(
+                  "active",
+                  button.dataset.filter ===
+                    "all"
+                )
+            );
+
+
+          renderTours();
+
+
+          document
+            .getElementById(
+              "excursions"
+            )
+            ?.scrollIntoView({
+              behavior: "smooth"
+            });
+
+        }
+      );
+
+    });
+
+}
+
+
+/* =========================================================
+   CIRCUITS
+   ========================================================= */
+
+function renderCircuits() {
+
+  const grid =
+    document.getElementById(
+      "circuitsGrid"
+    );
+
+  if (!grid) return;
+
+
+  grid.innerHTML =
+    CIRCUITS.map(
+      circuit => `
+
+        <div class="circuit-card reveal">
+
+          <span class="circuit-days">
+            ${circuit.days}
+          </span>
+
+          <h3 class="circuit-name">
+            ${circuit.name}
+          </h3>
+
+          <p class="circuit-route">
+            ${circuit.route}
+          </p>
+
+          <p class="circuit-price">
+
+            <span>
+              À partir de
+            </span>
+
+            <br>
+
+            ${formatPrice(
+              circuit.price
+            )}
+
+          </p>
+
+          <button
+            type="button"
+            class="btn btn-outline circuit-btn"
+            data-name="${circuit.name}">
+
+            Voir le circuit
+
+          </button>
+
+        </div>
+
+      `
+    ).join("");
+
+
+  grid
+    .querySelectorAll(
+      ".circuit-btn"
+    )
+    .forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          const message =
+            `Bonjour Privilege_Travel_Agency 👋
+
+Je suis intéressé(e) par le circuit :
+${button.dataset.name}
+
+Pouvez-vous me donner plus de détails ?
+
+Merci.`;
+
+          window.open(
+            buildWhatsappLink(
+              message
+            ),
+            "_blank"
+          );
+
+        }
+      );
+
+    });
+
+}
+
+
+/* =========================================================
+   INSTAGRAM
+   ========================================================= */
+
+function renderInstagram() {
+
+  const grid =
+    document.getElementById(
+      "instagramGrid"
+    );
+
+  if (!grid) return;
+
+
+  grid.innerHTML =
+    INSTAGRAM_IMAGES.map(
+      image => `
+
+        <a
+          class="insta-item"
+          href="${CONFIG.instagram}"
+          target="_blank"
+          rel="noopener">
+
+          <img
+            src="${image}"
+            alt="Photo de voyage Privilege_Travel_Agency"
+            loading="lazy">
+
+          <span class="insta-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="currentColor">
+
+              <path
+                d="M12 2c2.7 0 3.05.01 4.12.06c1.06.05 1.79.22 2.43.47c.66.26 1.21.6 1.76 1.15c.55.55.9 1.1 1.15 1.76c.25.64.42 1.37.47 2.43c.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76a4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47c-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15a4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43c.26-.66.6-1.21 1.15-1.76a4.9 4.9 0 0 1 1.76-1.15c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2m0 1.8c-2.65 0-2.97.01-4.02.06c-.97.04-1.5.2-1.85.34c-.47.18-.8.4-1.15.75s-.57.68-.75 1.15c-.14.35-.3.88-.34 1.85c-.05 1.05-.06 1.37-.06 4.02s.01 2.97.06 4.02c.04.97.2 1.5.34 1.85c.18.47.4.8.75 1.15s.68.57 1.15.75c.35.14.88.3 1.85.34c1.05.05 1.37.06 4.02.06s2.97-.01 4.02-.06c.97-.04 1.5-.2 1.85-.34c.47-.18.8-.4 1.15-.75s.57-.68.75-1.15c.14-.35.3-.88.34-1.85c.05-1.05.06-1.37.06-4.02s-.01-2.97-.06-4.02c-.04-.97-.2-1.5-.34-1.85a3.1 3.1 0 0 0-.75-1.15a3.1 3.1 0 0 0-1.15-.75c-.35-.14-.88-.3-1.85-.34C14.97 3.81 14.65 3.8 12 3.8m0 3.06a5.14 5.14 0 1 1 0 10.28a5.14 5.14 0 0 1 0-10.28m0 1.8a3.34 3.34 0 1 0 0 6.68a3.34 3.34 0 0 0 0-6.68m5.34-1.96a1.2 1.2 0 1 1-2.4 0a1.2 1.2 0 0 1 2.4 0"
+              />
+
+            </svg>
+
+          </span>
+
+        </a>
+
+      `
+    ).join("");
+
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+
+function renderTestimonials() {
+
+  const track =
+    document.getElementById(
+      "testimonialTrack"
+    );
+
+  const dots =
+    document.getElementById(
+      "testimonialDots"
+    );
+
+  if (!track || !dots) return;
+
+
+  track.innerHTML =
+    TESTIMONIALS.map(
+      testimonial => `
+
+        <div class="testimonial-card">
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+          <p class="testimonial-quote">
+            "${testimonial.text}"
+          </p>
+
+          <img
+            class="testimonial-avatar"
+            src="${testimonial.avatar}"
+            alt="${testimonial.name}">
+
+          <p class="testimonial-name">
+            ${testimonial.name}
+          </p>
+
+          <p class="testimonial-country">
+            ${testimonial.country}
+          </p>
+
+        </div>
+
+      `
+    ).join("");
+
+
+  dots.innerHTML =
+    TESTIMONIALS.map(
+      (_, index) => `
+
+        <button
+          type="button"
+          class="t-dot ${
+            index === 0
+              ? "active"
+              : ""
+          }"
+          data-index="${index}">
+        </button>
+
+      `
+    ).join("");
+
+
+  dots
+    .querySelectorAll(".t-dot")
+    .forEach(dot => {
+
+      dot.addEventListener(
+        "click",
+        () => {
+
+          testimonialIndex =
+            parseInt(
+              dot.dataset.index
+            );
+
+          updateTestimonialSlide();
+
+          resetTestimonialTimer();
+
+        }
+      );
+
+    });
+
+
+  startTestimonialAutoplay();
+
+}
+
+
+function updateTestimonialSlide() {
+
+  const track =
+    document.getElementById(
+      "testimonialTrack"
+    );
+
+  if (!track) return;
+
+
+  track.style.transform =
+    `translateX(-${
+      testimonialIndex * 100
+    }%)`;
+
+
+  document
+    .querySelectorAll(".t-dot")
+    .forEach(
+      (dot, index) =>
+        dot.classList.toggle(
+          "active",
+          index ===
+            testimonialIndex
+        )
+    );
+
+}
+
+
+function startTestimonialAutoplay() {
+
+  clearInterval(
+    testimonialTimer
+  );
+
+
+  testimonialTimer =
+    setInterval(
+      () => {
+
+        testimonialIndex =
+          (
+            testimonialIndex + 1
+          ) %
+          TESTIMONIALS.length;
+
+        updateTestimonialSlide();
+
+      },
+      5500
+    );
+
+}
+
+
+function resetTestimonialTimer() {
+
+  clearInterval(
+    testimonialTimer
+  );
+
+  startTestimonialAutoplay();
+
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+function initFaq() {
+
+  document
+    .querySelectorAll(".faq-item")
+    .forEach(item => {
+
+      const question =
+        item.querySelector(
+          ".faq-question"
+        );
+
+      const answer =
+        item.querySelector(
+          ".faq-answer"
+        );
+
+      if (!question || !answer) {
+        return;
+      }
+
+
+      question.addEventListener(
+        "click",
+        () => {
+
+          const isOpen =
+            item.classList.contains(
+              "open"
+            );
+
+
+          document
+            .querySelectorAll(
+              ".faq-item"
+            )
+            .forEach(other => {
+
+              other.classList.remove(
+                "open"
+              );
+
+              const otherAnswer =
+                other.querySelector(
+                  ".faq-answer"
+                );
+
+              if (otherAnswer) {
+                otherAnswer.style.maxHeight =
+                  null;
+              }
+
+            });
+
+
+          if (!isOpen) {
+
+            item.classList.add(
+              "open"
+            );
+
+            answer.style.maxHeight =
+              answer.scrollHeight +
+              "px";
+
+          }
+
+        }
+      );
+
+    });
+
+}
+
+
+/* =========================================================
+   TOUR MODAL
+   ========================================================= */
+
+function openTourModal(id) {
+
+  const tour =
+    TOURS.find(
+      item =>
+        item.id === id
+    );
+
+
+  if (!tour) return;
+
+
+  activeTour =
+    tour;
+
+  bookingQty =
+    2;
+
+
+  const image =
+    document.getElementById(
+      "tmImage"
+    );
+
+  const badge =
+    document.getElementById(
+      "tmBadge"
+    );
+
+  const destination =
+    document.getElementById(
+      "tmDestination"
+    );
+
+  const title =
+    document.getElementById(
+      "tmTitle"
+    );
+
+  const duration =
+    document.getElementById(
+      "tmDuration"
+    );
+
+  const rating =
+    document.getElementById(
+      "tmRating"
+    );
+
+  const desc =
+    document.getElementById(
+      "tmDesc"
+    );
+
+  const price =
+    document.getElementById(
+      "tmPrice"
+    );
+
+
+  if (image) {
+
+    image.src =
+      tour.image;
+
+    image.alt =
+      tour.name;
+
+  }
+
+
+  if (badge) {
+
+    badge.textContent =
+      tour.badge;
+
+    badge.className =
+      "tour-badge " +
+      (
+        tour.badge ===
+        "NOUVEAU"
+          ? "new"
+          : ""
+      );
+
+  }
+
+
+  if (destination) {
+    destination.textContent =
+      tour.destination;
+  }
+
+
+  if (title) {
+    title.textContent =
+      tour.name;
+  }
+
+
+  if (duration) {
+    duration.textContent =
+      tour.duration;
+  }
+
+
+  if (rating) {
+
+    rating.textContent =
+      "★ " +
+      tour.rating.toFixed(1);
+
+  }
+
+
+  if (desc) {
+    desc.textContent =
+      tour.description;
+  }
+
+
+  if (price) {
+    price.textContent =
+      formatPrice(
+        tour.price
+      );
+  }
+
+
+  const qty =
+    document.getElementById(
+      "tmQtyValue"
+    );
+
+  if (qty) {
+    qty.textContent =
+      bookingQty;
+  }
+
+
+  /* ---------- DYNAMIC EXTRA CONTENT ---------- */
+
+  const modalBody =
+    document.querySelector(
+      "#tourModal .tour-modal-body"
+    );
+
+
+  let extra =
+    document.getElementById(
+      "tmDynamicExtra"
+    );
+
+
+  if (
+    !extra &&
+    modalBody
+  ) {
+
+    extra =
+      document.createElement(
+        "div"
+      );
+
+    extra.id =
+      "tmDynamicExtra";
+
+    extra.style.margin =
+      "22px 0";
+
+
+    const programTitle =
+      modalBody.querySelector(
+        "h4"
+      );
+
+
+    if (programTitle) {
+
+      modalBody.insertBefore(
+        extra,
+        programTitle
+      );
+
+    } else {
+
+      modalBody.appendChild(
+        extra
+      );
+
+    }
+
+  }
+
+
+  if (extra) {
+
+    let html = "";
+
+
+    /* DATES */
+
+    if (
+      tour.dates &&
+      tour.dates.length
+    ) {
+
+      html += `
+
+        <div
+          style="
+            margin:0 0 20px;
+          ">
+
+          <h4
+            style="
+              margin:0 0 10px;
+            ">
+
+            📅 Dates disponibles
+
+          </h4>
+
+
+          <div
+            style="
+              display:flex;
+              flex-wrap:wrap;
+              gap:7px;
+            ">
+
+            ${tour.dates
+              .map(
+                date => `
+
+                  <span
+                    style="
+                      padding:7px 10px;
+                      border:1px solid #d8e2e8;
+                      border-radius:8px;
+                      font-size:12px;
+                      background:#f8fafb;
+                    ">
+
+                    ${date}
+
+                  </span>
+
+                `
+              )
+              .join("")}
+
+          </div>
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* DEPARTURE POINTS */
+
+    if (
+      tour.departurePoints &&
+      tour.departurePoints.length
+    ) {
+
+      html += `
+
+        <div
+          style="
+            margin:0 0 20px;
+          ">
+
+          <h4
+            style="
+              margin:0 0 9px;
+            ">
+
+            🚌 Points de départ
+
+          </h4>
+
+          <ul
+            style="
+              margin:0;
+              padding-left:20px;
+              line-height:1.7;
+            ">
+
+            ${tour.departurePoints
+              .map(
+                item =>
+                  `<li>${item}</li>`
+              )
+              .join("")}
+
+          </ul>
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* HOTELS */
+
+    if (
+      tour.hotels &&
+      tour.hotels.length
+    ) {
+
+      html += `
+
+        <div
+          style="
+            margin:0 0 20px;
+          ">
+
+          <h4
+            style="
+              margin:0 0 9px;
+            ">
+
+            🏨 Hébergement
+
+          </h4>
+
+          <ul
+            style="
+              margin:0;
+              padding-left:20px;
+              line-height:1.7;
+            ">
+
+            ${tour.hotels
+              .map(
+                item =>
+                  `<li>${item}</li>`
+              )
+              .join("")}
+
+          </ul>
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* FORMULAS */
+
+    if (
+      tour.formulas &&
+      tour.formulas.length
+    ) {
+
+      html += `
+
+        <div
+          style="
+            margin:0 0 20px;
+          ">
+
+          <h4
+            style="
+              margin:0 0 10px;
+            ">
+
+            💰 Formules
+
+          </h4>
+
+          ${tour.formulas
+            .map(
+              formula => `
+
+                <div
+                  style="
+                    border:1px solid #d8e2e8;
+                    border-radius:10px;
+                    padding:12px;
+                    margin-bottom:10px;
+                  ">
+
+                  <strong>
+
+                    ${formula.name}
+                    —
+                    ${formatPrice(
+                      formula.price
+                    )}
+
+                  </strong>
+
+                  <ul
+                    style="
+                      margin:8px 0 0;
+                      padding-left:20px;
+                      line-height:1.7;
+                    ">
+
+                    ${formula.items
+                      .map(
+                        item =>
+                          `<li>${item}</li>`
+                      )
+                      .join("")}
+
+                  </ul>
+
+                </div>
+
+              `
+            )
+            .join("")}
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* RESERVATION */
+
+    if (tour.reservation) {
+
+      html += `
+
+        <div
+          style="
+            margin:0 0 20px;
+          ">
+
+          <h4
+            style="
+              margin:0 0 9px;
+            ">
+
+            📌 Réservation
+
+          </h4>
+
+          <p
+            style="
+              margin:0;
+              line-height:1.7;
+              color:#526476;
+            ">
+
+            ${tour.reservation}
+
+          </p>
+
+        </div>
+
+      `;
+
+    }
+
+
+    /* CONDITIONS */
+
+    if (
+      tour.conditions &&
+      tour.conditions.length
+    ) {
+
+      html += `
+
+        <div
+          style="
+            margin:0 0 20px;
+          ">
+
+          <h4
+            style="
+              margin:0 0 9px;
+            ">
+
+            ⚠️ Informations importantes
+
+          </h4>
+
+          <ul
+            style="
+              margin:0;
+              padding-left:20px;
+              line-height:1.7;
+            ">
+
+            ${tour.conditions
+              .map(
+                item =>
+                  `<li>${item}</li>`
+              )
+              .join("")}
+
+          </ul>
+
+        </div>
+
+      `;
+
+    }
+
+
+    extra.innerHTML =
+      html;
+
+    extra.hidden =
+      !html;
+
+  }
+
+
+  /* =====================================================
+     PROGRAMME
+     ===================================================== */
+
+  const program =
+    document.getElementById(
+      "tmProgram"
+    );
+
+
+  if (program) {
+
+    program.innerHTML =
+      tour.program
+        .map(
+          item => `
+
+            <li>
+
+              <span class="time">
+                ${item.time}
+              </span>
+
+              <span>
+                ${item.label}
+              </span>
+
+            </li>
+
+          `
+        )
+        .join("");
+
+  }
+
+
+  /* =====================================================
+     INCLUDED
+     ===================================================== */
+
+  const included =
+    document.getElementById(
+      "tmIncluded"
+    );
+
+
+  if (included) {
+
+    included.innerHTML =
+      tour.included
+        .map(
+          item =>
+            `<li>${item}</li>`
+        )
+        .join("");
+
+  }
+
+
+  /* =====================================================
+     EXCLUDED
+     ===================================================== */
+
+  const excluded =
+    document.getElementById(
+      "tmExcluded"
+    );
+
+
+  if (excluded) {
+
+    excluded.innerHTML =
+      tour.excluded
+        .map(
+          item =>
+            `<li>${item}</li>`
+        )
+        .join("");
+
+  }
+
+
+  /* =====================================================
+     WHATSAPP
+     ===================================================== */
+
+  const whatsapp =
+    document.getElementById(
+      "tmWhatsapp"
+    );
+
+
+  if (whatsapp) {
+
+    whatsapp.href =
+      buildWhatsappLink(
+        tourWhatsappMessage(
+          tour
+        )
+      );
+
+  }
+
+
+  /* =====================================================
+     OPEN MODAL
+     ===================================================== */
+
+  const backdrop =
+    document.getElementById(
+      "tourModalBackdrop"
+    );
+
+
+  if (backdrop) {
+
+    backdrop.classList.add(
+      "open"
+    );
+
+    document.body.style.overflow =
+      "hidden";
+
+  }
+
+}
+
+
+/* =========================================================
+   CLOSE TOUR MODAL
+   ========================================================= */
+
+function closeTourModal() {
+
+  const backdrop =
+    document.getElementById(
+      "tourModalBackdrop"
+    );
+
+  if (backdrop) {
+
+    backdrop.classList.remove(
+      "open"
+    );
+
+  }
 
   document.body.style.overflow =
-    "hidden";
+    "";
+
 }
 
-function closeTourModal(){
 
-  document.getElementById("tourModalBackdrop")
-    .classList.remove("open");
+/* =========================================================
+   INIT TOUR MODAL
+   ========================================================= */
 
-  document.body.style.overflow = "";
-}
+function initTourModal() {
 
-function initTourModal(){
+  const close =
+    document.getElementById(
+      "tourModalClose"
+    );
 
-  document.getElementById("tourModalClose")
-    .addEventListener(
+  const backdrop =
+    document.getElementById(
+      "tourModalBackdrop"
+    );
+
+  const minus =
+    document.getElementById(
+      "tmQtyMinus"
+    );
+
+  const plus =
+    document.getElementById(
+      "tmQtyPlus"
+    );
+
+  const book =
+    document.getElementById(
+      "tmBookBtn"
+    );
+
+
+  if (close) {
+
+    close.addEventListener(
       "click",
       closeTourModal
     );
 
-  document.getElementById("tourModalBackdrop")
-    .addEventListener("click",(e)=>{
+  }
 
-      if(
-        e.target.id ===
-        "tourModalBackdrop"
-      ){
+
+  if (backdrop) {
+
+    backdrop.addEventListener(
+      "click",
+      e => {
+
+        if (
+          e.target ===
+          backdrop
+        ) {
+
+          closeTourModal();
+
+        }
+
+      }
+    );
+
+  }
+
+
+  if (minus) {
+
+    minus.addEventListener(
+      "click",
+      () => {
+
+        if (
+          bookingQty > 1
+        ) {
+
+          bookingQty--;
+
+        }
+
+
+        const value =
+          document.getElementById(
+            "tmQtyValue"
+          );
+
+        if (value) {
+
+          value.textContent =
+            bookingQty;
+
+        }
+
+      }
+    );
+
+  }
+
+
+  if (plus) {
+
+    plus.addEventListener(
+      "click",
+      () => {
+
+        bookingQty++;
+
+
+        const value =
+          document.getElementById(
+            "tmQtyValue"
+          );
+
+        if (value) {
+
+          value.textContent =
+            bookingQty;
+
+        }
+
+      }
+    );
+
+  }
+
+
+  if (book) {
+
+    book.addEventListener(
+      "click",
+      () => {
+
         closeTourModal();
+
+        openBookingModal(
+          activeTour
+        );
+
       }
+    );
 
-    });
+  }
 
-
-  document.getElementById("tmQtyMinus")
-    .addEventListener("click", ()=>{
-
-      if(bookingQty > 1){
-        bookingQty--;
-      }
-
-      document.getElementById("tmQtyValue")
-        .textContent =
-        bookingQty;
-    });
-
-
-  document.getElementById("tmQtyPlus")
-    .addEventListener("click", ()=>{
-
-      bookingQty++;
-
-      document.getElementById("tmQtyValue")
-        .textContent =
-        bookingQty;
-    });
-
-
-  document.getElementById("tmBookBtn")
-    .addEventListener("click", ()=>{
-
-      closeTourModal();
-
-      openBookingModal(activeTour);
-    });
 }
 
-/* ---------- BOOKING MODAL ---------- */
-function openBookingModal(tour){
 
-  document.getElementById("bookingModalBackdrop")
-    .classList.add("open");
+/* =========================================================
+   BOOKING MODAL
+   ========================================================= */
+
+function openBookingModal(tour) {
+
+  const backdrop =
+    document.getElementById(
+      "bookingModalBackdrop"
+    );
+
+  if (!backdrop) return;
+
+
+  backdrop.classList.add(
+    "open"
+  );
 
   document.body.style.overflow =
     "hidden";
 
-  document.getElementById("bookingFormWrap")
-    .hidden = false;
 
-  document.getElementById("bookingConfirmation")
-    .hidden = true;
+  const formWrap =
+    document.getElementById(
+      "bookingFormWrap"
+    );
+
+  const confirmation =
+    document.getElementById(
+      "bookingConfirmation"
+    );
+
+
+  if (formWrap) {
+    formWrap.hidden =
+      false;
+  }
+
+
+  if (confirmation) {
+    confirmation.hidden =
+      true;
+  }
 
 
   const tourName =
-    tour ? tour.name : "";
-
-  document.getElementById("bookingTourName")
-    .textContent =
-    tourName
-      ? `Pour l'excursion : ${tourName}`
-      : "Demande générale";
+    tour
+      ? tour.name
+      : "";
 
 
-  document.getElementById("bookingTourInput")
-    .value = tourName;
+  const name =
+    document.getElementById(
+      "bookingTourName"
+    );
 
 
-  document.querySelector(
-    '#bookingForm [name="travelers"]'
-  ).value =
-    bookingQty || 2;
+  if (name) {
+
+    name.textContent =
+      tourName
+        ? `Pour l'excursion : ${tourName}`
+        : "Demande générale";
+
+  }
+
+
+  const input =
+    document.getElementById(
+      "bookingTourInput"
+    );
+
+
+  if (input) {
+
+    input.value =
+      tourName;
+
+  }
+
+
+  const travelers =
+    document.querySelector(
+      '#bookingForm [name="travelers"]'
+    );
+
+
+  if (travelers) {
+
+    travelers.value =
+      bookingQty || 2;
+
+  }
+
 }
 
-function closeBookingModal(){
 
-  document.getElementById("bookingModalBackdrop")
-    .classList.remove("open");
+function closeBookingModal() {
 
-  document.body.style.overflow = "";
+  const backdrop =
+    document.getElementById(
+      "bookingModalBackdrop"
+    );
+
+  if (backdrop) {
+
+    backdrop.classList.remove(
+      "open"
+    );
+
+  }
+
+  document.body.style.overflow =
+    "";
+
 }
 
-function initBookingModal(){
 
-  document.getElementById("bookingModalClose")
-    .addEventListener(
+function initBookingModal() {
+
+  const close =
+    document.getElementById(
+      "bookingModalClose"
+    );
+
+  const backdrop =
+    document.getElementById(
+      "bookingModalBackdrop"
+    );
+
+  const confirmClose =
+    document.getElementById(
+      "confirmCloseBtn"
+    );
+
+  const form =
+    document.getElementById(
+      "bookingForm"
+    );
+
+
+  if (close) {
+
+    close.addEventListener(
       "click",
       closeBookingModal
     );
 
-  document.getElementById("bookingModalBackdrop")
-    .addEventListener("click",(e)=>{
+  }
 
-      if(
-        e.target.id ===
-        "bookingModalBackdrop"
-      ){
-        closeBookingModal();
+
+  if (backdrop) {
+
+    backdrop.addEventListener(
+      "click",
+      e => {
+
+        if (
+          e.target ===
+          backdrop
+        ) {
+
+          closeBookingModal();
+
+        }
+
       }
+    );
 
-    });
+  }
 
 
-  document.getElementById("confirmCloseBtn")
-    .addEventListener(
+  if (confirmClose) {
+
+    confirmClose.addEventListener(
       "click",
       closeBookingModal
     );
 
+  }
 
-  document.getElementById("bookingForm")
-    .addEventListener("submit",(e)=>{
+
+  if (form) {
+
+    form.addEventListener(
+      "submit",
+      e => {
+
+        e.preventDefault();
+
+
+        const formWrap =
+          document.getElementById(
+            "bookingFormWrap"
+          );
+
+        const confirmation =
+          document.getElementById(
+            "bookingConfirmation"
+          );
+
+
+        if (formWrap) {
+          formWrap.hidden =
+            true;
+        }
+
+
+        if (confirmation) {
+          confirmation.hidden =
+            false;
+        }
+
+
+        form.reset();
+
+      }
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
+
+function initContactForm() {
+
+  const form =
+    document.getElementById(
+      "contactForm"
+    );
+
+  if (!form) return;
+
+
+  form.addEventListener(
+    "submit",
+    e => {
 
       e.preventDefault();
 
-      document.getElementById("bookingFormWrap")
-        .hidden = true;
 
-      document.getElementById("bookingConfirmation")
-        .hidden = false;
+      const button =
+        form.querySelector(
+          "button"
+        );
 
-      e.target.reset();
-    });
+      if (!button) return;
+
+
+      const original =
+        button.textContent;
+
+
+      button.textContent =
+        "Message envoyé ✓";
+
+      button.disabled =
+        true;
+
+
+      form.reset();
+
+
+      setTimeout(
+        () => {
+
+          button.textContent =
+            original;
+
+          button.disabled =
+            false;
+
+        },
+        2600
+      );
+
+    }
+  );
+
 }
 
-/* ---------- CONTACT FORM ---------- */
-function initContactForm(){
 
-  const form =
-    document.getElementById("contactForm");
+/* =========================================================
+   SCROLL REVEAL
+   ========================================================= */
 
-  form.addEventListener("submit",(e)=>{
+function initScrollReveal() {
 
-    e.preventDefault();
+  if (
+    !("IntersectionObserver" in window)
+  ) {
 
-    const btn =
-      form.querySelector("button");
+    document
+      .querySelectorAll(".reveal")
+      .forEach(
+        element =>
+          element.classList.add(
+            "in-view"
+          )
+      );
 
-    const originalText =
-      btn.textContent;
+    return;
 
-    btn.textContent =
-      "Message envoyé ✓";
+  }
 
-    btn.disabled = true;
-
-    form.reset();
-
-    setTimeout(()=>{
-
-      btn.textContent =
-        originalText;
-
-      btn.disabled = false;
-
-    }, 2600);
-  });
-}
-
-/* ---------- SCROLL REVEAL ---------- */
-function initScrollReveal(){
 
   const observer =
     new IntersectionObserver(
-      (entries)=>{
+      entries => {
 
-        entries.forEach(entry=>{
+        entries.forEach(
+          entry => {
 
-          if(entry.isIntersecting){
+            if (
+              entry.isIntersecting
+            ) {
 
-            entry.target.classList
-              .add("in-view");
+              entry.target.classList.add(
+                "in-view"
+              );
 
-            observer.unobserve(
-              entry.target
-            );
+              observer.unobserve(
+                entry.target
+              );
+
+            }
+
           }
-
-        });
+        );
 
       },
       {
@@ -1552,36 +3510,64 @@ function initScrollReveal(){
       }
     );
 
-  document.querySelectorAll(".reveal")
-    .forEach(el =>
-      observer.observe(el)
+
+  document
+    .querySelectorAll(".reveal")
+    .forEach(
+      element =>
+        observer.observe(
+          element
+        )
     );
+
 }
 
-/* ---------- ANIMATED COUNTERS ---------- */
-function initCounters(){
 
-  const nums =
-    document.querySelectorAll(".stat-num");
+/* =========================================================
+   COUNTERS
+   ========================================================= */
+
+function initCounters() {
+
+  const numbers =
+    document.querySelectorAll(
+      ".stat-num"
+    );
+
+
+  if (
+    !numbers.length ||
+    !("IntersectionObserver" in window)
+  ) {
+
+    return;
+
+  }
+
 
   const observer =
     new IntersectionObserver(
-      (entries)=>{
+      entries => {
 
-        entries.forEach(entry=>{
+        entries.forEach(
+          entry => {
 
-          if(entry.isIntersecting){
+            if (
+              entry.isIntersecting
+            ) {
 
-            animateCounter(
-              entry.target
-            );
+              animateCounter(
+                entry.target
+              );
 
-            observer.unobserve(
-              entry.target
-            );
+              observer.unobserve(
+                entry.target
+              );
+
+            }
+
           }
-
-        });
+        );
 
       },
       {
@@ -1589,40 +3575,54 @@ function initCounters(){
       }
     );
 
-  nums.forEach(el =>
-    observer.observe(el)
+
+  numbers.forEach(
+    number =>
+      observer.observe(
+        number
+      )
   );
+
 }
 
-function animateCounter(el){
+
+function animateCounter(element) {
 
   const target =
     parseFloat(
-      el.dataset.target
+      element.dataset.target
     );
+
 
   const decimals =
     parseInt(
-      el.dataset.decimal || "0"
+      element.dataset.decimal ||
+        "0"
     );
 
-  const suffix =
-    el.dataset.suffix || "";
 
-  const duration = 1400;
+  const suffix =
+    element.dataset.suffix ||
+    "";
+
+
+  const duration =
+    1400;
+
 
   const start =
     performance.now();
 
 
-  function step(now){
+  function step(now) {
 
     const progress =
       Math.min(
         (now - start) /
-        duration,
+          duration,
         1
       );
+
 
     const eased =
       1 -
@@ -1631,44 +3631,72 @@ function animateCounter(el){
         3
       );
 
-    const value =
-      target * eased;
 
-    el.textContent =
-      value.toFixed(decimals) +
+    const value =
+      target *
+      eased;
+
+
+    element.textContent =
+      value.toFixed(
+        decimals
+      ) +
       suffix;
 
 
-    if(progress < 1){
+    if (
+      progress < 1
+    ) {
 
-      requestAnimationFrame(step);
+      requestAnimationFrame(
+        step
+      );
 
     } else {
 
-      el.textContent =
-        target.toFixed(decimals) +
+      element.textContent =
+        target.toFixed(
+          decimals
+        ) +
         suffix;
+
     }
+
   }
 
-  requestAnimationFrame(step);
+
+  requestAnimationFrame(
+    step
+  );
+
 }
 
-/* ---------- ACTIVE NAV LINK ON SCROLL ---------- */
-function initActiveNavLink(){
 
-  const sections = [
+/* =========================================================
+   ACTIVE NAV
+   ========================================================= */
+
+function initActiveNavLink() {
+
+  const sectionIds = [
     "accueil",
     "excursions",
     "destinations",
     "circuits",
     "apropos",
     "contact"
-  ]
-  .map(id =>
-    document.getElementById(id)
-  )
-  .filter(Boolean);
+  ];
+
+
+  const sections =
+    sectionIds
+      .map(
+        id =>
+          document.getElementById(
+            id
+          )
+      )
+      .filter(Boolean);
 
 
   const links =
@@ -1677,103 +3705,250 @@ function initActiveNavLink(){
     );
 
 
+  if (!sections.length) return;
+
+
   window.addEventListener(
     "scroll",
-    ()=>{
+    () => {
 
       let currentId =
         sections[0].id;
 
 
-      sections.forEach(sec=>{
+      sections.forEach(
+        section => {
 
-        if(
-          window.scrollY + 140 >=
-          sec.offsetTop
-        ){
+          if (
+            window.scrollY +
+              140 >=
+            section.offsetTop
+          ) {
 
-          currentId =
-            sec.id;
+            currentId =
+              section.id;
+
+          }
+
         }
+      );
 
-      });
 
+      links.forEach(
+        link => {
 
-      links.forEach(link=>{
+          link.classList.toggle(
+            "active",
+            link.getAttribute(
+              "href"
+            ) ===
+              "#" +
+                currentId
+          );
 
-        link.classList.toggle(
-          "active",
-          link.getAttribute("href") ===
-          "#" + currentId
-        );
-
-      });
+        }
+      );
 
     }
   );
+
 }
 
-/* ---------- INIT ---------- */
+
+/* =========================================================
+   INITIALISATION
+   =========================================================
+   
+   IMPORTANT :
+   renderTours() est lancé EN PREMIER.
+   Une erreur dans une autre fonctionnalité
+   ne doit plus empêcher les cartes de s'afficher.
+   ========================================================= */
+
 document.addEventListener(
   "DOMContentLoaded",
-  ()=>{
+  () => {
 
-    initWhatsappLinks();
+    /* ---------- TOURS FIRST ---------- */
 
-    initNavbarScroll();
+    try {
 
-    initMobileMenu();
+      renderTours();
 
-    initSearchOverlay();
+    } catch (error) {
 
-    initHeroSearch();
+      console.error(
+        "Erreur renderTours :",
+        error
+      );
 
-    initFiltersAndSort();
-
-    renderTours();
-
-    updateFavCount();
-
-    initFavDrawer();
-
-    renderDestinations();
-
-    renderCircuits();
-
-    renderInstagram();
-
-    renderTestimonials();
-
-    initFaq();
-
-    initTourModal();
-
-    initBookingModal();
-
-    initContactForm();
-
-    initScrollReveal();
-
-    initCounters();
-
-    initActiveNavLink();
+    }
 
 
-    // Set minimum date for date pickers to today
+    /* ---------- SAFE INIT ---------- */
+
+    function safeInit(
+      name,
+      functionToRun
+    ) {
+
+      try {
+
+        functionToRun();
+
+      } catch (error) {
+
+        console.error(
+          `Erreur ${name} :`,
+          error
+        );
+
+      }
+
+    }
+
+
+    safeInit(
+      "initWhatsappLinks",
+      initWhatsappLinks
+    );
+
+
+    safeInit(
+      "initNavbarScroll",
+      initNavbarScroll
+    );
+
+
+    safeInit(
+      "initMobileMenu",
+      initMobileMenu
+    );
+
+
+    safeInit(
+      "initSearchOverlay",
+      initSearchOverlay
+    );
+
+
+    safeInit(
+      "initHeroSearch",
+      initHeroSearch
+    );
+
+
+    safeInit(
+      "initFiltersAndSort",
+      initFiltersAndSort
+    );
+
+
+    safeInit(
+      "updateFavCount",
+      updateFavCount
+    );
+
+
+    safeInit(
+      "initFavDrawer",
+      initFavDrawer
+    );
+
+
+    safeInit(
+      "renderDestinations",
+      renderDestinations
+    );
+
+
+    safeInit(
+      "renderCircuits",
+      renderCircuits
+    );
+
+
+    safeInit(
+      "renderInstagram",
+      renderInstagram
+    );
+
+
+    safeInit(
+      "renderTestimonials",
+      renderTestimonials
+    );
+
+
+    safeInit(
+      "initFaq",
+      initFaq
+    );
+
+
+    safeInit(
+      "initTourModal",
+      initTourModal
+    );
+
+
+    safeInit(
+      "initBookingModal",
+      initBookingModal
+    );
+
+
+    safeInit(
+      "initContactForm",
+      initContactForm
+    );
+
+
+    safeInit(
+      "initScrollReveal",
+      initScrollReveal
+    );
+
+
+    safeInit(
+      "initCounters",
+      initCounters
+    );
+
+
+    safeInit(
+      "initActiveNavLink",
+      initActiveNavLink
+    );
+
+
+    /* ---------- HERO DATE ---------- */
 
     const today =
       new Date()
         .toISOString()
         .split("T")[0];
 
-    const hsDate =
+
+    const dateInput =
       document.getElementById(
         "hsDate"
       );
 
-    if(hsDate){
-      hsDate.min = today;
+
+    if (dateInput) {
+
+      dateInput.min =
+        today;
+
     }
+
+
+    console.log(
+      "Privilege_Travel_Agency : script chargé correctement.",
+      TOURS.length +
+        " excursions disponibles."
+    );
 
   }
 );
