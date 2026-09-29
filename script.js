@@ -106,6 +106,173 @@ const TOURS = [
    {
 id:"dakhla",
 
+name:"Dakhla — Voyage Avion",
+
+destination:"Dakhla • Lagon • Désert • Océan Atlantique",
+
+category:"plages",
+
+duration:"4 jours / 3 nuits",
+
+price:3799,
+
+rating:5.0,
+
+badge:"BEST SELLER",
+
+image:"PM5.jpg",
+
+
+description:
+"Un voyage exceptionnel à Dakhla avec Privilège Travel. Vol aller-retour avec Royal Air Maroc, hôtels au choix, excursions en 4x4, lagon, désert et paysages uniques.",
+
+
+dates:[
+"Départ chaque jeudi — Retour dimanche",
+"Disponible toute l'année"
+],
+
+
+formulas:[
+
+{
+name:"Hôtel 3★ — Centre ville (Petit déjeuner)",
+price:3899,
+items:[
+"Chambre double ou triple : 3899 DH/personne",
+"Chambre single : 4299 DH",
+"Petit déjeuner inclus"
+]
+},
+
+
+{
+name:"Hôtel 4★ Surf House — Vue plage (Demi pension)",
+price:4199,
+items:[
+"Chambre double ou triple : 4199 DH/personne",
+"Chambre single : 4949 DH",
+"Piscine et proximité plage",
+"Demi pension"
+]
+},
+
+
+{
+name:"Hôtel 4★ PK25 / West Point — Vue mer",
+price:6450,
+items:[
+"Chambre double ou triple : 6450 DH/personne",
+"Chambre single : 8150–8250 DH",
+"Pension complète"
+]
+},
+
+
+{
+name:"Hôtel 5★ Dakhla Club — Vue mer",
+price:6999,
+items:[
+"Chambre double ou triple : 6999 DH/personne",
+"Chambre single : 7799 DH",
+"Piscine",
+"Pension complète"
+]
+}
+
+],
+
+
+program:[
+
+
+{
+time:"JOUR 1",
+label:
+"Rassemblement à l'aéroport Mohammed V Casablanca. Vol direct Casablanca → Dakhla avec Royal Air Maroc. Accueil, transfert hôtel, installation, dîner inclus et nuitée."
+},
+
+
+{
+time:"JOUR 2 — 09:00",
+label:
+"Petit déjeuner inclus. Départ en 4x4 vers la Dune Blanche, visite de la Source Asmaa et découverte des paysages du lagon. Déjeuner libre au restaurant Parc des Huîtres. Retour hôtel et dîner inclus."
+},
+
+
+{
+time:"JOUR 3 — 09:00",
+label:
+"Petit déjeuner. Safari 4x4 vers Sabkha Amelili, découverte du site naturel, puis direction plage Porto Rico avec temps libre baignade. Retour hôtel, dîner inclus et balade nocturne en ville."
+},
+
+
+{
+time:"JOUR 4",
+label:
+"Petit déjeuner hôtel. Check-out et transfert vers l'aéroport. Vol retour Dakhla → Casablanca avec Royal Air Maroc."
+}
+
+],
+
+
+included:[
+
+"Vol aller-retour Casablanca — Dakhla avec Royal Air Maroc",
+
+"Bagages compris (23 + 10 kg)",
+
+"Transfert aéroport ↔ hôtel",
+
+"3 nuitées selon hôtel choisi",
+
+"2 jours d'excursions Safari 4x4",
+
+"Frais entrée ferme d'autruches",
+
+"Frais baignade Source Asmaa",
+
+"Visites guidées"
+
+],
+
+
+excluded:[
+
+"Déjeuners non mentionnés",
+
+"Dépenses personnelles",
+
+"Options supplémentaires",
+
+"Activités non incluses"
+
+],
+
+
+reservation:
+"Réservation par WhatsApp au 0675296774. Contactez Privilège Travel pour choisir votre hôtel et confirmer votre réservation.",
+
+
+conditions:[
+
+"Départ chaque jeudi retour dimanche",
+
+"Voyage personnalisable selon vos préférences",
+
+"Prix selon hôtel choisi",
+
+"Disponibilité selon les places aériennes et hôtelières",
+
+"Programme pouvant être adapté selon les conditions du voyage"
+
+]
+
+},
+   
+   {
+id:"dakhla",
+
 name:"Dakhla — Maldives du Maroc",
 
 destination:"Sud marocain • Océan Atlantique • Dakhla",
