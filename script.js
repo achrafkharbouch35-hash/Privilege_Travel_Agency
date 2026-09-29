@@ -527,7 +527,7 @@ const TOURS = [
       "Azilal • Ouzoud • Bin El Ouidane — 1299 DH",
 
     description:
-      "Quand la beauté de la nature rencontre le plaisir du voyage, l'aventure commence avec Privilège Travel. Découvrez une magnifique expérience au cœur de la nature marocaine entre les montagnes de l'Atlas, les cascades d'Ouzoud, le lac de Bin El Ouidane et les sources d'Aïn Asserdoun. Une escapade pensée pour combiner découverte, détente, divertissement et moments conviviaux pendant 3 jours.",
+      "Quand la beauté de la nature rencontre le plaisir du voyage, l'aventure commence avec Privilège Travel.",
 
     dates: [
       "09–11 octobre 2026",
