@@ -114,7 +114,7 @@ const TOURS = [
 
     formulas: [
       {
-        name: "Formule Essentielle",
+        name: "_Formule Essentielle_",
         price: 779,
         items: [
           "Transport touristique climatisé A/R",
@@ -127,7 +127,7 @@ const TOURS = [
         ]
       },
       {
-        name: "Formule All In",
+        name: "_Formule All In_",
         price: 979,
         items: [
           "Transport touristique climatisé A/R",
