@@ -379,7 +379,7 @@ const TESTIMONIALS = [
     name: "Sarah Johnson",
     country: "Royaume-Uni",
     avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop",
-    text: "Réservation simple via WhatsApp, transport confortable et guides passionnants. Je recommande vivement NOMADIA."
+    text: "Réservation simple via WhatsApp, transport confortable et guides passionnants. Je recommande vivement Privilege_Travel_Agency."
   }
 ];
 
@@ -405,11 +405,11 @@ function buildWhatsappLink(message){
 }
 
 function defaultWhatsappMessage(){
-  return "Bonjour NOMADIA TRAVEL 👋\n\nJe souhaite avoir plus d'informations sur vos excursions.\n\nMerci.";
+  return "Bonjour Privilege_Travel_Agency TRAVEL 👋\n\nJe souhaite avoir plus d'informations sur vos excursions.\n\nMerci.";
 }
 
 function tourWhatsappMessage(tour){
-  return `Bonjour NOMADIA TRAVEL 👋\n\nJe souhaite réserver :\n\nExcursion : ${tour.name}\nDate : \nNombre de personnes : \n\nMerci.`;
+  return `Bonjour Privilege_Travel_Agency TRAVEL 👋\n\nJe souhaite réserver :\n\nExcursion : ${tour.name}\nDate : \nNombre de personnes : \n\nMerci.`;
 }
 
 /* ---------- INIT WHATSAPP LINKS ---------- */
@@ -867,7 +867,7 @@ function renderCircuits(){
       btn.addEventListener("click", ()=>{
 
         const msg =
-          `Bonjour NOMADIA TRAVEL 👋\n\nJe suis intéressé(e) par le circuit :\n${btn.dataset.name}\n\nPouvez-vous me donner plus de détails ?\n\nMerci.`;
+          `Bonjour Privilege_Travel_Agency TRAVEL 👋\n\nJe suis intéressé(e) par le circuit :\n${btn.dataset.name}\n\nPouvez-vous me donner plus de détails ?\n\nMerci.`;
 
         window.open(
           buildWhatsappLink(msg),
@@ -891,7 +891,7 @@ function renderInstagram(){
 
       <img
         src="${src}"
-        alt="Photo de voyage NOMADIA"
+        alt="Photo de voyage Privilege_Travel_Agency"
         loading="lazy">
 
       <span class="insta-icon">
