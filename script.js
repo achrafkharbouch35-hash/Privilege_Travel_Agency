@@ -1145,19 +1145,35 @@ function openTourModal(id){
   }
 
 
-  if(tour.dates){
+ if(tour.dates){
 
-    const dates =
-      document.getElementById("tmDates");
+  const dates =
+    document.getElementById("tmDates");
 
-    if(dates){
+  const datesBlock =
+    document.getElementById("tmDatesBlock");
 
-      dates.innerHTML =
-        tour.dates.map(d=>`
-          <span>${d}</span>
-        `).join("");
+  if(dates){
+
+    dates.innerHTML =
+      tour.dates.map(d=>`
+        <span class="tm-date-item">${d}</span>
+      `).join("");
+
+    if(datesBlock){
+      datesBlock.hidden = false;
     }
   }
+
+}else{
+
+  const datesBlock =
+    document.getElementById("tmDatesBlock");
+
+  if(datesBlock){
+    datesBlock.hidden = true;
+  }
+}
 
 
   if(tour.reservation){
