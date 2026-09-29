@@ -4,7 +4,7 @@
 
 /* ---------- CONFIG ---------- */
 const CONFIG = {
-    whatsapp: "212600000000",
+    whatsapp: "212675296774",
     instagram: "https://instagram.com/nomadia.travel"
 };
 
@@ -73,25 +73,191 @@ const TOURS = [
     included: ["Guide francophone", "Entrées aux sites principaux"],
     excluded: ["Déjeuner", "Transport depuis votre riad"]
   },
+
+  /* =========================================================
+     MERZOUGA — DÉTAILS COMPLETS
+     ========================================================= */
   {
     id: "merzouga",
-    name: "Merzouga & Sahara",
-    destination: "Dunes de l'Erg Chebbi",
+    name: "Merzouga Express",
+    destination: "Dunes de l'Erg Chebbi — Safari Sahara",
     category: "desert",
-    duration: "3 jours",
-    price: 1490,
+    duration: "3 jours / 2 nuits",
+    price: 779,
     rating: 5.0,
     badge: "BEST SELLER",
-    image: "marzouga.jpg",
-    description: "Traversez l'Atlas, les gorges du Todra et les vallées du sud pour rejoindre les majestueuses dunes de Merzouga. Une nuit inoubliable sous les étoiles du Sahara.",
-    program: [
-      { time: "Jour 1", label: "Marrakech → Vallée du Dadès" },
-      { time: "Jour 2", label: "Gorges du Todra → Merzouga, coucher de soleil en dromadaire" },
-      { time: "Jour 3", label: "Lever de soleil sur les dunes → retour" }
+    image: "PM.jpeg",
+
+    description: "Le voyage le plus demandé est de retour en mode SAFARI. Ambiance, détente et relaxation au cœur du désert de Merzouga, avec hôtel, soirée animée, feu de camp et plusieurs activités selon la formule choisie.",
+
+    dates: [
+      "02–04 octobre 2026",
+      "09–11 octobre 2026",
+      "16–18 octobre 2026",
+      "23–25 octobre 2026",
+      "30 octobre–01 novembre 2026",
+      "06–08 novembre 2026",
+      "13–15 novembre 2026",
+      "20–22 novembre 2026",
+      "27–29 novembre 2026",
+      "04–06 décembre 2026",
+      "11–13 décembre 2026",
+      "18–20 décembre 2026",
+      "25–27 décembre 2026",
+      "01–03 janvier 2027",
+      "08–10 janvier 2027",
+      "09–11 janvier 2027",
+      "15–17 janvier 2027",
+      "22–24 janvier 2027",
+      "29–31 janvier 2027"
     ],
-    included: ["2 nuits en hébergement (hôtel + bivouac)", "Tous les transports", "Balade en dromadaire", "Petits-déjeuners et dîners"],
-    excluded: ["Déjeuners", "Boissons", "Dépenses personnelles"]
+
+    formulas: [
+      {
+        name: "Formule Essentielle",
+        price: 779,
+        items: [
+          "Transport touristique climatisé A/R",
+          "Shooting photo professionnel et Story",
+          "Petit déjeuner en buffet le dimanche",
+          "Dîner du samedi en buffet",
+          "Soirée à l'hôtel avec DJ ou Gnaoua",
+          "Nuitée à l'hôtel",
+          "Feux de camp"
+        ]
+      },
+      {
+        name: "Formule All In",
+        price: 979,
+        items: [
+          "Transport touristique climatisé A/R",
+          "Shooting photo professionnel et Story",
+          "Excursion en 4×4 dans le désert de Merzouga",
+          "Petits déjeuners en buffet samedi & dimanche",
+          "Déjeuner du samedi",
+          "Dîner du samedi en buffet",
+          "Balade en dromadaire",
+          "Soirée à l'hôtel avec DJ ou Gnaoua",
+          "Nuitée à l'hôtel",
+          "Feux de camp"
+        ]
+      }
+    ],
+
+    program: [
+      {
+        time: "VENDREDI · 19:00",
+        label: "Départ de Casablanca — Gare Casa-Voyageurs"
+      },
+      {
+        time: "20:00",
+        label: "Départ de Mohammedia — devant École Majorelle"
+      },
+      {
+        time: "21:00",
+        label: "Départ de Rabat — Gare Rabat Ville"
+      },
+      {
+        time: "00:30",
+        label: "Départ de Meknès — Gare routière Sidi Saïd"
+      },
+      {
+        time: "Nuit",
+        label: "Pause dîner en route et pause dans une aire de repos"
+      },
+      {
+        time: "SAMEDI · 07:30",
+        label: "Arrivée à Aïn Atti, petit déjeuner et possibilité d'acheter cache-col, melhfa et derâa"
+      },
+      {
+        time: "Matinée",
+        label: "Départ vers Merzouga, arrivée au centre et check-in à l'hôtel"
+      },
+      {
+        time: "Après arrivée",
+        label: "Dispatching des chambres doubles, triples ou suites quadruples selon disponibilité, puis temps libre, détente et baignade à la piscine"
+      },
+      {
+        time: "13:00",
+        label: "Départ vers le village de Khamlia et déjeuner à Dar Gnaoua : salade, medfouna, poulet, thé et fruit de saison"
+      },
+      {
+        time: "14:00",
+        label: "1 heure de Quad ou Buggy dans le désert — activité libre"
+      },
+      {
+        time: "Après-midi",
+        label: "Départ en 4×4 vers les dunes de Merzouga et coucher du soleil"
+      },
+      {
+        time: "Soir",
+        label: "Retour à l'hôtel à dos de dromadaire, douche et temps libre"
+      },
+      {
+        time: "Soirée",
+        label: "Dîner buffet, soirée animée avec DJ, feu de camp en plein désert et nuitée à l'hôtel"
+      },
+      {
+        time: "DIMANCHE · 07:00",
+        label: "Réveil en douceur et petit déjeuner buffet à l'hôtel"
+      },
+      {
+        time: "08:15",
+        label: "Check-out et départ vers Erfoud"
+      },
+      {
+        time: "09:30",
+        label: "Arrivée à Erfoud et achat des dattes"
+      },
+      {
+        time: "10:30",
+        label: "Arrivée à Aïn Atti et possibilité d'achat de lait de dromadaire"
+      },
+      {
+        time: "11:00",
+        label: "Pause à l'oasis Oulad Chaggar — paysage panoramique"
+      },
+      {
+        time: "Retour",
+        label: "Voyage du retour avec déjeuner libre à Zaida et pause dans une aire de repos"
+      },
+      {
+        time: "Fin",
+        label: "Arrivée successive à Meknès, Rabat, Mohammedia puis Casablanca"
+      }
+    ],
+
+    included: [
+      "Transport touristique climatisé A/R",
+      "Shooting photo professionnel et Story",
+      "Nuitée à l'hôtel",
+      "Dîner du samedi en buffet",
+      "Petit déjeuner du dimanche en buffet",
+      "Soirée à l'hôtel avec DJ ou Gnaoua",
+      "Feux de camp"
+    ],
+
+    excluded: [
+      "Déjeuner du samedi en formule Essentielle",
+      "Excursion 4×4 et balade en dromadaire en formule Essentielle",
+      "Quad : 350 DH/personne/1H",
+      "Quad : 450 DH/2 personnes/1H",
+      "Buggy : 900 DH/1 ou 2 personnes/1H",
+      "Dépenses personnelles et prestations non mentionnées"
+    ],
+
+    reservation: "Réservation par versement bancaire d'une avance de 300 DH. Contactez Allo Privilège au 0675296774 via WhatsApp ou appel pour demander le RIB.",
+
+    conditions: [
+      "Réservation selon les places disponibles.",
+      "Avant tout versement, contactez l'un des collaborateurs.",
+      "Annulation possible 48 heures avant le jour du voyage.",
+      "L'agence n'est pas responsable en cas d'arrivée tardive.",
+      "Des changements peuvent survenir pour le bon déroulement du programme, tout en assurant les services et activités compris.",
+      "En cas de force majeure ou de circonstances indépendantes de la volonté de l'agence, sa responsabilité ne peut être engagée."
+    ]
   },
+
   {
     id: "essaouira",
     name: "Essaouira",
@@ -113,6 +279,7 @@ const TOURS = [
     included: ["Transport aller-retour", "Guide local"],
     excluded: ["Déjeuner", "Activités nautiques"]
   },
+
   {
     id: "ouzoud",
     name: "Ouzoud",
@@ -134,6 +301,7 @@ const TOURS = [
     included: ["Transport", "Guide accompagnateur"],
     excluded: ["Déjeuner", "Balade en barque"]
   },
+
   {
     id: "atlas",
     name: "Atlas Mountains",
@@ -155,6 +323,7 @@ const TOURS = [
     included: ["Transport 4x4", "Guide de montagne", "Déjeuner berbère"],
     excluded: ["Boissons", "Pourboires"]
   },
+
   {
     id: "fes-meknes",
     name: "Fès & Meknès",
@@ -267,10 +436,12 @@ function initNavbarScroll(){
 function initMobileMenu(){
   const hamburger = document.getElementById("hamburger");
   const mobileMenu = document.getElementById("mobileMenu");
+
   hamburger.addEventListener("click", ()=>{
     hamburger.classList.toggle("open");
     mobileMenu.classList.toggle("open");
   });
+
   mobileMenu.querySelectorAll(".mobile-link").forEach(link=>{
     link.addEventListener("click", ()=>{
       hamburger.classList.remove("open");
@@ -290,6 +461,7 @@ function initSearchOverlay(){
     setTimeout(()=>input.focus(), 350);
     renderSearchResults("");
   }
+
   function close(){
     overlay.classList.remove("open");
     input.value = "";
@@ -297,16 +469,27 @@ function initSearchOverlay(){
 
   document.getElementById("searchToggle").addEventListener("click", open);
   document.getElementById("searchClose").addEventListener("click", close);
-  overlay.addEventListener("click", (e)=>{ if(e.target === overlay) close(); });
-  document.addEventListener("keydown", (e)=>{ if(e.key === "Escape") close(); });
 
-  input.addEventListener("input", ()=> renderSearchResults(input.value));
+  overlay.addEventListener("click", (e)=>{
+    if(e.target === overlay) close();
+  });
+
+  document.addEventListener("keydown", (e)=>{
+    if(e.key === "Escape") close();
+  });
+
+  input.addEventListener("input", ()=>{
+    renderSearchResults(input.value);
+  });
 
   function renderSearchResults(query){
     const q = query.trim().toLowerCase();
+
     const matches = TOURS.filter(t =>
-      t.name.toLowerCase().includes(q) || t.destination.toLowerCase().includes(q)
+      t.name.toLowerCase().includes(q) ||
+      t.destination.toLowerCase().includes(q)
     );
+
     resultsWrap.innerHTML = matches.map(t => `
       <a class="search-result-item" href="#excursions" data-id="${t.id}">
         <span>${t.name} — ${t.destination}</span>
@@ -326,14 +509,20 @@ function initSearchOverlay(){
 /* ---------- HERO SEARCH FORM ---------- */
 function initHeroSearch(){
   const form = document.getElementById("heroSearchForm");
+
   form.addEventListener("submit", (e)=>{
     e.preventDefault();
+
     const where = document.getElementById("hsWhere").value.trim();
-    document.getElementById("excursions").scrollIntoView({behavior:"smooth"});
+
+    document.getElementById("excursions").scrollIntoView({
+      behavior:"smooth"
+    });
+
     if(where){
       document.getElementById("liveSearchInput").value = where;
     }
-    // filter grid by matching text too
+
     window.__heroSearchTerm = where.toLowerCase();
     renderTours();
   });
@@ -349,15 +538,30 @@ function getFilteredSortedTours(){
 
   if(window.__heroSearchTerm){
     const term = window.__heroSearchTerm;
-    list = list.filter(t => t.name.toLowerCase().includes(term) || t.destination.toLowerCase().includes(term));
+
+    list = list.filter(t =>
+      t.name.toLowerCase().includes(term) ||
+      t.destination.toLowerCase().includes(term)
+    );
   }
 
   switch(currentSort){
-    case "price-asc": list.sort((a,b)=>a.price-b.price); break;
-    case "price-desc": list.sort((a,b)=>b.price-a.price); break;
-    case "rating": list.sort((a,b)=>b.rating-a.rating); break;
-    default: break;
+    case "price-asc":
+      list.sort((a,b)=>a.price-b.price);
+      break;
+
+    case "price-desc":
+      list.sort((a,b)=>b.price-a.price);
+      break;
+
+    case "rating":
+      list.sort((a,b)=>b.rating-a.rating);
+      break;
+
+    default:
+      break;
   }
+
   return list;
 }
 
@@ -371,29 +575,69 @@ function renderTours(){
     noResults.hidden = false;
     return;
   }
+
   noResults.hidden = true;
 
   grid.innerHTML = list.map(t => `
     <div class="tour-card reveal in-view" data-id="${t.id}">
       <div class="tour-media">
         <img src="${t.image}" alt="${t.name}" loading="lazy">
-        <span class="tour-badge ${t.badge === 'NOUVEAU' ? 'new' : ''}">${t.badge}</span>
-        <button class="tour-fav-btn ${favorites.includes(t.id) ? 'active' : ''}" data-id="${t.id}" aria-label="Ajouter aux favoris">
-          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke-width="1.8"><path d="M12 20.5s-7.5-4.6-10-9.2C0.3 8 1.7 4.3 5.2 3.6c2.1-0.4 4.1 0.6 5.2 2.3c1.1-1.7 3.1-2.7 5.2-2.3c3.5 0.7 4.9 4.4 3.2 7.7c-2.5 4.6-10 9.2-10 9.2z"/></svg>
+
+        <span class="tour-badge ${t.badge === 'NOUVEAU' ? 'new' : ''}">
+          ${t.badge}
+        </span>
+
+        <button
+          class="tour-fav-btn ${favorites.includes(t.id) ? 'active' : ''}"
+          data-id="${t.id}"
+          aria-label="Ajouter aux favoris">
+
+          <svg viewBox="0 0 24 24"
+               width="17"
+               height="17"
+               fill="none"
+               stroke-width="1.8">
+            <path d="M12 20.5s-7.5-4.6-10-9.2C0.3 8 1.7 4.3 5.2 3.6c2.1-.4 4.1.6 5.2 2.3c1.1-1.7 3.1-2.7 5.2-2.3c3.5.7 4.9 4.4 3.2 7.7c-2.5 4.6-10 9.2-10 9.2z"/>
+          </svg>
         </button>
       </div>
+
       <div class="tour-body">
         <div class="tour-top-row">
           <h3 class="tour-name">${t.name}</h3>
           <span class="tour-rating">★ ${t.rating.toFixed(1)}</span>
         </div>
-        <p class="tour-meta">${t.destination} · ${t.duration}</p>
+
+        <p class="tour-meta">
+          ${t.destination} · ${t.duration}
+        </p>
+
         <div class="tour-bottom-row">
-          <p class="tour-price"><span>Dès</span><br>${formatPrice(t.price)}</p>
+          <p class="tour-price">
+            <span>Dès</span><br>
+            ${formatPrice(t.price)}
+          </p>
+
           <div class="tour-actions">
-            <button class="btn btn-primary btn-details" data-id="${t.id}">Détails</button>
-            <a class="icon-btn tour-wa-btn" data-id="${t.id}" target="_blank" rel="noopener" aria-label="WhatsApp">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.9-4.45 9.9-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24c-1.44 0-2.85-.37-4.09-1.08l-.29-.17l-3.11.82l.83-3.03l-.19-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.24-8.24z"/></svg>
+            <button
+              class="btn btn-primary btn-details"
+              data-id="${t.id}">
+              Détails
+            </button>
+
+            <a
+              class="icon-btn tour-wa-btn"
+              data-id="${t.id}"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp">
+
+              <svg viewBox="0 0 24 24"
+                   width="16"
+                   height="16"
+                   fill="currentColor">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.9-4.45 9.9-9.91c0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67a8.2 8.2 0 0 1 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.25 8.24c-1.44 0-2.85-.37-4.09-1.08l-.29-.17l-3.11.82l.83-3.03l-.19-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.55 3.7-8.24 8.24-8.24z"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -402,14 +646,23 @@ function renderTours(){
   `).join("");
 
   grid.querySelectorAll(".btn-details").forEach(btn=>{
-    btn.addEventListener("click", ()=> openTourModal(btn.dataset.id));
+    btn.addEventListener("click", ()=>{
+      openTourModal(btn.dataset.id);
+    });
   });
+
   grid.querySelectorAll(".tour-fav-btn").forEach(btn=>{
-    btn.addEventListener("click", ()=> toggleFavorite(btn.dataset.id));
+    btn.addEventListener("click", ()=>{
+      toggleFavorite(btn.dataset.id);
+    });
   });
+
   grid.querySelectorAll(".tour-wa-btn").forEach(btn=>{
     const tour = TOURS.find(t=>t.id === btn.dataset.id);
-    btn.href = buildWhatsappLink(tourWhatsappMessage(tour));
+
+    btn.href = buildWhatsappLink(
+      tourWhatsappMessage(tour)
+    );
   });
 }
 
@@ -417,10 +670,16 @@ function renderTours(){
 function initFiltersAndSort(){
   document.getElementById("filterTabs").addEventListener("click",(e)=>{
     const btn = e.target.closest(".filter-tab");
+
     if(!btn) return;
-    document.querySelectorAll(".filter-tab").forEach(b=>b.classList.remove("active"));
+
+    document.querySelectorAll(".filter-tab")
+      .forEach(b=>b.classList.remove("active"));
+
     btn.classList.add("active");
+
     currentFilter = btn.dataset.filter;
+
     renderTours();
   });
 
@@ -437,110 +696,213 @@ function toggleFavorite(id){
   } else {
     favorites.push(id);
   }
-  localStorage.setItem("nomadia_favorites", JSON.stringify(favorites));
+
+  localStorage.setItem(
+    "nomadia_favorites",
+    JSON.stringify(favorites)
+  );
+
   updateFavCount();
   renderTours();
   renderFavDrawer();
 }
 
 function updateFavCount(){
-  document.getElementById("favCount").textContent = favorites.length;
+  document.getElementById("favCount").textContent =
+    favorites.length;
 }
 
 function renderFavDrawer(){
   const body = document.getElementById("favDrawerBody");
+
   if(favorites.length === 0){
-    body.innerHTML = `<p class="fav-empty">Vous n'avez pas encore d'excursion favorite.<br>Cliquez sur le cœur d'une carte pour l'ajouter ici.</p>`;
+    body.innerHTML = `
+      <p class="fav-empty">
+        Vous n'avez pas encore d'excursion favorite.<br>
+        Cliquez sur le cœur d'une carte pour l'ajouter ici.
+      </p>
+    `;
     return;
   }
-  const items = TOURS.filter(t => favorites.includes(t.id));
+
+  const items = TOURS.filter(t =>
+    favorites.includes(t.id)
+  );
+
   body.innerHTML = items.map(t=>`
     <div class="fav-item">
       <img src="${t.image}" alt="${t.name}">
+
       <div class="fav-item-info">
         <h4>${t.name}</h4>
         <p>${formatPrice(t.price)} · ${t.duration}</p>
       </div>
-      <button class="fav-remove" data-id="${t.id}" aria-label="Retirer">&times;</button>
+
+      <button
+        class="fav-remove"
+        data-id="${t.id}"
+        aria-label="Retirer">
+        &times;
+      </button>
     </div>
   `).join("");
 
   body.querySelectorAll(".fav-remove").forEach(btn=>{
-    btn.addEventListener("click", ()=> toggleFavorite(btn.dataset.id));
+    btn.addEventListener("click", ()=>{
+      toggleFavorite(btn.dataset.id);
+    });
   });
 }
 
 function initFavDrawer(){
   const drawer = document.getElementById("favDrawer");
   const backdrop = document.getElementById("drawerBackdrop");
+
   function open(){
     renderFavDrawer();
+
     drawer.classList.add("open");
     backdrop.classList.add("open");
   }
+
   function close(){
     drawer.classList.remove("open");
     backdrop.classList.remove("open");
   }
-  document.getElementById("favToggle").addEventListener("click", open);
-  document.getElementById("favClose").addEventListener("click", close);
+
+  document.getElementById("favToggle")
+    .addEventListener("click", open);
+
+  document.getElementById("favClose")
+    .addEventListener("click", close);
+
   backdrop.addEventListener("click", close);
 }
 
 /* ---------- DESTINATIONS RENDER ---------- */
 function renderDestinations(){
   const grid = document.getElementById("destinationsGrid");
+
   grid.innerHTML = DESTINATIONS.map(d=>`
-    <div class="destination-card reveal" data-name="${d.name}">
-      <img src="${d.image}" alt="${d.name}" loading="lazy">
+    <div
+      class="destination-card reveal"
+      data-name="${d.name}">
+
+      <img
+        src="${d.image}"
+        alt="${d.name}"
+        loading="lazy">
+
       <div class="destination-info">
         <h3>${d.name}</h3>
         <p>${d.count} expériences disponibles</p>
-        <span class="destination-explore">Explorer</span>
+        <span class="destination-explore">
+          Explorer
+        </span>
       </div>
     </div>
   `).join("");
 
-  grid.querySelectorAll(".destination-card").forEach(card=>{
-    card.addEventListener("click", ()=>{
-      window.__heroSearchTerm = card.dataset.name.toLowerCase();
-      currentFilter = "all";
-      document.querySelectorAll(".filter-tab").forEach(b=>b.classList.toggle("active", b.dataset.filter==="all"));
-      renderTours();
-      document.getElementById("excursions").scrollIntoView({behavior:"smooth"});
+  grid.querySelectorAll(".destination-card")
+    .forEach(card=>{
+
+      card.addEventListener("click", ()=>{
+
+        window.__heroSearchTerm =
+          card.dataset.name.toLowerCase();
+
+        currentFilter = "all";
+
+        document.querySelectorAll(".filter-tab")
+          .forEach(b =>
+            b.classList.toggle(
+              "active",
+              b.dataset.filter === "all"
+            )
+          );
+
+        renderTours();
+
+        document.getElementById("excursions")
+          .scrollIntoView({
+            behavior:"smooth"
+          });
+      });
+
     });
-  });
 }
 
 /* ---------- CIRCUITS RENDER ---------- */
 function renderCircuits(){
   const grid = document.getElementById("circuitsGrid");
+
   grid.innerHTML = CIRCUITS.map(c=>`
     <div class="circuit-card reveal">
       <span class="circuit-days">${c.days}</span>
-      <h3 class="circuit-name">${c.name}</h3>
-      <p class="circuit-route">${c.route}</p>
-      <p class="circuit-price"><span>À partir de</span><br>${formatPrice(c.price)}</p>
-      <button class="btn btn-outline circuit-btn" data-name="${c.name}">Voir le circuit</button>
+
+      <h3 class="circuit-name">
+        ${c.name}
+      </h3>
+
+      <p class="circuit-route">
+        ${c.route}
+      </p>
+
+      <p class="circuit-price">
+        <span>À partir de</span><br>
+        ${formatPrice(c.price)}
+      </p>
+
+      <button
+        class="btn btn-outline circuit-btn"
+        data-name="${c.name}">
+        Voir le circuit
+      </button>
     </div>
   `).join("");
 
-  grid.querySelectorAll(".circuit-btn").forEach(btn=>{
-    btn.addEventListener("click", ()=>{
-      const msg = `Bonjour NOMADIA TRAVEL 👋\n\nJe suis intéressé(e) par le circuit :\n${btn.dataset.name}\n\nPouvez-vous me donner plus de détails ?\n\nMerci.`;
-      window.open(buildWhatsappLink(msg), "_blank");
+  grid.querySelectorAll(".circuit-btn")
+    .forEach(btn=>{
+
+      btn.addEventListener("click", ()=>{
+
+        const msg =
+          `Bonjour NOMADIA TRAVEL 👋\n\nJe suis intéressé(e) par le circuit :\n${btn.dataset.name}\n\nPouvez-vous me donner plus de détails ?\n\nMerci.`;
+
+        window.open(
+          buildWhatsappLink(msg),
+          "_blank"
+        );
+      });
+
     });
-  });
 }
 
 /* ---------- INSTAGRAM RENDER ---------- */
 function renderInstagram(){
   const grid = document.getElementById("instagramGrid");
+
   grid.innerHTML = INSTAGRAM_IMAGES.map(src=>`
-    <a class="insta-item" href="${CONFIG.instagram}" target="_blank" rel="noopener">
-      <img src="${src}" alt="Photo de voyage NOMADIA" loading="lazy">
+    <a
+      class="insta-item"
+      href="${CONFIG.instagram}"
+      target="_blank"
+      rel="noopener">
+
+      <img
+        src="${src}"
+        alt="Photo de voyage NOMADIA"
+        loading="lazy">
+
       <span class="insta-icon">
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2c2.7 0 3.05.01 4.12.06c1.06.05 1.79.22 2.43.47c.66.26 1.21.6 1.76 1.15c.55.55.9 1.1 1.15 1.76c.25.64.42 1.37.47 2.43c.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76a4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47c-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15a4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43c.26-.66.6-1.21 1.15-1.76a4.9 4.9 0 0 1 1.76-1.15c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2m0 1.8c-2.65 0-2.97.01-4.02.06c-.97.04-1.5.2-1.85.34c-.47.18-.8.4-1.15.75s-.57.68-.75 1.15c-.14.35-.3.88-.34 1.85c-.05 1.05-.06 1.37-.06 4.02s.01 2.97.06 4.02c.04.97.2 1.5.34 1.85c.18.47.4.8.75 1.15s.68.57 1.15.75c.35.14.88.3 1.85.34c1.05.05 1.37.06 4.02.06s2.97-.01 4.02-.06c.97-.04 1.5-.2 1.85-.34c.47-.18.8-.4 1.15-.75s.57-.68.75-1.15c.14-.35.3-.88.34-1.85c.05-1.05.06-1.37.06-4.02s-.01-2.97-.06-4.02c-.04-.97-.2-1.5-.34-1.85a3.1 3.1 0 0 0-.75-1.15a3.1 3.1 0 0 0-1.15-.75c-.35-.14-.88-.3-1.85-.34C14.97 3.81 14.65 3.8 12 3.8m0 3.06a5.14 5.14 0 1 1 0 10.28a5.14 5.14 0 0 1 0-10.28m0 1.8a3.34 3.34 0 1 0 0 6.68a3.34 3.34 0 0 0 0-6.68m5.34-1.96a1.2 1.2 0 1 1-2.4 0a1.2 1.2 0 0 1 2.4 0"/></svg>
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="currentColor">
+
+          <path d="M12 2c2.7 0 3.05.01 4.12.06c1.06.05 1.79.22 2.43.47c.66.26 1.21.6 1.76 1.15c.55.55.9 1.1 1.15 1.76c.25.64.42 1.37.47 2.43c.05 1.07.06 1.42.06 4.12s-.01 3.05-.06 4.12c-.05 1.06-.22 1.79-.47 2.43a4.9 4.9 0 0 1-1.15 1.76a4.9 4.9 0 0 1-1.76 1.15c-.64.25-1.37.42-2.43.47c-1.07.05-1.42.06-4.12.06s-3.05-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47a4.9 4.9 0 0 1-1.76-1.15a4.9 4.9 0 0 1-1.15-1.76c-.25-.64-.42-1.37-.47-2.43C2.01 15.05 2 14.7 2 12s.01-3.05.06-4.12c.05-1.06.22-1.79.47-2.43c.26-.66.6-1.21 1.15-1.76a4.9 4.9 0 0 1 1.76-1.15c.64-.25 1.37-.42 2.43-.47C8.95 2.01 9.3 2 12 2m0 1.8c-2.65 0-2.97.01-4.02.06c-.97.04-1.5.2-1.85.34c-.47.18-.8.4-1.15.75s-.57.68-.75 1.15c-.14.35-.3.88-.34 1.85c-.05 1.05-.06 1.37-.06 4.02s.01 2.97.06 4.02c.04.97.2 1.5.34 1.85c.18.47.4.8.75 1.15s.68.57 1.15.75c.35.14.88.3 1.85.34c1.05.05 1.37.06 4.02.06s2.97-.01 4.02-.06c.97-.04 1.5-.2 1.85-.34c.47-.18.8-.4 1.15-.75s.57-.68.75-1.15c.14-.35.3-.88.34-1.85c.05-1.05.06-1.37.06-4.02s-.01-2.97-.06-4.02c-.04-.97-.2-1.5-.34-1.85a3.1 3.1 0 0 0-.75-1.15a3.1 3.1 0 0 0-1.15-.75c-.35-.14-.88-.3-1.85-.34C14.97 3.81 14.65 3.8 12 3.8m0 3.06a5.14 5.14 0 1 1 0 10.28a5.14 5.14 0 0 1 0-10.28m0 1.8a3.34 3.34 0 1 0 0 6.68a3.34 3.34 0 0 0 0-6.68m5.34-1.96a1.2 1.2 0 1 1-2.4 0a1.2 1.2 0 0 1 2.4 0"/>
+        </svg>
       </span>
     </a>
   `).join("");
@@ -557,38 +919,74 @@ function renderTestimonials(){
   track.innerHTML = TESTIMONIALS.map(t=>`
     <div class="testimonial-card">
       <div class="stars">★★★★★</div>
-      <p class="testimonial-quote">"${t.text}"</p>
-      <img class="testimonial-avatar" src="${t.avatar}" alt="${t.name}">
-      <p class="testimonial-name">${t.name}</p>
-      <p class="testimonial-country">${t.country}</p>
+
+      <p class="testimonial-quote">
+        "${t.text}"
+      </p>
+
+      <img
+        class="testimonial-avatar"
+        src="${t.avatar}"
+        alt="${t.name}">
+
+      <p class="testimonial-name">
+        ${t.name}
+      </p>
+
+      <p class="testimonial-country">
+        ${t.country}
+      </p>
     </div>
   `).join("");
 
-  dots.innerHTML = TESTIMONIALS.map((_,i)=>`<button class="t-dot ${i===0?'active':''}" data-index="${i}"></button>`).join("");
+  dots.innerHTML = TESTIMONIALS.map((_,i)=>
+    `<button class="t-dot ${i===0?'active':''}" data-index="${i}"></button>`
+  ).join("");
 
   dots.querySelectorAll(".t-dot").forEach(dot=>{
+
     dot.addEventListener("click", ()=>{
-      testimonialIndex = parseInt(dot.dataset.index);
+
+      testimonialIndex =
+        parseInt(dot.dataset.index);
+
       updateTestimonialSlide();
       resetTestimonialTimer();
     });
+
   });
 
   startTestimonialAutoplay();
 }
 
 function updateTestimonialSlide(){
-  const track = document.getElementById("testimonialTrack");
-  track.style.transform = `translateX(-${testimonialIndex * 100}%)`;
-  document.querySelectorAll(".t-dot").forEach((d,i)=> d.classList.toggle("active", i===testimonialIndex));
+  const track =
+    document.getElementById("testimonialTrack");
+
+  track.style.transform =
+    `translateX(-${testimonialIndex * 100}%)`;
+
+  document.querySelectorAll(".t-dot")
+    .forEach((d,i)=>
+      d.classList.toggle(
+        "active",
+        i===testimonialIndex
+      )
+    );
 }
 
 function startTestimonialAutoplay(){
   testimonialTimer = setInterval(()=>{
-    testimonialIndex = (testimonialIndex + 1) % TESTIMONIALS.length;
+
+    testimonialIndex =
+      (testimonialIndex + 1) %
+      TESTIMONIALS.length;
+
     updateTestimonialSlide();
+
   }, 5500);
 }
+
 function resetTestimonialTimer(){
   clearInterval(testimonialTimer);
   startTestimonialAutoplay();
@@ -596,218 +994,667 @@ function resetTestimonialTimer(){
 
 /* ---------- FAQ ACCORDION ---------- */
 function initFaq(){
-  document.querySelectorAll(".faq-item").forEach(item=>{
-    const question = item.querySelector(".faq-question");
-    const answer = item.querySelector(".faq-answer");
-    question.addEventListener("click", ()=>{
-      const isOpen = item.classList.contains("open");
-      document.querySelectorAll(".faq-item").forEach(other=>{
-        other.classList.remove("open");
-        other.querySelector(".faq-answer").style.maxHeight = null;
+  document.querySelectorAll(".faq-item")
+    .forEach(item=>{
+
+      const question =
+        item.querySelector(".faq-question");
+
+      const answer =
+        item.querySelector(".faq-answer");
+
+      question.addEventListener("click", ()=>{
+
+        const isOpen =
+          item.classList.contains("open");
+
+        document.querySelectorAll(".faq-item")
+          .forEach(other=>{
+
+            other.classList.remove("open");
+
+            other.querySelector(".faq-answer")
+              .style.maxHeight = null;
+          });
+
+        if(!isOpen){
+
+          item.classList.add("open");
+
+          answer.style.maxHeight =
+            answer.scrollHeight + "px";
+        }
+
       });
-      if(!isOpen){
-        item.classList.add("open");
-        answer.style.maxHeight = answer.scrollHeight + "px";
-      }
+
     });
-  });
 }
 
 /* ---------- TOUR DETAILS MODAL ---------- */
 function openTourModal(id){
-  const tour = TOURS.find(t=>t.id===id);
+
+  const tour =
+    TOURS.find(t=>t.id===id);
+
   if(!tour) return;
+
   activeTour = tour;
   bookingQty = 2;
 
-  document.getElementById("tmImage").src = tour.image;
-  document.getElementById("tmImage").alt = tour.name;
-  document.getElementById("tmBadge").textContent = tour.badge;
-  document.getElementById("tmBadge").className = "tour-badge " + (tour.badge === "NOUVEAU" ? "new" : "");
-  document.getElementById("tmDestination").textContent = tour.destination;
-  document.getElementById("tmTitle").textContent = tour.name;
-  document.getElementById("tmDuration").textContent = tour.duration;
-  document.getElementById("tmRating").textContent = "★ " + tour.rating.toFixed(1);
-  document.getElementById("tmDesc").textContent = tour.description;
-  document.getElementById("tmPrice").textContent = formatPrice(tour.price);
-  document.getElementById("tmQtyValue").textContent = bookingQty;
+  document.getElementById("tmImage").src =
+    tour.image;
 
-  document.getElementById("tmProgram").innerHTML = tour.program.map(p=>`
-    <li><span class="time">${p.time}</span><span>${p.label}</span></li>
-  `).join("");
-  document.getElementById("tmIncluded").innerHTML = tour.included.map(i=>`<li>${i}</li>`).join("");
-  document.getElementById("tmExcluded").innerHTML = tour.excluded.map(i=>`<li>${i}</li>`).join("");
+  document.getElementById("tmImage").alt =
+    tour.name;
 
-  document.getElementById("tmWhatsapp").href = buildWhatsappLink(tourWhatsappMessage(tour));
+  document.getElementById("tmBadge").textContent =
+    tour.badge;
 
-  document.getElementById("tourModalBackdrop").classList.add("open");
-  document.body.style.overflow = "hidden";
+  document.getElementById("tmBadge").className =
+    "tour-badge " +
+    (tour.badge === "NOUVEAU" ? "new" : "");
+
+  document.getElementById("tmDestination").textContent =
+    tour.destination;
+
+  document.getElementById("tmTitle").textContent =
+    tour.name;
+
+  document.getElementById("tmDuration").textContent =
+    tour.duration;
+
+  document.getElementById("tmRating").textContent =
+    "★ " + tour.rating.toFixed(1);
+
+  document.getElementById("tmDesc").textContent =
+    tour.description;
+
+  document.getElementById("tmPrice").textContent =
+    formatPrice(tour.price);
+
+  document.getElementById("tmQtyValue").textContent =
+    bookingQty;
+
+
+  /* ---------- MERZOUGA SPECIAL CONTENT ---------- */
+
+  const special =
+    document.getElementById("tmSpecial");
+
+  const datesBlock =
+    document.getElementById("tmDatesBlock");
+
+  const reservationBlock =
+    document.getElementById("tmReservationBlock");
+
+  const conditionsBlock =
+    document.getElementById("tmConditionsBlock");
+
+  if(special){
+    special.hidden = !tour.formulas;
+  }
+
+  if(datesBlock){
+    datesBlock.hidden = !tour.dates;
+  }
+
+  if(reservationBlock){
+    reservationBlock.hidden = !tour.reservation;
+  }
+
+  if(conditionsBlock){
+    conditionsBlock.hidden = !tour.conditions;
+  }
+
+
+  if(tour.formulas){
+
+    const title =
+      document.getElementById("tmSpecialTitle");
+
+    if(title){
+      title.textContent =
+        "Safari Merzouga — 779 DH / All In 979 DH";
+    }
+
+    const formulas =
+      document.getElementById("tmFormulas");
+
+    if(formulas){
+
+      formulas.innerHTML =
+        tour.formulas.map(f=>`
+
+          <div class="tm-formula">
+
+            <div class="tm-formula-top">
+              <strong>${f.name}</strong>
+              <span>${formatPrice(f.price)}</span>
+            </div>
+
+            <ul>
+              ${f.items.map(i=>`
+                <li>${i}</li>
+              `).join("")}
+            </ul>
+
+          </div>
+
+        `).join("");
+    }
+  }
+
+
+  if(tour.dates){
+
+    const dates =
+      document.getElementById("tmDates");
+
+    if(dates){
+
+      dates.innerHTML =
+        tour.dates.map(d=>`
+          <span>${d}</span>
+        `).join("");
+    }
+  }
+
+
+  if(tour.reservation){
+
+    const reservation =
+      document.getElementById("tmReservation");
+
+    if(reservation){
+      reservation.textContent =
+        tour.reservation;
+    }
+  }
+
+
+  if(tour.conditions){
+
+    const conditions =
+      document.getElementById("tmConditions");
+
+    if(conditions){
+
+      conditions.innerHTML =
+        tour.conditions.map(i=>`
+          <li>${i}</li>
+        `).join("");
+    }
+  }
+
+
+  /* ---------- PROGRAMME ---------- */
+
+  document.getElementById("tmProgram").innerHTML =
+    tour.program.map(p=>`
+      <li>
+        <span class="time">${p.time}</span>
+        <span>${p.label}</span>
+      </li>
+    `).join("");
+
+
+  document.getElementById("tmIncluded").innerHTML =
+    tour.included
+      .map(i=>`<li>${i}</li>`)
+      .join("");
+
+
+  document.getElementById("tmExcluded").innerHTML =
+    tour.excluded
+      .map(i=>`<li>${i}</li>`)
+      .join("");
+
+
+  document.getElementById("tmWhatsapp").href =
+    buildWhatsappLink(
+      tourWhatsappMessage(tour)
+    );
+
+
+  document.getElementById("tourModalBackdrop")
+    .classList.add("open");
+
+  document.body.style.overflow =
+    "hidden";
 }
 
 function closeTourModal(){
-  document.getElementById("tourModalBackdrop").classList.remove("open");
+
+  document.getElementById("tourModalBackdrop")
+    .classList.remove("open");
+
   document.body.style.overflow = "";
 }
 
 function initTourModal(){
-  document.getElementById("tourModalClose").addEventListener("click", closeTourModal);
-  document.getElementById("tourModalBackdrop").addEventListener("click",(e)=>{
-    if(e.target.id === "tourModalBackdrop") closeTourModal();
-  });
 
-  document.getElementById("tmQtyMinus").addEventListener("click", ()=>{
-    if(bookingQty > 1) bookingQty--;
-    document.getElementById("tmQtyValue").textContent = bookingQty;
-  });
-  document.getElementById("tmQtyPlus").addEventListener("click", ()=>{
-    bookingQty++;
-    document.getElementById("tmQtyValue").textContent = bookingQty;
-  });
+  document.getElementById("tourModalClose")
+    .addEventListener(
+      "click",
+      closeTourModal
+    );
 
-  document.getElementById("tmBookBtn").addEventListener("click", ()=>{
-    closeTourModal();
-    openBookingModal(activeTour);
-  });
+  document.getElementById("tourModalBackdrop")
+    .addEventListener("click",(e)=>{
+
+      if(
+        e.target.id ===
+        "tourModalBackdrop"
+      ){
+        closeTourModal();
+      }
+
+    });
+
+
+  document.getElementById("tmQtyMinus")
+    .addEventListener("click", ()=>{
+
+      if(bookingQty > 1){
+        bookingQty--;
+      }
+
+      document.getElementById("tmQtyValue")
+        .textContent =
+        bookingQty;
+    });
+
+
+  document.getElementById("tmQtyPlus")
+    .addEventListener("click", ()=>{
+
+      bookingQty++;
+
+      document.getElementById("tmQtyValue")
+        .textContent =
+        bookingQty;
+    });
+
+
+  document.getElementById("tmBookBtn")
+    .addEventListener("click", ()=>{
+
+      closeTourModal();
+
+      openBookingModal(activeTour);
+    });
 }
 
 /* ---------- BOOKING MODAL ---------- */
 function openBookingModal(tour){
-  document.getElementById("bookingModalBackdrop").classList.add("open");
-  document.body.style.overflow = "hidden";
-  document.getElementById("bookingFormWrap").hidden = false;
-  document.getElementById("bookingConfirmation").hidden = true;
 
-  const tourName = tour ? tour.name : "";
-  document.getElementById("bookingTourName").textContent = tourName ? `Pour l'excursion : ${tourName}` : "Demande générale";
-  document.getElementById("bookingTourInput").value = tourName;
-  document.querySelector('#bookingForm [name="travelers"]').value = bookingQty || 2;
+  document.getElementById("bookingModalBackdrop")
+    .classList.add("open");
+
+  document.body.style.overflow =
+    "hidden";
+
+  document.getElementById("bookingFormWrap")
+    .hidden = false;
+
+  document.getElementById("bookingConfirmation")
+    .hidden = true;
+
+
+  const tourName =
+    tour ? tour.name : "";
+
+  document.getElementById("bookingTourName")
+    .textContent =
+    tourName
+      ? `Pour l'excursion : ${tourName}`
+      : "Demande générale";
+
+
+  document.getElementById("bookingTourInput")
+    .value = tourName;
+
+
+  document.querySelector(
+    '#bookingForm [name="travelers"]'
+  ).value =
+    bookingQty || 2;
 }
 
 function closeBookingModal(){
-  document.getElementById("bookingModalBackdrop").classList.remove("open");
+
+  document.getElementById("bookingModalBackdrop")
+    .classList.remove("open");
+
   document.body.style.overflow = "";
 }
 
 function initBookingModal(){
-  document.getElementById("bookingModalClose").addEventListener("click", closeBookingModal);
-  document.getElementById("bookingModalBackdrop").addEventListener("click",(e)=>{
-    if(e.target.id === "bookingModalBackdrop") closeBookingModal();
-  });
-  document.getElementById("confirmCloseBtn").addEventListener("click", closeBookingModal);
 
-  document.getElementById("bookingForm").addEventListener("submit",(e)=>{
-    e.preventDefault();
-    document.getElementById("bookingFormWrap").hidden = true;
-    document.getElementById("bookingConfirmation").hidden = false;
-    e.target.reset();
-  });
+  document.getElementById("bookingModalClose")
+    .addEventListener(
+      "click",
+      closeBookingModal
+    );
+
+  document.getElementById("bookingModalBackdrop")
+    .addEventListener("click",(e)=>{
+
+      if(
+        e.target.id ===
+        "bookingModalBackdrop"
+      ){
+        closeBookingModal();
+      }
+
+    });
+
+
+  document.getElementById("confirmCloseBtn")
+    .addEventListener(
+      "click",
+      closeBookingModal
+    );
+
+
+  document.getElementById("bookingForm")
+    .addEventListener("submit",(e)=>{
+
+      e.preventDefault();
+
+      document.getElementById("bookingFormWrap")
+        .hidden = true;
+
+      document.getElementById("bookingConfirmation")
+        .hidden = false;
+
+      e.target.reset();
+    });
 }
 
 /* ---------- CONTACT FORM ---------- */
 function initContactForm(){
-  const form = document.getElementById("contactForm");
+
+  const form =
+    document.getElementById("contactForm");
+
   form.addEventListener("submit",(e)=>{
+
     e.preventDefault();
-    const btn = form.querySelector("button");
-    const originalText = btn.textContent;
-    btn.textContent = "Message envoyé ✓";
+
+    const btn =
+      form.querySelector("button");
+
+    const originalText =
+      btn.textContent;
+
+    btn.textContent =
+      "Message envoyé ✓";
+
     btn.disabled = true;
+
     form.reset();
+
     setTimeout(()=>{
-      btn.textContent = originalText;
+
+      btn.textContent =
+        originalText;
+
       btn.disabled = false;
+
     }, 2600);
   });
 }
 
 /* ---------- SCROLL REVEAL ---------- */
 function initScrollReveal(){
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add("in-view");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
 
-  document.querySelectorAll(".reveal").forEach(el=> observer.observe(el));
+  const observer =
+    new IntersectionObserver(
+      (entries)=>{
+
+        entries.forEach(entry=>{
+
+          if(entry.isIntersecting){
+
+            entry.target.classList
+              .add("in-view");
+
+            observer.unobserve(
+              entry.target
+            );
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+  document.querySelectorAll(".reveal")
+    .forEach(el =>
+      observer.observe(el)
+    );
 }
 
 /* ---------- ANIMATED COUNTERS ---------- */
 function initCounters(){
-  const nums = document.querySelectorAll(".stat-num");
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        animateCounter(entry.target);
-        observer.unobserve(entry.target);
+
+  const nums =
+    document.querySelectorAll(".stat-num");
+
+  const observer =
+    new IntersectionObserver(
+      (entries)=>{
+
+        entries.forEach(entry=>{
+
+          if(entry.isIntersecting){
+
+            animateCounter(
+              entry.target
+            );
+
+            observer.unobserve(
+              entry.target
+            );
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.4
       }
-    });
-  }, { threshold: 0.4 });
-  nums.forEach(el=>observer.observe(el));
+    );
+
+  nums.forEach(el =>
+    observer.observe(el)
+  );
 }
 
 function animateCounter(el){
-  const target = parseFloat(el.dataset.target);
-  const decimals = parseInt(el.dataset.decimal || "0");
-  const suffix = el.dataset.suffix || "";
+
+  const target =
+    parseFloat(
+      el.dataset.target
+    );
+
+  const decimals =
+    parseInt(
+      el.dataset.decimal || "0"
+    );
+
+  const suffix =
+    el.dataset.suffix || "";
+
   const duration = 1400;
-  const start = performance.now();
+
+  const start =
+    performance.now();
+
 
   function step(now){
-    const progress = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    const value = target * eased;
-    el.textContent = value.toFixed(decimals) + suffix;
-    if(progress < 1) requestAnimationFrame(step);
-    else el.textContent = target.toFixed(decimals) + suffix;
+
+    const progress =
+      Math.min(
+        (now - start) /
+        duration,
+        1
+      );
+
+    const eased =
+      1 -
+      Math.pow(
+        1 - progress,
+        3
+      );
+
+    const value =
+      target * eased;
+
+    el.textContent =
+      value.toFixed(decimals) +
+      suffix;
+
+
+    if(progress < 1){
+
+      requestAnimationFrame(step);
+
+    } else {
+
+      el.textContent =
+        target.toFixed(decimals) +
+        suffix;
+    }
   }
+
   requestAnimationFrame(step);
 }
 
 /* ---------- ACTIVE NAV LINK ON SCROLL ---------- */
 function initActiveNavLink(){
-  const sections = ["accueil","excursions","destinations","circuits","apropos","contact"]
-    .map(id=>document.getElementById(id)).filter(Boolean);
-  const links = document.querySelectorAll(".nav-link");
 
-  window.addEventListener("scroll", ()=>{
-    let currentId = sections[0].id;
-    sections.forEach(sec=>{
-      if(window.scrollY + 140 >= sec.offsetTop) currentId = sec.id;
-    });
-    links.forEach(link=>{
-      link.classList.toggle("active", link.getAttribute("href") === "#" + currentId);
-    });
-  });
+  const sections = [
+    "accueil",
+    "excursions",
+    "destinations",
+    "circuits",
+    "apropos",
+    "contact"
+  ]
+  .map(id =>
+    document.getElementById(id)
+  )
+  .filter(Boolean);
+
+
+  const links =
+    document.querySelectorAll(
+      ".nav-link"
+    );
+
+
+  window.addEventListener(
+    "scroll",
+    ()=>{
+
+      let currentId =
+        sections[0].id;
+
+
+      sections.forEach(sec=>{
+
+        if(
+          window.scrollY + 140 >=
+          sec.offsetTop
+        ){
+
+          currentId =
+            sec.id;
+        }
+
+      });
+
+
+      links.forEach(link=>{
+
+        link.classList.toggle(
+          "active",
+          link.getAttribute("href") ===
+          "#" + currentId
+        );
+
+      });
+
+    }
+  );
 }
 
 /* ---------- INIT ---------- */
-document.addEventListener("DOMContentLoaded", ()=>{
-  initWhatsappLinks();
-  initNavbarScroll();
-  initMobileMenu();
-  initSearchOverlay();
-  initHeroSearch();
-  initFiltersAndSort();
-  renderTours();
-  updateFavCount();
-  initFavDrawer();
-  renderDestinations();
-  renderCircuits();
-  renderInstagram();
-  renderTestimonials();
-  initFaq();
-  initTourModal();
-  initBookingModal();
-  initContactForm();
-  initScrollReveal();
-  initCounters();
-  initActiveNavLink();
+document.addEventListener(
+  "DOMContentLoaded",
+  ()=>{
 
-  // Set minimum date for date pickers to today
-  const today = new Date().toISOString().split("T")[0];
-  const hsDate = document.getElementById("hsDate");
-  if(hsDate) hsDate.min = today;
-});
+    initWhatsappLinks();
+
+    initNavbarScroll();
+
+    initMobileMenu();
+
+    initSearchOverlay();
+
+    initHeroSearch();
+
+    initFiltersAndSort();
+
+    renderTours();
+
+    updateFavCount();
+
+    initFavDrawer();
+
+    renderDestinations();
+
+    renderCircuits();
+
+    renderInstagram();
+
+    renderTestimonials();
+
+    initFaq();
+
+    initTourModal();
+
+    initBookingModal();
+
+    initContactForm();
+
+    initScrollReveal();
+
+    initCounters();
+
+    initActiveNavLink();
+
+
+    // Set minimum date for date pickers to today
+
+    const today =
+      new Date()
+        .toISOString()
+        .split("T")[0];
+
+    const hsDate =
+      document.getElementById(
+        "hsDate"
+      );
+
+    if(hsDate){
+      hsDate.min = today;
+    }
+
+  }
+);
