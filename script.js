@@ -534,7 +534,7 @@ rating:5.0,
 
 badge:"BEST SELLER",
 
-image:"PM7.jpg",
+image:"PM7.jpeg",
 
 
 description:
