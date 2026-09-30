@@ -349,6 +349,306 @@ conditions:[
 ]
 
 },
+
+{
+id:"dakhla-maldives-du-maroc",
+
+name:"Grand Sud – Dakhla en 8 jours",
+
+destination:"Tiznit • Tan-Tan • Laâyoune • Dakhla",
+
+category:"aventure",
+
+duration:"8 jours / 6 nuits",
+
+price:4199,
+
+rating:5.0,
+
+badge:"SPÉCIAL DAKHLA",
+
+image:"PM8.jpg",
+
+
+description:
+"Un circuit complet le long de la côte atlantique, des villes du Sud jusqu'à la presqu'île de Dakhla. Plages de Lakhsas, Trou du Diable, parc de Khnifiss, Dune Blanche, source chaude d'Aïn Rek, ferme d'huîtres et désert. Aller en autocar climatisé, retour en avion avec Royal Air Maroc.",
+
+
+dates:[
+"03–10 octobre 2026",
+"17–24 octobre 2026 (spécial vacances scolaires)",
+"31 octobre–07 novembre 2026",
+"14–21 novembre 2026",
+"05–12 décembre 2026 (spécial vacances scolaires)",
+"26 décembre 2026–02 janvier 2027 (spécial réveillon 2027)",
+"09–16 janvier 2027",
+"23–30 janvier 2027",
+"20–27 mars 2027 (spécial vacances scolaires)",
+"03–10 avril 2027",
+"17–24 avril 2027",
+"01–08 mai 2027",
+"22–29 mai 2027"
+],
+
+
+program:[
+
+{
+time:"JOUR 1 — 16:30",
+label:"Départ de Fès — devant la gare ferroviaire"
+},
+
+{
+time:"18:00",
+label:"Départ de Meknès — gare routière Sidi Saïd"
+},
+
+{
+time:"20:00",
+label:"Départ de Rabat — Gare Rabat Agdal"
+},
+
+{
+time:"20:45",
+label:"Départ de Mohammedia — devant Marjane"
+},
+
+{
+time:"21:30",
+label:"Départ de Casablanca — Gare routière Casa Voyageurs (dîner dans une aire de repos)"
+},
+
+{
+time:"01:30",
+label:"Départ de Marrakech — devant la gare ferroviaire, puis direction Tiznit"
+},
+
+
+{
+time:"JOUR 2 — Matin",
+label:"Petit déjeuner, installation à l'hôtel Idou Tiznit et répartition des chambres (doubles ou triples)"
+},
+
+{
+time:"Journée",
+label:"Plage de Lakhsas : temps libre, baignade, puis déjeuner"
+},
+
+{
+time:"Après-midi",
+label:"Visite du souk de l'argent de Tiznit (bijoux et artisanat)"
+},
+
+{
+time:"Soir",
+label:"Dîner et nuit à Tiznit"
+},
+
+
+{
+time:"JOUR 3 — Matin",
+label:"Petit déjeuner puis route vers Guelmim (Porte du Sahara)"
+},
+
+{
+time:"Matin",
+label:"Arrivée à Tan-Tan et photos avec les chameaux, symbole de la ville"
+},
+
+{
+time:"Midi",
+label:"Visite du Trou du Diable (Ajab Allah) puis déjeuner à Akhfennir"
+},
+
+{
+time:"Après-midi",
+label:"Parc national de Khnifiss et balade en bateau sur la lagune de Naïla (optionnelle, 40 DH)"
+},
+
+{
+time:"Soir",
+label:"Arrivée à Laâyoune, installation à l'hôtel, dîner et balade nocturne en ville"
+},
+
+
+{
+time:"JOUR 4 — Matin",
+label:"Petit déjeuner à l'hôtel puis route vers Dakhla"
+},
+
+{
+time:"Matin",
+label:"Arrêt à la plage de Foum El Oued"
+},
+
+{
+time:"Midi",
+label:"Passage par Boujdour et déjeuner libre"
+},
+
+{
+time:"Après-midi",
+label:"Arrivée à Dakhla, installation à l'hôtel Surf House et temps libre pour se reposer"
+},
+
+{
+time:"Soir",
+label:"Dîner à l'hôtel"
+},
+
+
+{
+time:"JOUR 5 — Matin",
+label:"Petit déjeuner puis départ en 4x4 (optionnel, 200 DH) vers la célèbre Dune Blanche"
+},
+
+{
+time:"Matin",
+label:"Temps libre pour se détendre et se baigner à la Dune Blanche"
+},
+
+{
+time:"Midi",
+label:"Source chaude d'Aïn Rek (La Source) : bain d'eau sulfureuse à 39°C"
+},
+
+{
+time:"Après-midi",
+label:"Visite d'une ferme d'huîtres à Boutalha et déjeuner sur place"
+},
+
+{
+time:"Après-midi",
+label:"Visite de la réserve d'élevage d'autruches, puis retour à l'hôtel"
+},
+
+{
+time:"Soir",
+label:"Complexe d'artisanat traditionnel, marché central (thé, daraa et produits locaux) et dîner"
+},
+
+
+{
+time:"JOUR 6 — Matin",
+label:"Petit déjeuner puis départ en 4x4 (optionnel, 250 DH) vers la sebkha d'Imlili via Aarkoub, à 130 km à l'est de Dakhla"
+},
+
+{
+time:"Matin",
+label:"Découverte des poches d'eau très salées abritant de petits poissons, phénomène écologique unique"
+},
+
+{
+time:"Midi",
+label:"Plage de Porto Rico : temps libre et baignade"
+},
+
+{
+time:"Après-midi",
+label:"Visite des tentes nomades, thé sahraoui et photos en tenue traditionnelle, puis déjeuner"
+},
+
+{
+time:"Soir",
+label:"Retour à l'hôtel, balade nocturne libre à Dakhla et dîner"
+},
+
+
+{
+time:"JOUR 7 — Matin",
+label:"Petit déjeuner puis route de retour vers Laâyoune"
+},
+
+{
+time:"Midi",
+label:"Déjeuner à Boujdour"
+},
+
+{
+time:"Après-midi",
+label:"Arrivée à Laâyoune (hôtel Oscar), répartition des chambres et repos"
+},
+
+{
+time:"Soir",
+label:"Visite de la place du Mechouar et de l'avenue Mecca (produits locaux), puis dîner"
+},
+
+
+{
+time:"JOUR 8 — Matin",
+label:"Petit déjeuner puis transfert à l'aéroport Hassan Ier de Laâyoune"
+},
+
+{
+time:"Fin de matinée",
+label:"Vol retour avec Royal Air Maroc vers l'aéroport Mohammed V de Casablanca"
+}
+
+],
+
+
+included:[
+
+"Transport aller en autocar touristique climatisé",
+
+"Vol retour avec Royal Air Maroc (Laâyoune – Casablanca)",
+
+"Tous les petits déjeuners",
+
+"3 dîners à Dakhla",
+
+"2 nuits à Laâyoune (hôtel Oscar ou équivalent)",
+
+"3 nuits à Dakhla (hôtel Surf House Dakhla, proche de la mer, avec piscine)",
+
+"1 nuit à Tiznit (hôtel Idou Tiznit)",
+
+"Animation et accompagnement durant tout le voyage"
+
+],
+
+
+excluded:[
+
+"Excursion en 4x4 à la Dune Blanche 200 DH (optionnelle)",
+
+"Excursion en 4x4 à la sebkha d'Imlili 250 DH (optionnelle)",
+
+"Balade en bateau sur la lagune de Naïla 40 DH (optionnelle)",
+
+"Déjeuners et dîners hors Dakhla (sauf indication contraire)",
+
+"Dépenses personnelles"
+
+],
+
+
+reservation:
+"Réservation et renseignements par WhatsApp ou téléphone auprès d'Allo Privilège Travel au 0675296774. Pour réserver, communiquez votre numéro de CIN, votre nom complet et votre numéro de téléphone, puis versez le montant total ou un acompte de 2000 DH (virement bancaire ou sur place à l'agence).",
+
+
+conditions:[
+
+"Réservation ouverte dans la limite des places disponibles",
+
+"Places numérotées selon l'ordre de réservation",
+
+"Tarif enfant : 1 à 5 ans 2500 DH, 6 à 10 ans 3200 DH, à partir de 11 ans même tarif que l'adulte",
+
+"Un seul enfant par chambre bénéficie du tarif enfant, en chambre double avec ses parents",
+
+"Le programme peut subir de légères modifications pour assurer le bon déroulement du voyage",
+
+"Merci de respecter les horaires pour profiter pleinement du voyage",
+
+"En cas d'annulation, prévenir l'agence suffisamment à l'avance avant le départ",
+
+"Aucune réclamation n'est acceptée en cas d'absence le jour du départ"
+
+]
+
+},
    
    {
 id:"dakhla",
