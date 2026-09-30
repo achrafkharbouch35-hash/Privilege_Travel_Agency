@@ -103,6 +103,253 @@ const TOURS = [
     ]
   },
 
+{
+id:"merzouga-ouarzazate",
+
+name:"Merzouga – Ouarzazate",
+
+destination:"Erg Chebbi • Rissani • Erfoud • Tinghir • Gorges Todgha • Aït Ben Haddou",
+
+category:"desert",
+
+duration:"4 jours / 3 nuits",
+
+price:1299,
+
+rating:5.0,
+
+badge:"BEST SELLER",
+
+image:"PM6.jpeg",
+
+
+description:
+"Un voyage de luxe au sud-est du Maroc à la découverte de Merzouga, Ouarzazate, Rissani, Erfoud, Tinghir, les Gorges Todgha, Kelaat M'Gouna et Aït Ben Haddou. Une expérience entre désert, montagnes, culture et paysages exceptionnels.",
+
+
+dates:[
+
+"01–04 octobre 2026",
+"08–11 octobre 2026",
+"15–18 octobre 2026",
+"18–21 octobre 2026",
+"22–25 octobre 2026",
+"29 octobre–01 novembre 2026",
+"05–08 novembre 2026",
+"12–15 novembre 2026",
+"19–22 novembre 2026",
+"26–29 novembre 2026",
+"03–06 décembre 2026",
+"06–09 décembre 2026",
+"10–13 décembre 2026",
+"17–20 décembre 2026",
+"24–27 décembre 2026",
+"08–11 janvier 2027",
+"14–17 janvier 2027",
+"21–24 janvier 2027",
+"24–27 janvier 2027",
+"28–31 janvier 2027",
+"21–24 mars 2027",
+"25–28 mars 2027",
+"29 avril–02 mai 2027",
+"09–12 mai 2027",
+"13–16 mai 2027",
+"20–23 mai 2027",
+"27–30 mai 2027"
+
+],
+
+
+formulas:[
+
+{
+name:"Programme normal",
+price:1299,
+
+items:[
+
+"Transport touristique climatisé",
+
+"Nuitée hôtel 4★ à Erfoud",
+
+"Nuitée hôtel 4★ à Ouarzazate",
+
+"Petits déjeuners buffet",
+
+"Dîners buffet",
+
+"Animation et accompagnement"
+
+]
+
+},
+
+
+{
+name:"Programme complet",
+price:1499,
+
+items:[
+
+"Transport touristique climatisé",
+
+"Hôtels 4★ Erfoud et Ouarzazate",
+
+"Tous les petits déjeuners",
+
+"Tous les dîners buffet",
+
+"Déjeuner à Rissani",
+
+"Balade chameau à Merzouga",
+
+"Excursion 4×4 désert",
+
+"Entrée musée du cinéma Ouarzazate",
+
+"Animation et guide"
+
+]
+
+},
+
+
+{
+name:"Avion + Retour bus",
+price:2399,
+
+items:[
+
+"Vol Royal Air Maroc aller",
+
+"Retour en autocar touristique",
+
+"Hôtels 4★",
+
+"Tous les repas inclus",
+
+"Excursion Merzouga 4×4 + dromadaire",
+
+"Musée du cinéma",
+
+"Animation et accompagnement"
+
+]
+
+}
+
+],
+
+
+program:[
+
+
+{
+time:"JOUR 1",
+
+label:
+"Départ Casablanca 19:00, Mohammedia 20:00, Rabat Agdal 20:45, Kénitra 21:45 puis direction sud-est avec pause dîner."
+},
+
+
+{
+time:"JOUR 2 MATIN",
+
+label:
+"Petit déjeuner, arrêt à Aïn Atti, découverte d'Erfoud et installation à l'hôtel 4★."
+},
+
+
+{
+time:"APRÈS-MIDI",
+
+label:
+"Visite de Rissani, découverte de la ville des dattes et déjeuner traditionnel."
+},
+
+
+{
+time:"SOIR",
+
+label:
+"Départ vers Merzouga, excursion en 4×4 et dromadaire, coucher du soleil sur les dunes, dîner buffet et nuit à l'hôtel."
+},
+
+
+{
+time:"JOUR 3",
+
+label:
+"Petit déjeuner, visite oasis Drâa, direction Gorges Todgha, déjeuner à Tinghir puis découverte d'Ouarzazate et Aït Ben Haddou."
+},
+
+
+{
+time:"SOIR",
+
+label:
+"Installation hôtel 4★ Ouarzazate, détente, piscine et dîner buffet."
+},
+
+
+{
+time:"JOUR 4",
+
+label:
+"Visite musée du cinéma, studios Ouarzazate, Kasbah Aït Ben Haddou, déjeuner puis retour vers Casablanca, Mohammedia, Rabat et Kénitra."
+
+}
+
+],
+
+
+included:[
+
+"Transport touristique climatisé",
+
+"Hébergement hôtels 4★",
+
+"2 petits déjeuners buffet",
+
+"2 dîners buffet",
+
+"Animation et accompagnement",
+
+"Guide durant la visite"
+
+],
+
+
+excluded:[
+
+"Activités optionnelles selon formule",
+
+"Dépenses personnelles",
+
+"Repas non mentionnés"
+
+],
+
+
+reservation:
+
+"Réservation par WhatsApp au 0675296774 avec nom complet, CIN, téléphone et acompte selon disponibilité.",
+
+
+conditions:[
+
+"Places limitées selon disponibilité",
+
+"Les sièges sont attribués selon l'ordre des réservations",
+
+"Le programme peut subir de petites modifications",
+
+"Respect des horaires obligatoire"
+
+]
+
+},
+   
    {
 id:"dakhla",
 
