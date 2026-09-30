@@ -367,7 +367,7 @@ rating:5.0,
 
 badge:"SPÉCIAL DAKHLA",
 
-image:"PM8.jpg",
+image:"PM8.jpeg",
 
 
 description:
