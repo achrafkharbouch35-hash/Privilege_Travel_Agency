@@ -516,11 +516,187 @@ conditions:[
 ]
 
 },
+
+{
+id:"dakhla",
+
+name:"Dakhla — Maldives du Maroc",
+
+destination:"Dakhla • Côte Atlantique • Grand Sud Marocain",
+
+category:"plages",
+
+duration:"9 jours / 7 nuits",
+
+price:3149,
+
+rating:5.0,
+
+badge:"BEST SELLER",
+
+image:"PM7.jpg",
+
+
+description:
+"Une aventure exceptionnelle vers le sud du Maroc à la découverte de Dakhla, ses plages paradisiaques, ses paysages désertiques et les plus beaux endroits de la côte atlantique.",
+
+
+dates:[
+"03–11 octobre 2026",
+"17–25 octobre 2026",
+"31 octobre–08 novembre 2026",
+"14–22 novembre 2026",
+"05–13 décembre 2026",
+"26 décembre 2026–03 janvier 2027",
+"09–17 janvier 2027",
+"23–31 janvier 2027",
+"20–28 mars 2027",
+"03–11 avril 2027",
+"17–25 avril 2027",
+"01–09 mai 2027",
+"22–30 mai 2027"
+],
+
+
+formulas:[
+
+{
+name:"Programme Standard",
+price:3149,
+
+items:[
+"Transport touristique climatisé aller-retour",
+"Tous les petits déjeuners",
+"1 nuit à Agadir Hotel Sud Bahia ou équivalent",
+"2 nuits à Laâyoune Hotel Oscar ou équivalent",
+"3 nuits à Dakhla Hotel Playa ou équivalent",
+"1 nuit à Tiznit Hotel Sénégal ou équivalent",
+"Animation et accompagnement durant la totalité du voyage"
+]
+
+},
+
+
+{
+name:"Programme VIP",
+price:3399,
+
+items:[
+"Transport touristique climatisé aller-retour",
+"Tous les petits déjeuners",
+"1 nuit à Agadir Hotel Oasis ou équivalent",
+"2 nuits à Laâyoune Hotel Oscar ou équivalent",
+"3 nuits à Dakhla Surf House 4 étoiles avec piscine",
+"3 dîners à Dakhla",
+"1 nuit à Tiznit Hotel Idou Tiznit",
+"Animation et accompagnement durant la totalité du voyage"
+]
+
+}
+
+],
+
+
+program:[
+
+{
+time:"JOUR 1",
+label:"Départ depuis Fès, Meknès, Rabat, Mohammedia et Casablanca. Direction Tiznit."
+},
+
+{
+time:"JOUR 2",
+label:"Visite plage Legzira, temps libre plage, visite marché de Tiznit et installation hôtel."
+},
+
+{
+time:"JOUR 3",
+label:"Direction Guelmim, Tan Tan, Trou du Diable, parc national Khnifiss, balade en bateau au lac Naila et arrivée Laâyoune."
+},
+
+{
+time:"JOUR 4",
+label:"Départ vers Dakhla avec visite Foum El Oued et Boujdour. Installation à l'hôtel Dakhla."
+},
+
+{
+time:"JOUR 5",
+label:"Excursion 4x4 vers Dune Blanche, source Ain Rak, ferme ostréicole, réserve d'autruches et marché local."
+},
+
+{
+time:"JOUR 6",
+label:"Excursion vers Sebkha Imili, Porto Rico, rencontre avec les nomades et pause thé sahraoui."
+},
+
+{
+time:"JOUR 7",
+label:"Retour vers Laâyoune, visite touristique de la ville et nuit à l'hôtel."
+},
+
+{
+time:"JOUR 8",
+label:"Départ vers Tarfaya, visite Casa Mar, direction Agadir et soirée libre."
+},
+
+{
+time:"JOUR 9",
+label:"Matin libre à Agadir, départ retour après déjeuner et retour vers les villes de départ."
+}
+
+],
+
+
+included:[
+
+"Transport touristique climatisé aller-retour",
+
+"Petits déjeuners durant la totalité du séjour",
+
+"Hébergement dans les hôtels mentionnés",
+
+"Animation et accompagnement pendant le voyage"
+
+],
+
+
+excluded:[
+
+"Excursions 4x4 à Dakhla",
+
+"Balade bateau lac Naila",
+
+"Activités nautiques",
+
+"Repas non mentionnés",
+
+"Dépenses personnelles"
+
+],
+
+
+reservation:
+"Réservation par WhatsApp au 0675296774 avec nom complet, CIN, téléphone et acompte de 1000 DH.",
+
+
+conditions:[
+
+"Places limitées selon disponibilité",
+
+"Les sièges sont attribués selon l'ordre de réservation",
+
+"Le programme peut subir de petites modifications selon les conditions",
+
+"Les personnes absentes au départ ne peuvent pas réclamer de remboursement"
+
+]
+
+},
    
    {
 id:"dakhla",
 
-name:"Dakhla — Maldives du Maroc",
+name:"Dakhla — SUD du Maroc",
 
 destination:"Sud marocain • Océan Atlantique • Dakhla",
 
