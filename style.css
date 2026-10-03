@@ -3508,3 +3508,40 @@ textarea{
 /* =========================================================
    END
    ========================================================= */
+/* =========================================================
+   SUPPRESSION DU WHATSAPP À CÔTÉ DE "DÉTAILS"
+   ========================================================= */
+
+.tour-actions .tour-wa-btn{
+  display:none !important;
+}
+
+/* Le bouton Détails reste correctement aligné */
+.tour-actions{
+  display:flex;
+  align-items:center;
+  gap:0;
+  margin-left:auto;
+}
+
+.tour-actions .btn-details{
+  min-height:34px;
+  padding:7px 12px;
+  border-radius:7px;
+  font-size:10.5px;
+}
+
+/* Mobile */
+@media(max-width:576px){
+
+  .tour-actions{
+    margin-left:auto;
+    gap:0;
+  }
+
+  .tour-actions .btn-details{
+    min-height:36px;
+    padding:7px 9px;
+    font-size:10px;
+  }
+}
