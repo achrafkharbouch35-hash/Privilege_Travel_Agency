@@ -1794,33 +1794,33 @@ conditions:[
 const DESTINATIONS = [
   {
     name: "Marrakech",
-    count: 6,
+    count: 1,
     image: "marrakech.jpg"
   },
   {
-    name: "Fès",
-    count: 4,
-    image: "fesmeknes.jpg"
-  },
-  {
-    name: "Chefchaouen",
-    count: 3,
-    image: "chafchaoun.jpg"
-  },
-  {
     name: "Merzouga",
-    count: 5,
+    count: 1,
     image: "marzouga.jpg"
   },
-  {
-    name: "Agafay",
-    count: 3,
-    image: "desert agafay.jpg"
-  },
-  {
-    name: "Essaouira",
+   {
+    name: "Dakhla",
     count: 4,
-    image: "essaouira.jpg"
+    image: "dakhla.jpg"
+  },
+ {
+    name: "Ouzoud",
+    count: 1,
+    image: "ouzoud.jpg"
+  },
+   {
+    name: "Imlil",
+    count: 1,
+    image: "imlil.jpg"
+  },
+   {
+    name: "Agafay",
+    count: 1,
+    image: "agafay.jpg"
   }
 ];
 
