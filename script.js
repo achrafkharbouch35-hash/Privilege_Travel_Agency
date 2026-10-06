@@ -268,6 +268,151 @@ conditions:[
 },
 
 {
+id:"merzouga-de-luxe",
+ 
+name:"Merzouga de Luxe",
+ 
+destination:"Merzouga • Kasbah Xaluca • Bivouac dans le désert",
+ 
+category:"aventure",
+ 
+duration:"3 jours / 2 nuits",
+ 
+price:1799,
+ 
+rating:5.0,
+ 
+badge:"LUXE",
+ 
+image:"PM9.jpeg",
+ 
+ 
+description:
+"Un pack de luxe entre hôtel 5 étoiles et bivouac dans le désert de Merzouga. Une nuit à l'hôtel Kasbah Xaluca avec piscines, jacuzzi et soirée animée, puis une nuit en bivouac luxe standard après une balade à dos de dromadaire.",
+ 
+ 
+dates:[
+"01–04 octobre 2026",
+"08–11 octobre 2026",
+"15–18 octobre 2026",
+"22–25 octobre 2026",
+"29 octobre–01 novembre 2026",
+"05–08 novembre 2026",
+"12–15 novembre 2026",
+"19–22 novembre 2026",
+"26–29 novembre 2026",
+"03–06 décembre 2026",
+"10–13 décembre 2026",
+"17–20 décembre 2026",
+"24–27 décembre 2026"
+],
+ 
+ 
+program:[
+ 
+{
+time:"JOUR 1",
+label:"Départ en transport touristique climatisé en direction de Merzouga (villes et horaires de départ à confirmer)"
+},
+ 
+{
+time:"Soir",
+label:"Installation à l'hôtel Kasbah Xaluca 5★ et dîner"
+},
+ 
+{
+time:"Soirée",
+label:"Soirée exceptionnelle avec DJ et troupe folklorique, accès au night club de l'hôtel"
+},
+ 
+ 
+{
+time:"JOUR 2",
+label:"Petit déjeuner à l'hôtel"
+},
+ 
+{
+time:"Journée",
+label:"Accès aux piscines de l'hôtel : piscine extérieure et piscine intérieure chauffée avec jacuzzi"
+},
+ 
+{
+time:"Fin d'après-midi",
+label:"Balade à dos de dromadaire dans les dunes"
+},
+ 
+{
+time:"Soir",
+label:"Installation au bivouac luxe standard (double, triple ou quadruple selon disponibilité), dîner et animation"
+},
+ 
+ 
+{
+time:"JOUR 3",
+label:"Petit déjeuner au bivouac"
+},
+ 
+{
+time:"Journée",
+label:"Départ de Merzouga et retour (horaires et villes d'arrivée à confirmer)"
+}
+ 
+],
+ 
+ 
+included:[
+ 
+"Transport touristique climatisé",
+ 
+"1 nuit à l'hôtel Kasbah Xaluca 5★",
+ 
+"Accès à la piscine extérieure et à la piscine intérieure chauffée avec jacuzzi",
+ 
+"Soirée exceptionnelle avec DJ et troupe folklorique",
+ 
+"Accès au night club de l'hôtel Xaluca",
+ 
+"Balade à dos de dromadaire",
+ 
+"1 nuit au bivouac luxe standard (double, triple ou quadruple selon disponibilité)",
+ 
+"3 petits déjeuners",
+ 
+"2 dîners",
+ 
+"Animation et jeux pendant le voyage"
+ 
+],
+ 
+ 
+excluded:[
+ 
+"Déjeuners",
+ 
+"Boissons",
+ 
+"Dépenses personnelles"
+ 
+],
+ 
+ 
+reservation:
+"Réservation par WhatsApp au 0675296774.",
+ 
+ 
+conditions:[
+ 
+"Places limitées selon disponibilité",
+ 
+"Confirmation après paiement",
+ 
+"Le programme peut être modifié pour assurer le bon déroulement du voyage"
+ 
+]
+ 
+},
+   
+{
 id:"dakhla-maldives-du-maroc",
 
 name:"Grand Sud – Dakhla en 8 jours",
