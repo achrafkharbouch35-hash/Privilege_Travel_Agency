@@ -19,7 +19,433 @@ const CONFIG = {
    ========================================================= */
 
 const TOURS = [
+{
+id:"azrou-ifrane-fes",
 
+name:"Azrou – Ifrane – Fès",
+
+destination:"Azrou • Ifrane • Sources de l'Oum Er-Rbia • Lacs de l'Atlas • Fès • Moulay Yaacoub",
+
+category:"montagne",
+
+duration:"4 jours / 3 nuits",
+
+price:1349,
+
+rating:5.0,
+
+badge:"MARCHE VERTE",
+
+image:"PM99.jpeg",
+
+
+description:
+"Un voyage de luxe à la découverte du Moyen Atlas et de Fès : forêts de cèdres, lacs naturels, sources de l'Oum Er-Rbia, Ifrane la « Suisse du Maroc », Imouzzer Kandar, bains thermaux de Moulay Yaacoub et médina de Fès. Entre nature, culture et détente.",
+
+
+dates:[
+"05–08 novembre 2026"
+],
+
+
+program:[
+
+{
+time:"JOUR 1 — 19:00",
+label:"Départ de Casablanca — devant la gare Casa Voyageurs"
+},
+
+{
+time:"20:00",
+label:"Départ de Mohammedia — devant Marjane"
+},
+
+{
+time:"21:00",
+label:"Départ de Rabat — devant la gare Rabat Agdal"
+},
+
+{
+time:"Soirée",
+label:"Dîner en route puis direction Azrou, charmante ville de montagne du Moyen Atlas"
+},
+
+{
+time:"Nuit",
+label:"Arrivée à l'hôtel Amrous Dar Maroc, accueil et répartition des chambres (doubles ou triples)"
+},
+
+
+{
+time:"JOUR 2 — Matin",
+label:"Petit déjeuner à l'hôtel"
+},
+
+{
+time:"Matin",
+label:"Lac Aguelmam Azegza : temps libre pour profiter du paysage et prendre des photos"
+},
+
+{
+time:"Midi",
+label:"Sources de l'Oum Er-Rbia : balade au milieu des eaux et de la verdure, puis déjeuner dans la région"
+},
+
+{
+time:"Après-midi",
+label:"Lac Ouiouane : temps libre pour se promener et se détendre"
+},
+
+{
+time:"Soir",
+label:"Retour à l'hôtel à Azrou, repos, dîner et nuit"
+},
+
+
+{
+time:"JOUR 3 — 09:00",
+label:"Petit déjeuner puis départ vers la forêt de cèdres et le célèbre cèdre Gouraud, vieux de plus de 820 ans"
+},
+
+{
+time:"Matin",
+label:"Rencontre avec les singes magots dans leur milieu naturel"
+},
+
+{
+time:"Matin",
+label:"Ifrane, la « Suisse du Maroc » : balade en ville et visite du célèbre Lion de l'Atlas"
+},
+
+{
+time:"Midi",
+label:"Imouzzer Kandar : déjeuner et temps libre pour découvrir la ville"
+},
+
+{
+time:"Après-midi",
+label:"Route vers Fès et installation à l'hôtel Nouzha ou équivalent"
+},
+
+{
+time:"Soir",
+label:"Bains thermaux de Moulay Yaacoub (bains classiques ou bains de Vichy, selon choix, disponibilité et conditions d'accès)"
+},
+
+{
+time:"Nuit",
+label:"Dîner puis retour à l'hôtel à Fès"
+},
+
+
+{
+time:"JOUR 4 — Matin",
+label:"Petit déjeuner puis journée de découverte de Fès : Bab Bou Jloud, Talaa Kebira et Talaa Sghira, quartier Rsif"
+},
+
+{
+time:"Matin",
+label:"Tanneries traditionnelles, jardins de Jnan Sbil et quartier Moulay Idriss"
+},
+
+{
+time:"Après-midi",
+label:"Temps libre pour le shopping (babouches, maroquinerie, poterie, souvenirs) et déjeuner"
+},
+
+{
+time:"Fin d'après-midi",
+label:"Départ retour vers Casablanca, Mohammedia et Rabat"
+}
+
+],
+
+
+included:[
+
+"Transport touristique climatisé aller-retour",
+
+"2 nuits à l'hôtel Amrous Dar Maroc à Azrou",
+
+"1 nuit à l'hôtel Nouzha à Fès ou équivalent",
+
+"3 petits déjeuners à l'hôtel",
+
+"Animation et accompagnement durant tout le voyage",
+
+"Encadrement et organisation",
+
+"Frais d'organisation liés au programme"
+
+],
+
+
+excluded:[
+
+"Déjeuners et dîners",
+
+"Entrée aux bains de Moulay Yaacoub",
+
+"Achats et dépenses personnelles"
+
+],
+
+
+reservation:
+"Réservation par WhatsApp au 0675296774.",
+
+
+conditions:[
+
+"Places limitées selon disponibilité",
+
+"Confirmation après paiement",
+
+"Les bains de Moulay Yaacoub sont soumis à la disponibilité et aux conditions d'accès",
+
+"Le programme peut être modifié pour assurer le bon déroulement du voyage"
+
+]
+
+},
+
+{
+id:"agadir-taghazout-essaouira",
+
+name:"Agadir – Taghazout – Essaouira",
+
+destination:"Agadir • Taghazout • Aghroud • Dunes de Timlaline • Imsouane • Essaouira • Diabat",
+
+category:"plages",
+
+duration:"4 jours / 3 nuits",
+
+price:1649,
+
+rating:5.0,
+
+badge:"MARCHE VERTE",
+
+image:"PM999.jepg",
+
+
+description:
+"Un voyage entre mer, nature et aventure le long de la côte atlantique : Agadir, Taghazout, le village coloré d'Aghroud, les dunes de Timlaline, la plage d'Imsouane, Essaouira et Diabat. Hôtels 4 étoiles, karting, quad et balade à cheval en option.",
+
+
+dates:[
+"05–08 novembre 2026"
+],
+
+
+program:[
+
+{
+time:"JOUR 1 — 18:00",
+label:"Départ de Rabat — devant la gare Rabat Agdal"
+},
+
+{
+time:"19:00",
+label:"Départ de Mohammedia — devant Marjane"
+},
+
+{
+time:"20:00",
+label:"Départ de Casablanca — devant la gare Casa Voyageurs"
+},
+
+{
+time:"Soirée",
+label:"Pause dîner dans une aire de repos"
+},
+
+{
+time:"01:00",
+label:"Arrivée à Agadir, installation à l'hôtel Anna Hotel et répartition des chambres"
+},
+
+
+{
+time:"JOUR 2 — Matin",
+label:"Petit déjeuner à l'hôtel"
+},
+
+{
+time:"10:00",
+label:"Karting (optionnel). Les participants qui ne le souhaitent pas peuvent profiter de l'hôtel et de sa piscine"
+},
+
+{
+time:"12:00",
+label:"Départ vers Taghazout, village côtier réputé pour ses plages, ses cafés face à l'océan et le surf"
+},
+
+{
+time:"Midi",
+label:"Déjeuner puis temps libre à la plage et photos"
+},
+
+{
+time:"Après-midi",
+label:"Retour à l'hôtel à Agadir"
+},
+
+{
+time:"Soir",
+label:"Souk El Had d'Agadir (produits locaux, épices, vêtements, artisanat)"
+},
+
+{
+time:"Soir",
+label:"Marina d'Agadir : cafés, restaurants et vue sur le port et les yachts"
+},
+
+{
+time:"Nuit",
+label:"Dîner puis retour à l'hôtel"
+},
+
+
+{
+time:"JOUR 3 — Matin",
+label:"Petit déjeuner à l'hôtel"
+},
+
+{
+time:"08:30",
+label:"Départ vers Essaouira par la route côtière"
+},
+
+{
+time:"Matin",
+label:"Aghroud, le village aux maisons colorées : temps libre et photos"
+},
+
+{
+time:"Matin",
+label:"Dunes de Timlaline : temps libre, balade en quad possible (optionnelle)"
+},
+
+{
+time:"Midi",
+label:"Plage d'Imsouane : déjeuner, détente et photos face à l'océan"
+},
+
+{
+time:"Après-midi",
+label:"Route vers Essaouira, installation à l'hôtel Hôtel des Îles et repos"
+},
+
+{
+time:"Soir",
+label:"Balade nocturne dans Essaouira : remparts, ruelles traditionnelles et port historique"
+},
+
+{
+time:"Soirée",
+label:"Dîner, avec possibilité d'organiser une soirée dans un restaurant classé de la ville selon envie"
+},
+
+{
+time:"Nuit",
+label:"Retour à l'hôtel et nuit à Essaouira"
+},
+
+
+{
+time:"JOUR 4 — Matin",
+label:"Petit déjeuner à l'hôtel"
+},
+
+{
+time:"09:00",
+label:"Plage de Diabat et balade à cheval sur la plage (optionnelle). Les autres participants peuvent profiter de l'hôtel et de sa piscine"
+},
+
+{
+time:"11:30",
+label:"Départ de l'hôtel"
+},
+
+{
+time:"Matin",
+label:"Découverte d'Essaouira : port historique et bateaux de pêche bleus, remparts et Skala, médina et boutiques d'artisanat"
+},
+
+{
+time:"Après-midi",
+label:"Départ retour vers Casablanca"
+},
+
+{
+time:"Après-midi",
+label:"Arrêt à Ounagha : visite d'une coopérative d'argan et d'amlou"
+},
+
+{
+time:"Midi",
+label:"Déjeuner dans une aire de repos"
+},
+
+{
+time:"Fin",
+label:"Arrivée à Casablanca, puis Mohammedia, puis Rabat"
+}
+
+],
+
+
+included:[
+
+"Transport touristique climatisé aller-retour",
+
+"2 nuits à l'hôtel Anna Hotel à Agadir",
+
+"1 nuit à l'hôtel Hôtel des Îles à Essaouira",
+
+"3 petits déjeuners",
+
+"Encadrement et accompagnement durant tout le voyage"
+
+],
+
+
+excluded:[
+
+"Déjeuners et dîners",
+
+"Karting (optionnel)",
+
+"Quad à Timlaline (optionnel)",
+
+"Balade à cheval à Diabat (optionnelle)",
+
+"Soirée dans un restaurant classé à Essaouira (optionnelle)",
+
+"Dépenses personnelles"
+
+],
+
+
+reservation:
+"Réservation et renseignements par WhatsApp au 0675296774.",
+
+
+conditions:[
+
+"Hôtels 4 étoiles",
+
+"Places limitées selon disponibilité",
+
+"Confirmation après paiement",
+
+"Le programme peut être modifié pour assurer le bon déroulement du voyage"
+
+]
+
+},
+   
 {
 id:"merzouga-ouarzazate",
 
